@@ -1,25 +1,19 @@
 import React from 'react';
-import Amerikan from "../../../assets/AmericanExpress.png";
-import WesternUnion from "../../../assets/westernunion.png";
-import Klarna from "../../../assets/klarna.png";
-import Skrill from "../../../assets/Skrill.png";
-import Stripe from "../../../assets/Stripe.png";
+import Amerikan from '../../../assets/AmericanExpress.png';
+import WesternUnion from '../../../assets/westernunion.png';
+import Klarna from '../../../assets/klarna.png';
+import Skrill from '../../../assets/Skrill.png';
+import Stripe from '../../../assets/Stripe.png';
 
-const  Partners = () => {
-  const partners = [
-    Amerikan,
-    WesternUnion,
-    Klarna,
-    Skrill,
-    Stripe,
-  ];
+const Partners = () => {
+  const partners = [Amerikan, WesternUnion, Klarna, Skrill, Stripe];
 
   // Uzluksiz ko‘rinish uchun ikki marta takrorlanadi
   const repeatedPartners = [...partners, ...partners];
 
   return (
     <div className="max-w-8xl m-auto bg-white py-6 md:py-12 overflow-hidden">
-      <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-6 md:mb-12 text-center">
+      <h2 className="text-2xl md:text-[45px] font-extrabold text-gray-900 mb-6 md:mb-12 text-center">
         Our Partners and Clients
       </h2>
 
@@ -58,14 +52,22 @@ const  Partners = () => {
       </div>
 
       {/* Animatsiyalar */}
-      <style  jsx="true">{`
+      <style jsx="true">{`
         @keyframes scroll {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
         }
         @keyframes scroll-reverse {
-          0% { transform: translateX(-50%); }
-          100% { transform: translateX(0); }
+          0% {
+            transform: translateX(-50%);
+          }
+          100% {
+            transform: translateX(0);
+          }
         }
         .animate-scroll {
           animation: scroll 25s linear infinite;
@@ -76,7 +78,8 @@ const  Partners = () => {
 
         /* Mobil uchun optimallashtirish */
         @media (max-width: 768px) {
-          .animate-scroll, .animate-scroll-reverse {
+          .animate-scroll,
+          .animate-scroll-reverse {
             animation-duration: 15s; /* Tezroq aylanish */
           }
         }

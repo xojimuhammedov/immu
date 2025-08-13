@@ -1,24 +1,25 @@
-import React, { useState, useEffect } from "react";
-import Image1 from "../../../assets/hero.png";
-import Image2 from "../../../assets/News/velo2.png";
-import Image3 from "../../../assets/News/sec.png";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import React, { useState, useEffect } from 'react';
+import Image1 from '../../../assets/hero.png';
+import Image2 from '../../../assets/News/velo2.png';
+import Image3 from '../../../assets/News/sec.png';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const slides = [
   {
     image: Image1,
-    title: "Janubiy Koreyadagi vatandoshlarimiz bilan muloqot",
-    buttonText: "Batafsil",
+    title: 'Janubiy Koreyadagi vatandoshlarimiz bilan muloqot',
+    buttonText: 'Batafsil',
   },
   {
     image: Image2,
-    title: "Kolumbiyada o‘tgan jahon chempionatida hamyurtimiz ilk medalni qo‘lga kiritdi",
-    buttonText: "Batafsil",
+    title:
+      'Kolumbiyada o‘tgan jahon chempionatida hamyurtimiz ilk medalni qo‘lga kiritdi',
+    buttonText: 'Batafsil',
   },
   {
     image: Image3,
-    title: "Oʻzbekiston diplomatlari Janubiy Koreyaning Kvanju",
-    buttonText: "Batafsil",
+    title: 'Oʻzbekiston diplomatlari Janubiy Koreyaning Kvanju',
+    buttonText: 'Batafsil',
   },
 ];
 
@@ -51,17 +52,15 @@ const EventBanner = () => {
         className="absolute inset-0 w-full h-full object-cover transition-all duration-500"
       />
 
-     
-
       {/* Kontent */}
       <div className="relative z-10 flex flex-col md:flex-row justify-between items-end md:items-end p-5 sm:p-6 h-full text-white">
         {/* Chap tomon: Sarlavha va Batafsil tugmasi */}
         <div className="flex-1 flex flex-col justify-end space-y-3 sm:space-y-4 w-full md:w-1/2">
           <div className="flex flex-col gap-4 sm:gap-6">
-            <h1 className="font-extrabold text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] leading-tight tracking-[0%] font-inter">
+            <h1 className="font-extrabold text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] leading-tight w-[700px] tracking-[0%] font-inter">
               {currentSlide.title}
             </h1>
-            <button className="bg-white w-fit hover:bg-[#009688] text-[#009688] hover:text-white px-5 sm:px-10 py-2 sm:py-3 rounded-lg transition duration-300 shadow-md font-bold text-[14px] sm:text-[15px] text-center font-inter self-start cursor-pointer">
+            <button className="bg-white w-fit hover:bg-[#009688] text-[#009688] hover:text-white px-5 sm:px-10 py-2 sm:py-3 rounded-2xl transition duration-300 shadow-md font-bold text-[14px] sm:text-[15px] text-center font-inter self-start cursor-pointer">
               {currentSlide.buttonText}
             </button>
           </div>

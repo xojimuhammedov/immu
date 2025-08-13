@@ -8,15 +8,15 @@ const Workshop = () => {
     agreed: false,
   });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = e => {
     e.preventDefault();
     // Form submission logic
     console.log('Form submitted:', formData);
   };
 
-  const handleChange = (e) => {
+  const handleChange = e => {
     const { name, value, type, checked } = e.target;
-    setFormData((prev) => ({
+    setFormData(prev => ({
       ...prev,
       [name]: type === 'checkbox' ? checked : value,
     }));
@@ -31,7 +31,10 @@ const Workshop = () => {
               Workshops and Spiritual Development
             </h2>
             <p className="text-[#D28527] font-inter font-medium text-[16px] md:text-[20px] leading-[32px] tracking-[0%] mt-2">
-              Participate in our weekly workshops focused on Islamic studies and spiritual growth. These sessions are designed to help you strengthen your connection with faith and acquire essential skills for daily life.
+              Participate in our weekly workshops focused on Islamic studies and
+              spiritual growth. These sessions are designed to help you
+              strengthen your connection with faith and acquire essential skills
+              for daily life.
             </p>
           </div>
           <div className="flex items-center justify-center mt-4">
@@ -45,7 +48,8 @@ const Workshop = () => {
             Free consultation
           </h2>
           <p className="text-[#152032] font-inter font-medium text-[16px] leading-[20px] tracking-[0%] mb-6">
-            Leave your phone number, and we will reach out to provide you with complete information about our courses.
+            Leave your phone number, and we will reach out to provide you with
+            complete information about our courses.
           </p>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
@@ -89,8 +93,12 @@ const Workshop = () => {
                 className="h-4 w-4 text-blue-600 border-gray-300 rounded mt-1"
                 required
               />
-              <label htmlFor="agreement" className="ml-3 block text-sm text-gray-700">
-                I agree to the use of my personal information for consultation purposes.
+              <label
+                htmlFor="agreement"
+                className="ml-3 block text-sm text-gray-700"
+              >
+                I agree to the use of my personal information for consultation
+                purposes.
               </label>
             </div>
             <button
@@ -99,7 +107,7 @@ const Workshop = () => {
             >
               Submit
             </button>
-            </form>
+          </form>
         </div>
       </div>
     </div>

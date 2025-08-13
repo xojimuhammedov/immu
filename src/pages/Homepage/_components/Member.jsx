@@ -1,8 +1,8 @@
 import React from 'react';
-import Person1 from '../../../assets/MemberPerson1.png'
-import Person2 from '../../../assets/MemberPerson2.png'
-import Person3 from '../../../assets/MemberPerson3.png'
-import { Phone,Mail } from 'lucide-react';
+import Person1 from '../../../assets/MemberPerson1.png';
+import Person2 from '../../../assets/MemberPerson2.png';
+import Person3 from '../../../assets/MemberPerson3.png';
+import { Phone, Mail } from 'lucide-react';
 const TeamMembers = () => {
   const members = [
     {
@@ -11,7 +11,7 @@ const TeamMembers = () => {
       position: 'Vasiliylik kengashi raisi oʻrnbosari',
       phone: '+998(55) 502-22-99',
       email: 'sattarov@immu.uz',
-      image: Person3, 
+      image: Person3,
     },
     {
       id: 2,
@@ -34,32 +34,41 @@ const TeamMembers = () => {
   return (
     <div className="mt-10 max-w-7xl mx-auto">
       {/* Section Title */}
-      <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">Aʼzolar tarkibi</h2>
+      <h2 className="text-2xl md:text-[45px] font-bold text-center mb-8">
+        Aʼzolar tarkibi
+      </h2>
 
       {/* Member Cards Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {members.map((member) => (
-          <div key={member.id} className="bg-white rounded-lg shadow-md overflow-hidden">
+        {members.map(member => (
+          <div
+            key={member.id}
+            className="bg-white rounded-lg shadow-md overflow-hidden"
+          >
             {/* Member Image */}
             <img
               src={member.image}
               alt={member.name}
-              className="w-full h-70 "
+              className="w-full h-100 object-cover"
             />
 
             {/* Member Info */}
             <div className="p-4 ">
-              <p className="font-normal text-[14px] leading-[100%] tracking-[0.2px] font-inter text-[#656B70] mb-3">{member.position}</p>
-              <h3 className=" font-bold text-[18px] leading-[100%] tracking-[0%] font-inter text-[#009688] mb-4">{member.name}</h3>
+              <p className="font-bold text-[14px] leading-[100%] tracking-[0.2px] font-inter text-[#656B70] mb-3">
+                {member.position}
+              </p>
+              <h3 className="font-bold text-[20px] leading-[100%] tracking-[0%] font-inter text-[#009688] mb-4">
+                {member.name}
+              </h3>
 
               {/* Contact Info */}
               <div className=" flex items-center mt-5 text-xs text-[#656B70] font-bold text-[14px] leading-[100%] tracking-[0.2px] font-inter gap-2">
-              <Phone className='w-4 h-4 text-[#009688]'/>
+                <Phone className="w-4 h-4 text-[#009688]" />
                 <span>{member.phone}</span>
               </div>
 
               <div className="flex items-center mt-2 text-xs text-[#656B70] font-bold text-[14px] leading-[100%] tracking-[0.2px] font-inter gap-3">
-              <Mail className='w-4 h-4 text-[#009688]' />
+                <Mail className="w-4 h-4 text-[#009688]" />
                 <span>{member.email}</span>
               </div>
             </div>

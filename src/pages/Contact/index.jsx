@@ -1,21 +1,8 @@
-import React from "react";
+import React from 'react';
 
 const ContactPage = () => {
   return (
-    <div className="w-full bg-white">
-      {/* Breadcrumb */}
-      <div className="max-w-6xl mx-auto px-4 py-4 text-sm text-gray-500 flex gap-2 justify-end">
-        <a
-          href="/"
-          className="hover:underline font-inter font-bold text-[14px] tracking-[0.2px] text-[#5D6B8A]"
-        >
-          Asosiy sahifa
-        </a>{" "}
-        ›{" "}
-        <span className="text-[#009688] font-inter font-bold text-[14px] tracking-[0.2px]">
-          Bog'lanish
-        </span>
-      </div>
+    <div className="w-full bg-white py-8">
 
       {/* Title and description */}
       <div className="max-w-7xl mx-auto border-b border-[#EAEDF6] px-4 sm:px-6">
@@ -57,7 +44,7 @@ const ContactPage = () => {
             />
             <button
               type="submit"
-              className="bg-[#009688] text-white px-6 py-2 rounded-md hover:bg-green-800 transition w-full sm:w-auto"
+              className="bg-[#009688] text-white px-6 py-3 rounded-2xl hover:bg-green-800 transition w-full sm:w-auto"
             >
               Отправить
             </button>

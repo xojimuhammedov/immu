@@ -1,9 +1,9 @@
-import React from "react";
-import CarouselPerson1 from "../../../assets/AboutImage/CarouselPerson1.png";
-import CarouselPerson2 from "../../../assets/AboutImage/CarouselPerson2.png";
-import CarouselPerson3 from "../../../assets/AboutImage/CarouselPerson3.png";
-import CarouselPerson4 from "../../../assets/AboutImage/CarouselPerson4.png";
-import CarouselPerson5 from "../../../assets/AboutImage/CarouselPerson5.png";
+import React from 'react';
+import CarouselPerson1 from '../../../assets/AboutImage/CarouselPerson1.png';
+import CarouselPerson2 from '../../../assets/AboutImage/CarouselPerson2.png';
+import CarouselPerson3 from '../../../assets/AboutImage/CarouselPerson3.png';
+import CarouselPerson4 from '../../../assets/AboutImage/CarouselPerson4.png';
+import CarouselPerson5 from '../../../assets/AboutImage/CarouselPerson5.png';
 
 const Carousel = () => {
   const images = [
@@ -15,8 +15,12 @@ const Carousel = () => {
   ];
   const repeatedPartners = [...images, ...images];
   return (
-  <div className="flex  flex-col gap-5 py-3 md:py-10 " >
-    <h1 className="font-inter p-5 max-w-7xl m-auto  font-bold text-[14px] md:text-[18px] lg:text-[24px] leading-[150%] tracking-[0] text-center align-middle text-[#009688]">Vatani atrofida yanada jipslashtirish, ularning qalbi va ongida yurt bilan faxrlanish  tuyg‘usini yuksaltirish, milliy o‘zlikni saqlab qolish bizning oliy maqsadimizdir</h1>
+    <div className="flex  flex-col gap-5 py-3 md:py-10 ">
+      <h1 className="font-inter p-5 max-w-7xl m-auto  font-bold text-[14px] md:text-[18px] lg:text-[24px] leading-[150%] tracking-[0] text-center align-middle text-[#009688]">
+        Vatani atrofida yanada jipslashtirish, ularning qalbi va ongida yurt
+        bilan faxrlanish tuyg‘usini yuksaltirish, milliy o‘zlikni saqlab qolish
+        bizning oliy maqsadimizdir
+      </h1>
       <div className="relative w-full overflow-hidden group">
         {/* First row */}
         <div className="flex whitespace-nowrap animate-scroll group-hover:[animation-play-state:paused]">
@@ -35,18 +39,25 @@ const Carousel = () => {
         </div>
 
         {/* Second row (reverse) */}
-       
       </div>
 
       {/* Animatsiyalar */}
-      <style  jsx="true">{`
+      <style jsx="true">{`
         @keyframes scroll {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
         }
         @keyframes scroll-reverse {
-          0% { transform: translateX(-50%); }
-          100% { transform: translateX(0); }
+          0% {
+            transform: translateX(-50%);
+          }
+          100% {
+            transform: translateX(0);
+          }
         }
         .animate-scroll {
           animation: scroll 25s linear infinite;
@@ -57,12 +68,13 @@ const Carousel = () => {
 
         /* Mobil uchun optimallashtirish */
         @media (max-width: 768px) {
-          .animate-scroll, .animate-scroll-reverse {
+          .animate-scroll,
+          .animate-scroll-reverse {
             animation-duration: 15s; /* Tezroq aylanish */
           }
         }
       `}</style>
-  </div>
+    </div>
   );
 };
 

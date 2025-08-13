@@ -1,5 +1,5 @@
-import React from "react";
-import FondImage from "../../../assets/Font.png";
+import React from 'react';
+import FondImage from '../../../assets/Font.png';
 
 const Font = () => {
   return (
@@ -34,16 +34,16 @@ const Font = () => {
           {/* Statistika */}
           <div className="flex flex-wrap gap-6 sm:gap-10">
             <div>
-              <h3 className="font-inter font-bold text-[18px] sm:text-[22px] md:text-[24px] text-[#009688] leading-[100%]">
-                105{" "}
+              <h3 className="font-inter font-bold text-[18px] sm:text-[22px] md:text-[32px] text-[#009688] leading-[100%]">
+                105{' '}
                 <span className="font-inter font-bold text-[14px] sm:text-[16px] md:text-[18px] text-[#5D6B8A]">
                   Mamlakatda
                 </span>
               </h3>
             </div>
             <div>
-              <h3 className="font-inter font-bold text-[18px] sm:text-[22px] md:text-[24px] text-[#009688] leading-[100%]">
-                2.4 mln{" "}
+              <h3 className="font-inter font-bold text-[18px] sm:text-[22px] md:text-[32px] text-[#009688] leading-[100%]">
+                2.4 mln{' '}
                 <span className="font-inter font-bold text-[14px] sm:text-[16px] md:text-[18px] text-[#5D6B8A]">
                   Yurtdoshimiz
                 </span>

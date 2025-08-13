@@ -1,6 +1,6 @@
-import React from "react";
-import VidioImage from "../../../assets/AboutImage/vidio.jpg";
-import { Play } from "lucide-react";
+import React from 'react';
+import VidioImage from '../../../assets/AboutImage/vidio.jpg';
+import { Play } from 'lucide-react';
 
 const Vidio = () => {
   return (

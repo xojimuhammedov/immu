@@ -13,26 +13,20 @@ const ArticlePage = React.lazy(() => import('./pages/Articles/index.jsx'));
 const ContackPage = React.lazy(() => import('./pages/Contact/index.jsx'));
 const NewsPage = React.lazy(() => import('./pages/News/index.jsx'));
 
-
-
 function App() {
   return (
     <Router>
       <div className="min-h-screen flex flex-col max-w-[1700px] m-auto ">
-     
-          <Header />
-       
+        <Header />
 
         <main className="flex-1">
-          <Suspense fallback={
-            <div className="flex justify-center items-center h-[80vh]">
-              <ThreeDot 
-                variant="bounce" 
-                color="#009688"
-                size="large"
-              />
-            </div>
-          }>
+          <Suspense
+            fallback={
+              <div className="flex justify-center items-center h-[80vh]">
+                <ThreeDot variant="bounce" color="#009688" size="large" />
+              </div>
+            }
+          >
             <Routes>
               <Route path="/" element={<Homepage />} />
               <Route path="/about" element={<AboutPage />} />
@@ -42,10 +36,7 @@ function App() {
             </Routes>
           </Suspense>
         </main>
-
-      
-          <Footer />
-        
+        <Footer />
       </div>
     </Router>
   );
