@@ -4,6 +4,7 @@ import UzFlag from '../assets/uzb.png';
 import EnFlag from '../assets/eng.png';
 import RuFlag from '../assets/rus.png';
 import { Link, useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Header = () => {
   const navigate = useNavigate();
@@ -29,9 +30,9 @@ const Header = () => {
   }, []);
 
   const tillar = [
-    { kod: 'ENG', nomi: 'English', bayroq: EnFlag },
-    { kod: 'UZB', nomi: "O'zbekcha", bayroq: UzFlag },
-    { kod: 'RUS', nomi: 'Русский', bayroq: RuFlag },
+    { kod: 'ENG', nomi: 'English', bayroq: EnFlag, value:"en" },
+    { kod: 'UZB', nomi: "O'zbek", bayroq: UzFlag, value:"uz" },
+    { kod: 'RUS', nomi: 'Русский', bayroq: RuFlag, value:"ru" },
   ];
 
   const tanlanganTil = tillar.find(t => t.kod === til) || tillar[1];
@@ -44,6 +45,12 @@ const Header = () => {
 
   const toggleMobilePrograms = () => {
     setProgramsDropdownOchiq(!programsDropdownOchiq);
+  };
+
+  const { i18n } = useTranslation();
+
+  const onChangeLanguage = (value) => {
+    i18n.changeLanguage(value);
   };
 
   return (
@@ -109,10 +116,10 @@ const Header = () => {
               <img
                 src={tanlanganTil.bayroq}
                 alt={tanlanganTil.kod}
-                className="w-5 h-5 mr-2"
+                className="w-[30px] h-5 mr-2 object-cover"
               />
               <span className="hidden lg:inline text-[18px]">
-                {tanlanganTil.kod}
+                {tanlanganTil.nomi}
               </span>
               <svg
                 className="ml-1 w-4 h-4"
@@ -132,12 +139,15 @@ const Header = () => {
               <div className="absolute right-0 mt-2 w-40 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-100">
                 {tillar.map(t => (
                   <button
-                    key={t.kod}
-                    onClick={() => tilTanlash(t.kod)}
-                    className={`flex items-center w-full px-4 py-2 text-gray-700 hover:bg-indigo-50 ${til === t.kod ? 'bg-indigo-50 font-medium' : ''}`}
+                    key={t?.kod}
+                    onClick={() => {
+                      tilTanlash(t.kod)
+                      onChangeLanguage(t.value)
+                    }}
+                    className={`flex items-center w-full cursor-pointer px-4 py-2 text-gray-700 hover:bg-indigo-50 ${til === t.kod ? 'bg-indigo-50 font-medium' : ''}`}
                   >
-                    <img src={t.bayroq} alt={t.kod} className="w-5 h-5 mr-2" />
-                    <span>{t.nomi}</span>
+                    <img src={t?.bayroq} alt={t?.kod} className="w-[30px] h-5 mr-2 object-cover" />
+                    <span>{t?.nomi}</span>
                   </button>
                 ))}
               </div>
