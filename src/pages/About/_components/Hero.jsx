@@ -7,7 +7,7 @@ const LeadershipSection = () => {
     <section className="bg-[#009688] text-white py-16 px-4 sm:px-8 lg:px-24 overflow-hidden relative">
       {/* Rasmni o'ng tomoniga joylashtirish */}
      <div className='flex items-center'>
-         <img 
+      <img 
         src={RightImage} 
         alt="O'ng tomon pattern"
         className='w-[331px] h-[493px] absolute mt-0 left-0 '
@@ -52,9 +52,9 @@ const LeadershipSection = () => {
 
       {/* Main Content */}
       <div className="max-w-7xl mx-auto pr-5 md:pr-40 2xl:pr-80">
-        <h1 className="font-inter font-bold text-[20px] sm:text-[24px] md:text-[32px] leading-[100%] tracking-[0] mb-4">Rahbariyat</h1>
+        <h1 className="font-inter font-bold text-[20px] sm:text-[24px] md:text-[32px] leading-[100%] tracking-[0] mb-4">Islom Moliyasi</h1>
         <p className="font-inter font-normal text-[14px] leading-[180%] tracking-[0.2px]">
-          Xorida istiqomat qilayotgan vatanadoslarini tarixiy Vatanimiz yonida jipslashtirish, ularning qabiliyati va ongida yurt bilan faksiyalash tuzgusini yuksaltirish, milliy ozrlarini saqlab qolish, vatanadoslar va ular tomonidan tuzilgan jamoat turfashlanmalari qobiliq-quvvatlashtirish, turli oholarda faoliyat yuritadigan vatanadoslarimizning salohiyatini muhimlikdanimiz tarqiqiyotiga kamerali yoqtirish Fondining aszay maqsadlardan bir hisoblanadi.
+          Islomiy moliya sohasida faoliyat yuritayotgan mutaxassislarni birlashtirish, ularning kasbiy salohiyatini oshirish, soha taraqqiyotiga hissa qo‘shish, O‘zbekistonda va Markaziy Osiyo mintaqasida islomiy moliyaviy tizimning rivojlanishiga ko‘maklashish hamda mintaqaviy hamkorlikni mustahkamlash.
         </p>
       </div>
     </section>

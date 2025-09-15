@@ -21,18 +21,11 @@ const Font = () => {
           </h2>
 
           <p className="text-gray-600 font-inter font-normal text-[14px] sm:text-[15px] md:text-[16px] leading-relaxed tracking-[0.2px]">
-            Xorijda istiqomat qilayotgan vatandoshlarni tarixiy Vatani atrofida
-            yanada jipslashtirish, ularning qalbi va ongida yurt bilan
-            faxrlanish tuyg‘usini yuksaltirish, milliy o‘zlikni saqlab qolish,
-            vatandoshlar va ular tomonidan tuzilgan jamoat birlashmalarini
-            qo‘llab-quvvatlash, turli sohalarda faoliyat yuritayotgan
-            vatandoshlarimizning salohiyatini mamlakatimiz taraqqiyotiga
-            samarali yo‘naltirish Fondning asosiy maqsadlaridan biri
-            hisoblanadi.
+              O‘zbekiston va Markaziy Osiyo davlatlari o‘rtasida islomiy moliya sohasida mintaqaviy hamkorlikni kuchaytirish, hamkorlikda tashabbuslarni amalga oshirish, o‘zaro muloqot va tajriba almashuvini rivojlantirish.
           </p>
 
           {/* Statistika */}
-          <div className="flex flex-wrap gap-6 sm:gap-10">
+          {/* <div className="flex flex-wrap gap-6 sm:gap-10">
             <div>
               <h3 className="font-inter font-bold text-[18px] sm:text-[22px] md:text-[24px] text-[#009688] leading-[100%]">
                 105{" "}
@@ -49,13 +42,13 @@ const Font = () => {
                 </span>
               </h3>
             </div>
-          </div>
+          </div> */}
 
-          <p className="text-gray-600 font-inter font-normal text-[14px] sm:text-[15px] md:text-[16px] leading-relaxed tracking-[0.2px]">
+          {/* <p className="text-gray-600 font-inter font-normal text-[14px] sm:text-[15px] md:text-[16px] leading-relaxed tracking-[0.2px]">
             Xorijda istiqomat qilayotgan vatandoshlarni tarixiy Vatani atrofida
             yanada jipslashtirish, ularning qalbi va ongida yurt bilan
             faxrlanish tuyg‘usini yuksaltirish.
-          </p>
+          </p> */}
         </div>
       </div>
     </section>

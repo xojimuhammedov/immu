@@ -10,7 +10,7 @@ const index = () => {
         <Hero/>
         <Font/>
         <Vidio/>
-        <Carousel/>
+        {/* <Carousel/> */}
     </div>
   )
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import FondImage from "../../../assets/Font.png";
+import { Link } from "react-router-dom";
 
 const Fond = () => {
   return (
@@ -13,8 +14,7 @@ const Fond = () => {
               src={FondImage}
               alt="Team Working Together"
               className="w-full h-full object-cover rounded-lg shadow-md"
-            />
-            
+            /> 
           </div>
 
           {/* Matn va Tugma */}
@@ -23,59 +23,59 @@ const Fond = () => {
               Fondning vazifasi va maqsadi
             </h2>
             <p className="text-gray-600 leading-relaxed font-normal text-[16px]  tracking-[0.2px] font-inter ">
-             Xorijda istiqomat qilayotgan vatandoshlarni tarixiy Vatani atrofida yanada jipslashtirish, ularning qalbi va ongida yurt bilan faxrlanish tuyg‘usini yuksaltirish, milliy o‘zlikni saqlab qolish, vatandoshlar va ular tomonidan tuzilgan jamoat birlashmalarini qo‘llab-quvvatlash, turli sohalarda faoliyat yuritayotgan vatandoshlarimizning salohiyatini mamlakatimiz taraqqiyotiga samarali yo‘naltirish Fondning asosiy maqsadlaridan biri hisoblanadi.
+            Islomiy moliya sohasida faoliyat yuritayotgan mutaxassislarni birlashtirish, ularning kasbiy salohiyatini oshirish, soha taraqqiyotiga hissa qo‘shish, O‘zbekistonda va Markaziy Osiyo mintaqasida islomiy moliyaviy tizimning rivojlanishiga ko‘maklashish hamda mintaqaviy hamkorlikni mustahkamlash.
              <br /><br />
-             Xorijda istiqomat qilayotgan vatandoshlarni tarixiy Vatani atrofida yanada jipslashtirish, ularning qalbi va ongida yurt bilan faxrlanish tuyg‘usini yuksaltirish.
+             O‘zbekiston va Markaziy Osiyo davlatlari o‘rtasida islomiy moliya sohasida mintaqaviy hamkorlikni kuchaytirish, hamkorlikda tashabbuslarni amalga oshirish, o‘zaro muloqot va tajriba almashuvini rivojlantirish.
             </p>
-            <button className="bg-[#009688] text-white w-[170px] h-[48px] rounded-[16px] hover:bg-[#00796b] transition duration-300">
+            <Link to={'/about'} className="bg-[#009688] flex items-center justify-center text-white w-[170px] h-[48px] rounded-[16px] hover:bg-[#00796b] transition duration-300">
               Batafsil
-            </button>
+            </Link>
           </div>
         </div>
       </div>
 
       {/* Ikkinchi qism: Statistika */}
-    <div className="max-w-7xl mx-auto mt-16 border-b border-[#2B2B2B99] px-4">
+    <div className="max-w-7xl mx-auto px-4">
       <div className="flex flex-wrap">
       {/* Item 1 */}
-        <div className="w-1/2 lg:w-1/4 h-[107px] border-x border-[#2B2B2B99] mb-4">
+        {/* <div className="w-1/2 lg:w-1/4 h-[107px] border-x border-[#2B2B2B99] mb-4">
           <h2 className="font-bold text-[40px] sm:text-[48px] lg:text-[60px] leading-[75px] tracking-[1%] text-center font-inter">
             12<span className="text-[#009688] font-medium">+</span>
           </h2>
           <h3 className="font-normal text-[18px] sm:text-[20px] lg:text-[22px] leading-[100%] tracking-[1%] text-center font-inter">
             Year Services
           </h3>
-        </div>
+        </div> */}
 
       {/* Item 2 */}
-        <div className="w-1/2 lg:w-1/4 h-[107px] border-x border-[#2B2B2B99] mb-4">
+        {/* <div className="w-1/2 lg:w-1/4 h-[107px] border-x border-[#2B2B2B99] mb-4">
           <h2 className="font-bold text-[40px] sm:text-[48px] lg:text-[60px] leading-[75px] tracking-[1%] text-center font-inter">
             <span className="text-[#009688] font-medium">+</span>20K
           </h2>
           <h3 className="font-normal text-[18px] sm:text-[20px] lg:text-[22px] leading-[100%] tracking-[1%] text-center font-inter">
             Cargo Delivered
           </h3>
-        </div>
+        </div> */}
 
       {/* Item 3 */}
-        <div className="w-1/2 lg:w-1/4 h-[107px] border-x border-[#2B2B2B99] mb-4 lg:mb-0">
+        {/* <div className="w-1/2 lg:w-1/4 h-[107px] border-x border-[#2B2B2B99] mb-4 lg:mb-0">
           <h2 className="font-bold text-[40px] sm:text-[48px] lg:text-[60px] leading-[75px] tracking-[1%] text-center font-inter">
             <span className="text-[#009688] font-medium">+</span>20K
           </h2>
           <h3 className="font-normal text-[18px] sm:text-[20px] lg:text-[22px] leading-[100%] tracking-[1%] text-center font-inter">
             Cargo Delivered
           </h3>
-        </div>
+        </div> */}
 
       {/* Item 4 */}
-        <div className="w-1/2 lg:w-1/4 h-[107px] border-x border-[#2B2B2B99]">
+        {/* <div className="w-1/2 lg:w-1/4 h-[107px] border-x border-[#2B2B2B99]">
           <h2 className="font-bold text-[40px] sm:text-[48px] lg:text-[60px] leading-[75px] tracking-[1%] text-center font-inter">
             500
           </h2>
           <h3 className="font-normal text-[18px] sm:text-[20px] lg:text-[22px] leading-[100%] tracking-[1%] text-center font-inter">
             Total Cargo
           </h3>
-        </div>
+        </div> */}
       </div>
     </div>
     </div>

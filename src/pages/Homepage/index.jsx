@@ -11,10 +11,10 @@ const index = () => {
    <div className='p-3'>
      <Hero/>
      <Fond/>
-     <News/>
+     {/* <News/> */}
      <TeamMembers/>
-     <Partners/>
-     <Media/>
+     {/* <Partners/> */}
+     {/* <Media/> */}
      <Workshop/>
    </div>
   )

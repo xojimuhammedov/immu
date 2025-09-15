@@ -4,21 +4,23 @@ import Image2 from "../../../assets/News/velo2.png";
 import Image3 from "../../../assets/News/sec.png";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
+import HeaderBanner from '../../../assets/newbanner.jpg'
+
 const slides = [
   {
-    image: Image1,
-    title: "Janubiy Koreyadagi vatandoshlarimiz bilan muloqot",
-    buttonText: "Batafsil",
+    image: HeaderBanner,
+    title: "",
+    buttonText: "",
   },
   {
-    image: Image2,
-    title: "Kolumbiyada o‘tgan jahon chempionatida hamyurtimiz ilk medalni qo‘lga kiritdi",
-    buttonText: "Batafsil",
+    image: HeaderBanner,
+    title: "",
+    buttonText: "",
   },
   {
-    image: Image3,
-    title: "Oʻzbekiston diplomatlari Janubiy Koreyaning Kvanju",
-    buttonText: "Batafsil",
+    image: HeaderBanner,
+    title: "",
+    buttonText: "",
   },
 ];
 
@@ -59,14 +61,14 @@ const EventBanner = () => {
             <h1 className="font-extrabold text-[20px] sm:text-[20px] lg:text-[24px] sm:w-full lg:w-[480px] leading-tight tracking-[0%] font-inter">
               {currentSlide.title}
             </h1>
-            <button className="bg-white w-fit hover:bg-[#009688] text-[#009688] hover:text-white px-5 sm:px-10 py-2 sm:py-3 rounded-[16px] transition duration-300 shadow-md font-bold text-[14px] sm:text-[15px] text-center font-inter self-start cursor-pointer">
+            {/* <button className="bg-white w-fit hover:bg-[#009688] text-[#009688] hover:text-white px-5 sm:px-10 py-2 sm:py-3 rounded-[16px] transition duration-300 shadow-md font-bold text-[14px] sm:text-[15px] text-center font-inter self-start cursor-pointer">
               {currentSlide.buttonText}
-            </button>
+            </button> */}
           </div>
         </div>
 
         {/* O'ng tomon: Tugmalar (faqat md va undan kattalarda ko'rinadi) */}
-        <div className="hidden md:flex space-x-3 mt-6 md:mt-0">
+        {/* <div className="hidden md:flex space-x-3 mt-6 md:mt-0">
           <button
             onClick={prevSlide}
             className="bg-white bg-opacity-20 cursor-pointer backdrop-blur-sm hover:bg-opacity-30 text-[#009688] border border-white border-opacity-30 w-[48px] h-[48px] flex justify-center items-center hover:bg-[#009688] hover:text-white rounded-full transition duration-300 shadow-md"
@@ -79,7 +81,7 @@ const EventBanner = () => {
           >
             <ChevronRight size={20} />
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );
