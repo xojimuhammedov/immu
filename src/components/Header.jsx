@@ -62,6 +62,7 @@ const Header = () => {
       
           <Link to="/" className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1" onClick={() => setMenuOchiq(false)}>{t("Bosh sahifa")}</Link>
           <Link to="/about" className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1" onClick={() => setMenuOchiq(false)}>{t("Biz haqimizda")}</Link>
+          <Link to="/member" className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1" onClick={() => setMenuOchiq(false)}>{t("A'zolar kengashi")}</Link>
           {/* <Link to="/articles" className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1">ARTICLES</Link> */}
           {/* <Link to="/news" className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1" onClick={() => setMenuOchiq(false)}>NEWS</Link> */}
           <Link to="/contact" className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1" onClick={() => setMenuOchiq(false)}>{t("Bog'lanish")}</Link>
@@ -128,6 +129,7 @@ const Header = () => {
           <div className="relative">
            <Link to="/about" className="block py-2.5 px-3 text-gray-700 hover:text-[#009688] hover:bg-gray-50 rounded-md transition duration-200" onClick={() => setMenuOchiq(false)}>{t("Biz haqimizda")}</Link>
           </div>
+          <Link to="/member" className="block py-2.5 px-3 text-gray-700 hover:text-[#009688] hover:bg-gray-50 rounded-md transition duration-200" onClick={() => setMenuOchiq(false)}>{t("A'zolar kengashi")}</Link>
           {/* <Link to="/articels" className="block py-2.5 px-3 text-gray-700 hover:text-[#009688] hover:bg-gray-50 rounded-md transition duration-200" onClick={() => setMenuOchiq(false)}>ARTICLES</Link> */}
           {/* <Link to="/news" className="block py-2.5 px-3 text-gray-700 hover:text-[#009688] hover:bg-gray-50 rounded-md transition duration-200" onClick={() => setMenuOchiq(false)}>NEWS</Link> */}
             <Link to="/contact" className="block py-2.5 px-3 text-gray-700 hover:text-[#009688] hover:bg-gray-50 rounded-md transition duration-200" onClick={() => setMenuOchiq(false)}>{t("Bog'lanish")}</Link>

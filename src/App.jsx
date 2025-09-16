@@ -12,6 +12,7 @@ const AboutPage = React.lazy(() => import('./pages/About/index.jsx'));
 const ArticlePage = React.lazy(() => import('./pages/Articles/index.jsx'));
 const ContackPage = React.lazy(() => import('./pages/Contact/index.jsx'));
 const NewsPage = React.lazy(() => import('./pages/News/index.jsx'));
+const MemberAbout = React.lazy(() => import('./pages/MemberAbout/index.jsx'))
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
               <Route path="/about" element={<AboutPage />} />
               {/* <Route path="/articles" element={<ArticlePage />} /> */}
               <Route path="/contact" element={<ContackPage />} />
+              <Route path='/member' element={<MemberAbout />} />
               {/* <Route path="/news" element={<NewsPage />} /> */}
             </Routes>
           </Suspense>

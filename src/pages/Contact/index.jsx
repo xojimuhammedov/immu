@@ -54,7 +54,7 @@ const ContactPage = () => {
               />
             </div>
             <textarea
-              placeholder="Qo‘shimcha ma’lumot"
+              placeholder={t("Qo‘shimcha ma’lumot")}
               rows="4"
               className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#009688]"
             />
