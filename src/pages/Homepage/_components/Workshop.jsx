@@ -1,5 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import SupportImage from '../../../assets/support.jpg'
 
 const Workshop = () => {
   const [formData, setFormData] = useState({
@@ -7,6 +9,8 @@ const Workshop = () => {
     phone: '',
     agreed: false,
   });
+
+  const {t} = useTranslation()
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -23,36 +27,24 @@ const Workshop = () => {
   };
 
   return (
-    <div className="max-w-6xl xl:max-w-7xl m-auto mt-10 flex flex-col rounded-lg bg-white overflow-hidden p-3 xl:p-0">
+    <div className="max-w-6xl py-[36px] xl:max-w-7xl m-auto mt-10 flex flex-col rounded-lg bg-white overflow-hidden p-3 xl:p-0">
       <div className="flex flex-col md:flex-row">
-        <div className="p-6 bg-[#FAE9D3] w-full md:w-3/5 flex flex-col justify-between">
-          <div>
-            <h2 className="font-bold text-[27px] md:text-[32px] leading-[100%] tracking-[0%] font-inter text-[#D28527]">
-              Workshops and Spiritual Development
-            </h2>
-            <p className="text-[#D28527] font-inter font-medium text-[16px] md:text-[20px] leading-[32px] tracking-[0%] mt-2">
-              Participate in our weekly workshops focused on Islamic studies and spiritual growth. These sessions are designed to help you strengthen your connection with faith and acquire essential skills for daily life.
-            </p>
-          </div>
-          <div className="flex items-center justify-center mt-4">
-            <div className="w-[35px] h-[10px] bg-green-700 rounded-full mr-2"></div>
-            <div className="w-[10px] h-[10px] bg-gray-300 rounded-full mr-1"></div>
-            <div className="w-[10px] h-[10px] bg-gray-300 rounded-full"></div>
-          </div>
+        <div className="w-full md:w-3/5 flex flex-col justify-between">
+          <img src={SupportImage} alt="" />
         </div>
         <div className="p-6 bg-[#F9F7F3] w-full md:w-2/5">
           <h2 className="font-inter font-medium text-[22px] leading-[32px] tracking-[0%] text-[#152032] mb-4">
-            Free consultation
+             {t("Free consultation")}
           </h2>
           <p className="text-[#152032] font-inter font-medium text-[16px] leading-[20px] tracking-[0%] mb-6">
-            Leave your phone number, and we will reach out to provide you with complete information about our courses.
+             {t("Leave your phone number, and we will reach out to provide you with complete information about our courses.")}
           </p>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
               <input
                 type="text"
                 name="name"
-                placeholder="Name"
+                placeholder={t("Ismingiz")}
                 value={formData.name}
                 onChange={handleChange}
                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none"
@@ -90,14 +82,14 @@ const Workshop = () => {
                 required
               />
               <label htmlFor="agreement" className="ml-3 block text-sm text-gray-700">
-                I agree to the use of my personal information for consultation purposes.
+                  {t("I agree to the use of my personal information for consultation purposes.")}
               </label>
             </div>
             <button
               type="submit"
               className="w-full bg-[#009688] hover:bg-[#26A69A] text-white font-medium py-2 px-4 rounded-md cursor-pointer"
             >
-              Submit
+                {t("Yuborish")}
             </button>
             </form>
         </div>

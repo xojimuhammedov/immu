@@ -1,5 +1,5 @@
 import React from "react";
-import FondImage from "../../../assets/Font.png";
+import FondImage from "../../../assets/islom-moliyasi.jpeg";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 

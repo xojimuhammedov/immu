@@ -1,5 +1,5 @@
 import React from "react";
-import VidioImage from "../../../assets/AboutImage/vidio.jpg";
+import VidioImage from "../../../assets/about-banner.webp";
 import { Play } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
@@ -12,18 +12,18 @@ const Vidio = () => {
         <img
           src={VidioImage}
           alt="Video"
-          className="w-full h-124 object-cover rounded-lg shadow-md transition-transform duration-500 group-hover:scale-105"
+          className="w-full h-128 object-cover rounded-lg shadow-md transition-transform duration-500 group-hover:scale-105"
         />
 
         {/* Oynatish Tugmasi */}
-        <button
+        {/* <button
           type="button"
           className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
           bg-white/60 text-[#FFFFFF] rounded-full p-4 shadow-lg 
           transition-all duration-300 hover:bg-[#009688] hover:text-white hover:scale-110 cursor-pointer"
         >
           <Play strokeWidth={3} size={28} />
-        </button>
+        </button> */}
       </div>
 
       {/* Matn */}
