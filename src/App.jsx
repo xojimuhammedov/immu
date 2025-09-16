@@ -17,10 +17,7 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen flex flex-col max-w-[1700px] m-auto ">
-     
-          <Header />
-       
-
+        <Header />
         <main className="flex-1">
           <Suspense fallback={
             <div className="flex justify-center items-center h-[80vh]">

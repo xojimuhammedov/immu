@@ -1,6 +1,9 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
+import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
 
 const ContactPage = () => {
+  const {t} = useTranslation()
   return (
     <div className="w-full bg-white">
       {/* Breadcrumb */}
@@ -9,24 +12,24 @@ const ContactPage = () => {
           href="/"
           className="hover:underline font-inter font-bold text-[14px] tracking-[0.2px] text-[#5D6B8A]"
         >
-          Asosiy sahifa
+          {t("Bosh sahifa")}
         </a>{" "}
         ›{" "}
         <span className="text-[#009688] font-inter font-bold text-[14px] tracking-[0.2px]">
-          Bog'lanish
+        {t("Bog'lanish")}
         </span>
       </div>
 
       {/* Title and description */}
-      <div className="max-w-7xl mx-auto border-b border-[#EAEDF6] px-4 sm:px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <h1 className="font-inter font-bold text-[32px] leading-[100%] tracking-[0] text-[#009688] mb-4">
-          Bog'lanish
+          {t("Bog'lanish")}
         </h1>
-        <p className="text-[#5D6B8A] max-w-3xl font-inter font-normal text-[14px] tracking-[0.2px] mb-8">
+        {/* <p className="text-[#5D6B8A] max-w-3xl font-inter font-normal text-[14px] tracking-[0.2px] mb-8">
           Xorijda istiqomat qilayotgan vatandoshlarni tarixiy Vatani atrofida
           yanada jipslashtirish, ularning qalbi va ongida yurt bilan faxrlanish
           tuyg‘usini yuksaltirish, milliy o‘zligini saqlab qolish.
-        </p>
+        </p> */}
       </div>
 
       {/* Main section */}
@@ -34,12 +37,12 @@ const ContactPage = () => {
         {/* Form */}
         <div className="flex-1">
           <h2 className="text-[#161616] mb-6 font-inter font-bold text-[24px] leading-[100%] tracking-[0]">
-            Форма заявки для связи с нами
+              {t("Biz bilan bog'lanish")} 
           </h2>
           <form className="space-y-4 w-full sm:w-[400px]">
             <input
               type="text"
-              placeholder="Ваше имя"
+              placeholder={t("Ismingiz")}
               className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#009688]"
             />
             <div className="flex items-center border border-gray-300 rounded-md px-4 py-2">
@@ -59,7 +62,7 @@ const ContactPage = () => {
               type="submit"
               className="bg-[#009688] text-white px-6 py-2 rounded-[16px] hover:bg-green-800 transition w-full sm:w-auto"
             >
-              Отправить
+                {t("Yuborish")}
             </button>
           </form>
         </div>
@@ -68,45 +71,41 @@ const ContactPage = () => {
         <div className="w-full md:w-80">
           <div className="mb-6">
             <h3 className="text-[#5D6B8A] font-inter font-normal text-[18px] leading-[210%] tracking-[0]">
-              Адрес
+              {t("Manzil")}
             </h3>
             <p className="text-[#062A49] font-inter font-bold text-[18px] leading-[130%] tracking-[0]">
-              100096. Toshkent sh. Muqimiy ko`chasi 166
+               {t("Tashkent city, Mirzo Ulugbek district, Lashkarbegi MFY, 59 Independence")}
             </p>
           </div>
           <div className="mb-6">
             <h3 className="text-[#5D6B8A] font-inter font-normal text-[18px] leading-[210%] tracking-[0]">
-              Часы работы
+               {t("Ish vaqti")}
             </h3>
             <p className="text-[#062A49] font-inter font-bold text-[18px] leading-[130%] tracking-[0]">
-              Понедельник - Пятница 09:00 - 18:00 Суббота 09:00 - 13:00
+                {t("Dushanba - Juma 09:00 - 18:00 Shanba 09:00 - 13:00")}
             </p>
           </div>
           <div>
             <h3 className="text-[#5D6B8A] font-inter font-normal text-[18px] leading-[210%] tracking-[0]">
-              Контактная информация
+               {t("Bog'lanish uchun ma'lumot")}
             </h3>
             <p className="text-[#062A49] font-inter font-bold text-[18px] leading-[130%] tracking-[0]">
-              +998 (55) 502-22-99
+              +998 99 051 18 81
             </p>
-            <p className="text-[#062A49] mt-2 font-inter font-bold text-[18px] leading-[130%] tracking-[0]">
+            {/* <p className="text-[#062A49] mt-2 font-inter font-bold text-[18px] leading-[130%] tracking-[0]">
               info@immuuz.com
-            </p>
+            </p> */}
           </div>
         </div>
       </div>
 
       {/* Map */}
       <div className="max-w-8xl m-auto mt-10 ">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.248862374478!2d69.2273059766114!3d41.295495271313364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDE3JzQzLjgiTiA2OcKwMTMnNDAuMiJF!5e0!3m2!1sru!2s!4v1614516020174!5m2!1sru!2s"
-          className="w-full"
-          height="300"
-          style={{ borderTopLeftRadius: 40, borderTopRightRadius: 40 }}
-          allowFullScreen=""
-          loading="lazy"
-          title="Kampus manzili"
-        ></iframe>
+      <YMaps>
+          <Map defaultState={{ center: [41.320159, 69.294864], zoom: 18 }} width="100%" height="400px">
+              <Placemark geometry={[41.320159, 69.294864]} />
+          </Map>
+      </YMaps>
       </div>
     </div>
   );

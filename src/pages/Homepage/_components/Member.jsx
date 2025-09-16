@@ -5,7 +5,9 @@ import Person3 from '../../../assets/MemberPerson3.png'
 import { Phone,Mail } from 'lucide-react';
 import CallIcon from '../../../assets/CallIcon';
 import MailIcon from '../../../assets/MailIcon';
+import { useTranslation } from 'react-i18next';
 const TeamMembers = () => {
+  const {t} = useTranslation()
   const members = [
     {
       id: 1,
@@ -36,7 +38,7 @@ const TeamMembers = () => {
   return (
     <div className="mt-10 max-w-7xl mx-auto">
       {/* Section Title */}
-      <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold text-center mb-8">Aʼzolar tarkibi</h2>
+      <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold text-center mb-8">{t("Aʼzolar tarkibi")}</h2>
 
       {/* Member Cards Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

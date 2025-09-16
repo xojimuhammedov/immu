@@ -1,7 +1,9 @@
 import React from "react";
 import FondImage from "../../../assets/Font.png";
+import { useTranslation } from "react-i18next";
 
 const Font = () => {
+  const {t} = useTranslation()
   return (
     <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4 py-8">
       <div className="flex flex-col lg:flex-row items-center gap-8 md:gap-12">
@@ -17,11 +19,11 @@ const Font = () => {
         {/* Matn */}
         <div className="w-full lg:w-1/2 flex flex-col gap-6">
           <h2 className="text-[#009688] font-inter font-bold text-[22px] sm:text-[26px] md:text-[28px] leading-[100%] tracking-[0]">
-            Fondning vazifasi va maqsadi
+             {t("Fondning vazifasi va maqsadi")}
           </h2>
 
           <p className="text-gray-600 font-inter font-normal text-[14px] sm:text-[15px] md:text-[16px] leading-relaxed tracking-[0.2px]">
-              O‘zbekiston va Markaziy Osiyo davlatlari o‘rtasida islomiy moliya sohasida mintaqaviy hamkorlikni kuchaytirish, hamkorlikda tashabbuslarni amalga oshirish, o‘zaro muloqot va tajriba almashuvini rivojlantirish.
+            {t("font_text1")}
           </p>
 
           {/* Statistika */}

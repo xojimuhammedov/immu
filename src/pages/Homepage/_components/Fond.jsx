@@ -1,8 +1,10 @@
 import React from "react";
 import FondImage from "../../../assets/Font.png";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Fond = () => {
+  const {t} = useTranslation()
   return (
     <div className="py-6 mt-10">
       {/* Birinchi qism: Rasm + Matn + Tugma */}
@@ -20,15 +22,15 @@ const Fond = () => {
           {/* Matn va Tugma */}
           <div className="w-full md:w-1/2 h-full  flex flex-col gap-8">
             <h2 className="text-[#009688] font-bold text-[24px] leading-[100%] tracking-[0%] font-inter " >
-              Fondning vazifasi va maqsadi
+                {t("Islom moliyasining vazifasi va maqsadi")}
             </h2>
             <p className="text-gray-600 leading-relaxed font-normal text-[16px]  tracking-[0.2px] font-inter ">
-            Islomiy moliya sohasida faoliyat yuritayotgan mutaxassislarni birlashtirish, ularning kasbiy salohiyatini oshirish, soha taraqqiyotiga hissa qo‘shish, O‘zbekistonda va Markaziy Osiyo mintaqasida islomiy moliyaviy tizimning rivojlanishiga ko‘maklashish hamda mintaqaviy hamkorlikni mustahkamlash.
+                {t("font_text")}
              <br /><br />
-             O‘zbekiston va Markaziy Osiyo davlatlari o‘rtasida islomiy moliya sohasida mintaqaviy hamkorlikni kuchaytirish, hamkorlikda tashabbuslarni amalga oshirish, o‘zaro muloqot va tajriba almashuvini rivojlantirish.
+                {t("font_text1")}
             </p>
             <Link to={'/about'} className="bg-[#009688] flex items-center justify-center text-white w-[170px] h-[48px] rounded-[16px] hover:bg-[#00796b] transition duration-300">
-              Batafsil
+                {t("Batafsil")}
             </Link>
           </div>
         </div>

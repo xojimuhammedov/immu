@@ -1,8 +1,10 @@
 import React from 'react';
 import RightImage from "../../../assets/AboutImage/heroimg.png"; // O'ng tomon rasm
 import LeftImage from "../../../assets/AboutImage/heroimg.png";   // Chap tomon rasm
+import { useTranslation } from 'react-i18next';
 
 const LeadershipSection = () => {
+  const {t} = useTranslation()
   return (
     <section className="bg-[#009688] text-white py-16 px-4 sm:px-8 lg:px-24 overflow-hidden relative">
       {/* Rasmni o'ng tomoniga joylashtirish */}
@@ -27,7 +29,7 @@ const LeadershipSection = () => {
           <ol role="list" className="flex items-center space-x-2">
             <li>
               <a href="#" className="text-gray-300 hover:text-white">
-                Asosiy sahifa
+                {t("Bosh sahifa")}
               </a>
             </li>
             <li>
@@ -35,15 +37,7 @@ const LeadershipSection = () => {
             </li>
             <li>
               <a href="#" className="text-gray-300 hover:text-white">
-                Yangiliklar
-              </a>
-            </li>
-            <li>
-              <span aria-hidden="true">•</span>
-            </li>
-            <li>
-              <a href="#" className="text-gray-300 hover:text-white">
-                batafsil
+                 {t("Batafsil")}
               </a>
             </li>
           </ol>
@@ -52,9 +46,9 @@ const LeadershipSection = () => {
 
       {/* Main Content */}
       <div className="max-w-7xl mx-auto pr-5 md:pr-40 2xl:pr-80">
-        <h1 className="font-inter font-bold text-[20px] sm:text-[24px] md:text-[32px] leading-[100%] tracking-[0] mb-4">Islom Moliyasi</h1>
+        <h1 className="font-inter font-bold text-[20px] sm:text-[24px] md:text-[32px] leading-[100%] tracking-[0] mb-4">{t("Islom Moliyasi")}</h1>
         <p className="font-inter font-normal text-[14px] leading-[180%] tracking-[0.2px]">
-          Islomiy moliya sohasida faoliyat yuritayotgan mutaxassislarni birlashtirish, ularning kasbiy salohiyatini oshirish, soha taraqqiyotiga hissa qo‘shish, O‘zbekistonda va Markaziy Osiyo mintaqasida islomiy moliyaviy tizimning rivojlanishiga ko‘maklashish hamda mintaqaviy hamkorlikni mustahkamlash.
+           {t("about_text")}
         </p>
       </div>
     </section>

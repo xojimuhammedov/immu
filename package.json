@@ -10,10 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@pbe/react-yandex-maps": "^1.2.5",
     "@tailwindcss/vite": "^4.1.11",
+    "i18next": "^25.5.2",
+    "i18next-browser-languagedetector": "^8.2.0",
     "lucide-react": "^0.537.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "react-i18next": "^15.7.3",
     "react-loading-indicators": "^1.0.1",
     "react-router-dom": "^7.7.1",
     "react-toastify": "^11.0.5",
