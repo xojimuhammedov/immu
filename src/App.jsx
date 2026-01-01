@@ -17,7 +17,7 @@ const MemberAbout = React.lazy(() => import('./pages/MemberAbout/index.jsx'))
 function App() {
   return (
     <Router>
-      <div className="min-h-screen flex flex-col max-w-[1700px] m-auto ">
+      {/* <div className="min-h-screen flex flex-col max-w-[1700px] m-auto ">
         <Header />
         <main className="flex-1">
           <Suspense fallback={
@@ -32,15 +32,15 @@ function App() {
             <Routes>
               <Route path="/" element={<Homepage />} />
               <Route path="/about" element={<AboutPage />} />
-              {/* <Route path="/articles" element={<ArticlePage />} /> */}
+              <Route path="/articles" element={<ArticlePage />} />
               <Route path="/contact" element={<ContackPage />} />
               <Route path='/member' element={<MemberAbout />} />
-              {/* <Route path="/news" element={<NewsPage />} /> */}
+              <Route path="/news/:id" element={<NewsPage />} />
             </Routes>
           </Suspense>
         </main>
           <Footer />
-      </div>
+      </div> */}
     </Router>
   );
 }

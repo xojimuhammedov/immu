@@ -8,7 +8,7 @@ const TeamMembers = () => {
   const {t, i18n} = useTranslation()
 
   return (
-    <div className="mt-10 max-w-7xl mx-auto py-12">
+    <div className="mt-10 max-w-7xl mx-auto py-12 px-4">
       {/* Section Title */}
       <h2 className="text-3xl lg:text-5xl font-bold text-center mb-8">{t("Aʼzolar tarkibi")}</h2>
       {/* Member Cards Grid */}

@@ -2,6 +2,12 @@ import Person1 from './assets/iskandar.jpg'
 import Person2 from './assets/khamid.jpg'
 import Person3 from './assets/oybek.jpg'
 
+import ISSFImage from './assets/issf2025.jpg'
+import NewsOneImage from './assets/news1.jpg'
+import NewsTwoImage from './assets/news2.jpg'
+import NewsThreeImage from './assets/news3.jpg'
+import NewsFourImage from './assets/news4.jpg'
+
 export const members = [
     {
       id: 1,
@@ -34,3 +40,39 @@ export const members = [
       description_uz:"Oybek Xojimamatov AQShdagi Janubiy Florida Universitetida buxgalteriya hisobi yo‘nalishi bo‘yicha bakalavr darajasiga ega. U, shuningdek, AAOIFI tomonidan berilgan CPSS va CPFAS sertifikatlariga ega. Oybek buxgalteriya va islomiy moliya sohasida mustahkam bilimga ega bo‘lib, uning alohida qiziqishlari shariatga muvofiq moliyaviy amaliyotlar hamda moliyaviy savodxonlikni oshirishga qaratilgan."
     },
   ];
+
+export const posts = [
+  {
+    id:1,
+    title_uz: "ISSF 2025 forumi - islom moliyasini joriy etish yo'lidagi muhim qadam",
+    title_en: "ISSF 2025 Forum - An Important Step Towards Implementing Islamic Finance",
+    image:ISSFImage,
+    description_uz: "Oʻzbekiston “Islomiy bank tizimini joriy etish: Barqaror moliyaviy tizim sari yuksalish” mavzusida XX Xalqaro islomiy moliya olimlari forumi (ISSF 2025) ga mezbonlik qildi<br><br>Oʻzbekiston poytaxtidagi Hyatt Regency Tashkent mehmonxonasida “Islomiy bank tizimini joriy etish: Barqaror moliyaviy tizim sari yuksalish” mavzusida XX Xalqaro islomiy moliya olimlari forumi (ISSF 2025) boʻlib oʻtdi. Forumni INCEIF universiteti va uning ISRA instituti Al Muamalat Consulting (Oʻzbekiston) bilan hamkorlikda tashkil etildi.<br><br>Oʻzbekiston Respublikasi Markaziy banki tadbirning strategik hamkori sifatida uni xalqaro darajada oʻtkazilishini taʼminladi. Shuningdek, mamlakatdagi yetakchi tijorat banklari va moliya tashkilotlari forumni qoʻllab-quvvatladi.<br><br><b>Forumning asosiy maqsadi</b><br>Forumning asosiy mavzusi islomiy moliyani rivojlantirish, ilgʻor amaliyotlarni moliya tizimiga joriy etish, olimlar, regulyatorlar, standartlarni belgilovchi tashkilotlar va soha mutaxassislari oʻrtasida hamkorlikni mustahkamlash hamda islomiy huquqqa oid masalalar yuzasidan fikr almashish maydonini yaratishga qaratildi.<br><br>Forum doirasida islomiy bank tizimiga oʻtish jarayoni, bankni islomiy bankka transformatsiya qilishda korporativ boshqaruv masalalari, moliyaviy mahsulotlar, huquqiy va meʼyoriy qiyinchiliklar, amaliyotdagi muammolar va ularning yechimlari muhokama qilindi.<br><br><b>Forum ishtirokchilari</b><br>ISSF 2025 dunyo miqyosidagi yetakchi olimlar, mutaxassislar va amaliyotchilarni birlashtiradi. Forumda Xalqaro musulmon ulamolari ittifoqi prezidenti prof. d-r Ali Muxyiddin al-Qoradogʻiy, islom iqtisodi va moliyasi boʻyicha ekspert prof. d-r Monzer Kahf, islom bankchiligi boʻyicha maslahatchi d-r Muhammad Imron Usmoniy, shuningdek INCEIF va ISRAdan taniqli olimlar — Datuk prof. d-r Mohamad Akram Laldin, prof. d-r Aznan Hasan, prof. d-r Enku Rabiya Adaviya, prof. d-r Said Buxeraua, prof. d-r Yunus Sualhi, prof. d-r Obiyatulla Ismat Bacha, d-r Marjan Muhammad qatnashdi. Shuningdek, xalqaro ekspertlardan d-r Nizom Yakubiy va d-r Sami al-Suvaylem (IsDB Institute) ham ishtirok etdi.",
+    description_en: "Uzbekistan hosted the 20th International Shariah Scholars Forum (ISSF 2025) on the theme “Implementing the Islamic Banking System: Advancing Towards a Sustainable Financial System.”<br><br>The forum was held at the Hyatt Regency Tashkent Hotel under the theme “Implementing the Islamic Banking System: Advancing Towards a Sustainable Financial System.” It was organized by INCEIF University and its ISRA Institute in collaboration with Al Muamalat Consulting (Uzbekistan).<br><br>The Central Bank of the Republic of Uzbekistan acted as the strategic partner, ensuring the event was held at an international level. In addition, leading commercial banks and financial institutions in the country supported the forum.<br><br><b>Main Goal of the Forum</b><br>The main focus of the forum was to promote the development of Islamic finance, integrate best practices into the financial system, strengthen cooperation among scholars, regulators, standard-setting organizations, and industry professionals, as well as to create a platform for discussions on Shariah-related issues.<br><br>During the forum, the process of transitioning to an Islamic banking system, corporate governance in transforming banks into Islamic banks, financial products, legal and regulatory challenges, practical issues, and their solutions were discussed.<br><br><b>Forum Participants</b><br>ISSF 2025 brought together leading scholars, experts, and practitioners from around the world. The forum featured Prof. Dr. Ali Muhyiddin al-Qaradaghi, President of the International Union of Muslim Scholars, Islamic economics and finance expert Prof. Dr. Monzer Kahf, Islamic banking advisor Dr. Muhammad Imran Usmani, as well as distinguished scholars from INCEIF and ISRA — Datuk Prof. Dr. Mohamad Akram Laldin, Prof. Dr. Aznan Hasan, Prof. Dr. Enku Rabiah Adawiah, Prof. Dr. Syed Bouherwa, Prof. Dr. Yunus Suahili, Prof. Dr. Obiyatullah Ismat Bacha, and Dr. Marjan Muhammad. International experts including Dr. Nizam Yaquby and Dr. Sami al-Suwailem (IsDB Institute) also participated."
+  },
+  {
+    id:2,
+    title_uz: "Islom moliyasi bo‘yicha 20-xalqaro forum Toshkentda bo‘lib o‘tdi",
+    title_en: "The 20th International Forum on Islamic Finance Held in Tashkent",
+    image:NewsThreeImage,
+    description_uz: "Birinchi bor ISSF – Islom moliyasi bo‘yicha shariat olimlari forumi Malayziyani tark etib, ilk bor Toshkentda bo‘lib o‘tdi. Forum O‘zbekiston banklarida islomiy darchalar joriy etilishi jarayonini tezlashtirishiga umid qilingan.",
+    description_en: "For the first time, the ISSF – International Shariah Scholars Forum on Islamic Finance – was held outside Malaysia, taking place in Tashkent. The forum is expected to accelerate the process of introducing Islamic windows in Uzbekistan's banks."
+  },
+  {
+    id:3,
+    title_uz: "Islomiy moliya olimlari Toshkentda yig‘ildi",
+    title_en: "Islamic Finance Scholars Gathered in Tashkent",
+    image:NewsTwoImage,
+    description_uz: "Toshkentda 20-Xalqaro islomiy moliya olimlari forumi bo‘lib o‘tdi. Unda islomiy moliyani rivojlantirish, ilg‘or amaliyotlarni moliya tizimiga joriy etish, olimlar, regulyatorlar, standartlarni belgilovchi tashkilotlar va soha mutaxassislari o‘rtasida hamkorlikni mustahkamlash hamda islomiy huquqqa oid masalalar yuzasidan fikr almashildi.<br><br>Shuningdek, islom bank tizimiga o‘tish jarayoni, bank konversiyasida korporativ boshqaruv, moliyaviy mahsulotlar, huquqiy va meʼyoriy qiyinchiliklar, amaliyotdagi muammolar va ularning yechimlari muhokama qilinadi.",
+    description_en: "The 20th International Forum of Islamic Finance Scholars was held in Tashkent. The event focused on the development of Islamic finance, the introduction of best practices into the financial system, strengthening cooperation among scholars, regulators, standard-setting organizations, and industry professionals, as well as exchanging views on Shariah-related issues.<br><br>In addition, discussions were held on the transition to the Islamic banking system, corporate governance during bank conversion, financial products, legal and regulatory challenges, practical issues, and possible solutions."
+  },
+  {
+    id:4,
+    title_uz: "Islomiy moliya olimlari Toshkentda yig‘ildi",
+    title_en: "Islamic Finance Scholars Gathered in Tashkent",
+    image:NewsFourImage,
+    description_uz: "ISSF 2025 Oʻzbekiston uchun islom moliyasi sohasida muhim qadam boʻlib, tegishli huquqiy va meʼyoriy asoslarni takomillashtirishga, inson kapitali va institutsional salohiyatni rivojlantirishga, shuningdek mamlakatning islom moliyasida mintaqaviy markaz sifatidagi mavqeini mustahkamlashga xizmat qiladi.",
+    description_en: "ISSF 2025 represents an important step for Uzbekistan in the field of Islamic finance, contributing to the improvement of the legal and regulatory framework, the development of human capital and institutional capacity, as well as strengthening the country’s position as a regional hub for Islamic finance."
+  }
+];
+  
