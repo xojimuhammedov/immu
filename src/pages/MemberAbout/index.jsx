@@ -1,49 +1,58 @@
-import React from 'react';
-import { Phone,Mail } from 'lucide-react';
-// import CallIcon from '../../../assets/CallIcon';
-// import MailIcon from '../../../assets/MailIcon';
-import { useTranslation } from 'react-i18next';
-import { members } from '../../data';
-const TeamMembers = () => {
-  const {t, i18n} = useTranslation()
+import { useTranslation } from "react-i18next";
+import { members } from "../../data";
 
+
+function TeamMemberCard({ member }) {
   return (
-    <div className="mt-10 max-w-7xl mx-auto py-12 px-4">
-      {/* Section Title */}
-      <h2 className="text-3xl lg:text-5xl font-bold text-center mb-8">{t("Aʼzolar tarkibi")}</h2>
-      {/* Member Cards Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {members.map((member) => (
-          <div key={member?.id} className="bg-white rounded-lg shadow-md overflow-hidden">
-            {/* Member Image */}
-            <img
-              src={member?.image}
-              alt={member?.name}
-              className="w-full h-100 object-cover"
-            />
+    <div className="flex flex-col items-center ] bg-[rgb(242,242,248)] shadow-[0px_9px_18px_0px_rgba(144,173,248,0.25)]">
+      {/* Image Container */}
+      <img
+        src={member.image}
+        alt={member.name}
+        fill
+        className="object-cover object-top h-[250px]"
+      />
 
-            {/* Member Info */}
-            <div className="p-4 ">
-              <p className="font-normal text-[14px] leading-[100%] tracking-[0.2px] font-inter text-[#656B70] mb-3">{member.position}</p>
-              <h3 className="font-bold text-2xl leading-[100%] tracking-[0%] font-inter text-[#009688] mb-4">{member.name}</h3>
-              <p className='text-base font-inter font-normal line-clamp-5 overflow-hidden'>{member[`description_${i18n.language}`]}</p>
-
-              {/* Contact Info */}
-              {/* <div className=" flex items-center mt-5 text-xs text-[#656B70] font-bold text-[14px] leading-[100%] tracking-[0.2px] font-inter gap-1">
-                <CallIcon />
-                <span>{member?.phone}</span>
-              </div>
-
-              <div className="flex items-center mt-2 text-xs text-[#656B70] font-bold text-[14px] leading-[100%] tracking-[0.2px] font-inter gap-1">
-                 <MailIcon />
-                <span>{member?.email}</span>
-              </div> */}
-            </div>
-          </div>
-        ))}
+      {/* Text Content */}
+      <div className="text-center px-2">
+        <h3 className="font-semibold text-slate-800 my-2 text-base md:text-lg mb-1 group-hover:text-emerald-700 transition-colors duration-300">
+          {member.name}
+        </h3>
+        <p className="text-slate-500 text-sm leading-relaxed">
+          {member.position}
+        </p>
       </div>
     </div>
   );
-};
+}
 
-export default TeamMembers;
+export function TeamSection() {
+  const { t } = useTranslation()
+  return (
+    <section className="py-12 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12 md:mb-16">
+          {/* <span className="inline-block px-4 py-1.5 bg-emerald-50 text-emerald-700 text-sm font-medium rounded-full mb-4">
+            Bizning Jamoa
+          </span> */}
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
+            {t("A'zolar kengashi")}
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8 mb-8">
+          {members.slice(0, 5).map((member) => (
+            <TeamMemberCard key={member.id} member={member} />
+          ))}
+        </div>
+
+        {/* Team Grid - Second Row (4 members, centered) */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 max-w-5xl mx-auto">
+          {members.slice(5).map((member) => (
+            <TeamMemberCard key={member.id} member={member} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

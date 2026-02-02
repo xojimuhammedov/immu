@@ -1,22 +1,18 @@
 import React from 'react'
-import Hero from './_components/Hero'
-import Fond from './_components/Fond'
-import News from './_components/News'
-import TeamMembers from './_components/Member'
-import Partners from './_components/Partners'
-import Media from './_components/Media'
-import Workshop from './_components/Workshop'
+import { CommunitySection } from './_components/Fond'
+import { HeroBanner } from '../../components/HeroBanner'
+import { ContactSection } from './_components/Contact'
 const index = () => {
   return (
-   <div className='p-3'>
-     <Hero/>
-     <Fond/>
-     <News/>
-     <TeamMembers/>
-     {/* <Partners/> */}
-     {/* <Media/> */}
-     <Workshop/>
-   </div>
+    <>
+      <main className="min-h-screen bg-white">
+        <header>
+          <HeroBanner />
+        </header>
+        <CommunitySection />
+        <ContactSection />
+      </main>
+    </>
   )
 }
 

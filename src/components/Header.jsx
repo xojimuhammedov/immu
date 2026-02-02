@@ -1,8 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
-import Logo from '../assets/immu-logo.svg';
+import Logo from '../assets/new-logo.jpg';
 import UzFlag from '../assets/uzb.png';
 import EnFlag from '../assets/eng.png';
-import RuFlag from '../assets/rus.png';
 import { Link, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
@@ -13,7 +12,7 @@ const Header = () => {
   const [tilDropdownOchiq, setTilDropdownOchiq] = useState(false);
   const [programsDropdownOchiq, setProgramsDropdownOchiq] = useState(false);
   const menuRef = useRef(null);
-  const {t, i18n} = useTranslation()
+  const { t, i18n } = useTranslation()
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -31,12 +30,9 @@ const Header = () => {
   }, []);
 
   const tillar = [
-    { kod: "en", nomi: "English", bayroq: EnFlag, value:"ENG" },
-    { kod: "uz", nomi: "O'zbekcha", bayroq: UzFlag, value:"UZB" },
-    // { kod: "RUS", nomi: "Русский", bayroq: RuFlag }
+    { kod: "en", nomi: "English", bayroq: EnFlag, value: "ENG" },
+    { kod: "uz", nomi: "O'zbekcha", bayroq: UzFlag, value: "UZB" },
   ];
-
- 
 
   const tanlanganTil = tillar.find(t => t.kod === til) || tillar[1];
 
@@ -54,17 +50,14 @@ const Header = () => {
   return (
     <header ref={menuRef} className="bg-white shadow-md py-3 px-4 sm:px-6 sticky top-0 z-[99999]">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <div className="flex items-center space-x-2 md:space-x-3 cursor-pointer" onClick={() => navigate('/') }>
-          <img src={Logo} alt="AL MUAMALAT" className="md:h-[50px] md:w-[102px] lg:h-[65px] lg:w-[135px]" />
+        <div className="flex items-center space-x-2 md:space-x-3 cursor-pointer" onClick={() => navigate('/')}>
+          <img src={Logo} alt="AL MUAMALAT" className="md:h-[50px] md:w-[102px] lg:h-[65px] lg:w-[165px] object-contain" />
         </div>
 
         <nav className="hidden lg:flex items-center space-x-4 lg:space-x-6 xl:space-x-8">
-      
+
           <Link to="/" className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1" >{t("Bosh sahifa")}</Link>
-          <Link to="/about" className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1" >{t("Biz haqimizda")}</Link>
           <Link to="/member" className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1" >{t("A'zolar kengashi")}</Link>
-          {/* <Link to="/articles" className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1">ARTICLES</Link> */}
-          {/* <Link to="/news" className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1" onClick={() => setMenuOchiq(false)}>NEWS</Link> */}
           <Link to="/contact" className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1" >{t("Bog'lanish")}</Link>
         </nav>
 
@@ -88,7 +81,7 @@ const Header = () => {
               </div>
             )}
           </div>
-        
+
         </div>
 
         <div className="flex lg:hidden items-center space-x-3">
@@ -108,7 +101,7 @@ const Header = () => {
             )}
           </div>
 
-        
+
           <button onClick={() => setMenuOchiq(!menuOchiq)} className="text-gray-700 p-1 rounded-full hover:bg-gray-100" aria-label="Menyu">
             {menuOchiq ? (
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -126,13 +119,8 @@ const Header = () => {
       {menuOchiq && (
         <div className="lg:hidden bg-white py-3 px-4 space-y-2 shadow-inner">
           <Link to="/" className="block py-2.5 px-3 text-gray-700 hover:text-[#009688] hover:bg-gray-50 rounded-md transition duration-200" onClick={() => setMenuOchiq(false)}>{t("Bosh sahifa")}</Link>
-          <div className="relative">
-           <Link to="/about" className="block py-2.5 px-3 text-gray-700 hover:text-[#009688] hover:bg-gray-50 rounded-md transition duration-200" onClick={() => setMenuOchiq(false)}>{t("Biz haqimizda")}</Link>
-          </div>
           <Link to="/member" className="block py-2.5 px-3 text-gray-700 hover:text-[#009688] hover:bg-gray-50 rounded-md transition duration-200" onClick={() => setMenuOchiq(false)}>{t("A'zolar kengashi")}</Link>
-          {/* <Link to="/articels" className="block py-2.5 px-3 text-gray-700 hover:text-[#009688] hover:bg-gray-50 rounded-md transition duration-200" onClick={() => setMenuOchiq(false)}>ARTICLES</Link> */}
-          {/* <Link to="/news" className="block py-2.5 px-3 text-gray-700 hover:text-[#009688] hover:bg-gray-50 rounded-md transition duration-200" onClick={() => setMenuOchiq(false)}>NEWS</Link> */}
-            <Link to="/contact" className="block py-2.5 px-3 text-gray-700 hover:text-[#009688] hover:bg-gray-50 rounded-md transition duration-200" onClick={() => setMenuOchiq(false)}>{t("Bog'lanish")}</Link>
+          <Link to="/contact" className="block py-2.5 px-3 text-gray-700 hover:text-[#009688] hover:bg-gray-50 rounded-md transition duration-200" onClick={() => setMenuOchiq(false)}>{t("Bog'lanish")}</Link>
         </div>
       )}
     </header>

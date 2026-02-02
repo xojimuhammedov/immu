@@ -6,7 +6,6 @@ import App from './App.jsx'
 import { ToastContainer } from 'react-toastify';
 import './i18n.jsx'
 
-
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ToastContainer />

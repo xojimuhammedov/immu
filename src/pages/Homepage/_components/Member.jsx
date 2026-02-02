@@ -12,14 +12,14 @@ const TeamMembers = () => {
       {/* Section Title */}
       <h2 className="text-3xl lg:text-5xl font-bold text-center mb-8">{t("Aʼzolar tarkibi")}</h2>
       {/* Member Cards Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
         {members.map((member) => (
           <div key={member?.id} className="bg-white rounded-lg shadow-md overflow-hidden">
             {/* Member Image */}
             <img
               src={member?.image}
               alt={member?.name}
-              className="w-full h-100 object-cover"
+              className="w-full h-75 object-cover"
             />
 
             {/* Member Info */}
