@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import FooterLogo from '../assets/footerlogo.jpg'
 
 export function Footer() {
   const { t } = useTranslation()
@@ -54,7 +55,7 @@ export function Footer() {
   ];
 
   return (
-    <footer className="bg-gradient-to-br from-teal-600 to-teal-700 text-white">
+    <footer className="bg-emerald-600 from-teal-600 to-teal-700 text-white">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
@@ -62,12 +63,7 @@ export function Footer() {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-4">
               <div>
-                <h3 className="text-2xl font-bold tracking-wide">IFPC</h3>
-                <p className="text-xs text-teal-100 leading-tight">
-                  {"ISLAMIC FINANCE"}
-                  <br />
-                  {"PROFESSIONALS COMMUNITY"}
-                </p>
+                 <img src={FooterLogo} className="w-[150px] object-top" alt="" />
               </div>
             </div>
             <p className="text-teal-100 text-sm leading-relaxed max-w-md mt-4">

@@ -29,7 +29,7 @@ export function HeroBanner() {
                             </svg>
                         </div>
 
-                        <blockquote className="text-gray-800 text-lg md:text-xl leading-relaxed font-medium mb-4 text-balance">
+                        <blockquote className="text-gray-800 text-base md:text-xl leading-relaxed font-medium mb-4 text-balance">
                             {t("O'zbekistonda islomiy moliya xizmatlarini joriy etish bo'yicha huquqiy bazani yaratish vaqti-soati keldi. Bunga Islom taraqqiyot banki va boshqa xalqaro moliya tashkilotlari ekspertlari jalb etiladi.")}
                         </blockquote>
 
@@ -48,7 +48,7 @@ export function HeroBanner() {
                 </div>
             </div>
 
-            <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 h-4 md:h-24 bg-gradient-to-t from-white to-transparent" />
         </section>
     )
 }

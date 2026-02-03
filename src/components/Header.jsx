@@ -7,12 +7,15 @@ import { useTranslation } from 'react-i18next';
 
 const Header = () => {
   const navigate = useNavigate();
+  const [til, setTil] = useState(() => {
+    return localStorage.getItem("language") || i18n.language || "uz";
+  });
+  const menuRef = useRef(null);
+  const { t, i18n } = useTranslation();
+
   const [menuOchiq, setMenuOchiq] = useState(false);
-  const [til, setTil] = useState("UZB");
   const [tilDropdownOchiq, setTilDropdownOchiq] = useState(false);
   const [programsDropdownOchiq, setProgramsDropdownOchiq] = useState(false);
-  const menuRef = useRef(null);
-  const { t, i18n } = useTranslation()
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -30,17 +33,37 @@ const Header = () => {
   }, []);
 
   const tillar = [
-    { kod: "en", nomi: "English", bayroq: EnFlag, value: "ENG" },
-    { kod: "uz", nomi: "O'zbekcha", bayroq: UzFlag, value: "UZB" },
+    { kod: "en", nomi: "English", bayroq: EnFlag },
+    { kod: "uz", nomi: "O'zbekcha", bayroq: UzFlag },
   ];
 
-  const tanlanganTil = tillar.find(t => t.kod === til) || tillar[1];
+  // ✅ tanlangan til object
+  const tanlanganTilObj =
+    tillar.find((x) => x.kod === til) || tillar[1]; // default uz
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setMenuOchiq(false);
+        setProgramsDropdownOchiq(false);
+        setTilDropdownOchiq(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+
+  useEffect(() => {
+    i18n.changeLanguage(til);
+    localStorage.setItem("language", til);
+  }, [til, i18n]);
 
   const tilTanlash = (yangiTil) => {
     setTil(yangiTil);
     setTilDropdownOchiq(false);
     setMenuOchiq(false);
-    i18n.changeLanguage(yangiTil)
   };
 
   const toggleMobilePrograms = () => {
@@ -57,6 +80,7 @@ const Header = () => {
         <nav className="hidden lg:flex items-center space-x-4 lg:space-x-6 xl:space-x-8">
 
           <Link to="/" className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1" >{t("Bosh sahifa")}</Link>
+          <Link to="/special/council" className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1" >{t("Maxsus Kengash")}</Link>
           <Link to="/member" className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1" >{t("Islomiy moliya mutaxassislari")}</Link>
           <Link to="/contact" className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1" >{t("Bog'lanish")}</Link>
         </nav>
@@ -64,8 +88,9 @@ const Header = () => {
         <div className="hidden lg:flex items-center space-x-4 lg:space-x-6">
           <div className="relative">
             <button onClick={() => setTilDropdownOchiq(!tilDropdownOchiq)} className="flex cursor-pointer items-center text-gray-700 hover:text-indigo-600 px-3 py-1 rounded-md hover:bg-gray-100 transition duration-200">
-              <img src={tanlanganTil.bayroq} alt={tanlanganTil.value} className="w-[30px] h-5 mr-2" />
-              <span className="hidden lg:inline text-[18px]">{tanlanganTil.value}</span>
+              <img src={tanlanganTilObj.bayroq}
+                alt={tanlanganTilObj.nomi} className="w-[30px] h-5 mr-2" />
+              <span className="hidden lg:inline text-[18px]">{tanlanganTilObj.nomi}</span>
               <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
@@ -87,7 +112,7 @@ const Header = () => {
         <div className="flex lg:hidden items-center space-x-3">
           <div className="relative">
             <button onClick={() => setTilDropdownOchiq(!tilDropdownOchiq)} className="flex cursor-pointer items-center p-1 rounded-full hover:bg-gray-100">
-              <img src={tanlanganTil.bayroq} alt={tanlanganTil.value} className="w-[35px] h-6" />
+              <img src={tanlanganTilObj.bayroq} alt={tanlanganTilObj.value} className="w-[35px] h-6" />
             </button>
             {tilDropdownOchiq && (
               <div className="absolute right-0 mt-2 w-40 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-100">

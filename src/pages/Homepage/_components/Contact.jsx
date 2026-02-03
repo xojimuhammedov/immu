@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import { Send, Phone, Building2, User, MessageSquare, ChevronDown } from "lucide-react";
 import FinanceBanner from '../../../assets/finance-banner.jpg'
 import { useTranslation } from "react-i18next";
+import { toast } from "react-toastify";
 
 const countryCodes = [
     { code: "+998", country: "O'zbekiston", flag: "🇺🇿" },
@@ -52,17 +53,52 @@ export function ContactSection() {
         return () => document.removeEventListener("mousedown", handleClickOutside);
     }, []);
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        setIsSubmitting(true);
-        await new Promise((resolve) => setTimeout(resolve, 1000));
-        setIsSubmitting(false);
-        setFormData({ name: "", organization: "", phone: "", message: "" });
-    };
+    // const handleSubmit = async (e) => {
+    //     e.preventDefault();
+    //     setIsSubmitting(true);
+    //     await new Promise((resolve) => setTimeout(resolve, 1000));
+    //     setIsSubmitting(false);
+    //     setFormData({ name: "", organization: "", phone: "", message: "" });
+    // };
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
+
+    let bot = {
+        TOKEN: "7385237559:AAFQNt7JRcDq_MVKNIiffjEDjqYZn8NdK8Y",
+        chatID: "-1003770480875",
+        message: `
+              Assalomu alaykum, sizga yangi xabar keldi!
+              Ismi 👤: ${formData.name}; 
+              Telefon raqami ☎: ${formData.phone};
+              Tashkiloti: ${formData.organization};
+              Xabar: ${formData.message};
+              `,
+    };
+    const encodedMessage = encodeURIComponent(bot.message);
+
+    function handleSubmit(e) {
+        e.preventDefault();
+        setIsSubmitting(true);
+
+        fetch(
+            `https://api.telegram.org/bot${bot.TOKEN}/sendMessage?chat_id=${bot.chatID}&text=${encodedMessage} `,
+            {
+                method: "GET",
+            }
+        ).then(
+            () => {
+                // handleClear();
+                setIsSubmitting(false);
+                setFormData({ name: "", organization: "", phone: "", message: "" });
+                toast.success(t("Sizning xabaringiz muvaffaqiyatli yuborildi!"));
+            },
+            (error) => {
+                console.log(error);
+            }
+        );
+    }
 
     return (
         <section id="contact" className="relative py-20 lg:py-28 overflow-hidden">
