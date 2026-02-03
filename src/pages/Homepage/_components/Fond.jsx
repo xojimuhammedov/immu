@@ -68,7 +68,7 @@ export function CommunitySection() {
                   </div>
                   <div className="bg-white/95 backdrop-blur-sm rounded-xl p-3 md:p-4 text-center shadow-lg border border-slate-100">
                     <p className="text-emerald-600 text-xl md:text-2xl lg:text-3xl font-bold">20+</p>
-                    <p className="text-slate-600 text-xs md:text-sm">Tadbirlar</p>
+                    <p className="text-slate-600 text-xs md:text-sm">{t("Tadbirlar")}</p>
                   </div>
                   <div className="bg-white/95 backdrop-blur-sm rounded-xl p-3 md:p-4 text-center shadow-lg border border-slate-100">
                     <p className="text-emerald-600 text-xl md:text-2xl lg:text-3xl font-bold">10+</p>
