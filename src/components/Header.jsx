@@ -57,7 +57,7 @@ const Header = () => {
         <nav className="hidden lg:flex items-center space-x-4 lg:space-x-6 xl:space-x-8">
 
           <Link to="/" className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1" >{t("Bosh sahifa")}</Link>
-          <Link to="/member" className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1" >{t("A'zolar kengashi")}</Link>
+          <Link to="/member" className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1" >{t("Islomiy moliya mutaxassislari")}</Link>
           <Link to="/contact" className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1" >{t("Bog'lanish")}</Link>
         </nav>
 
@@ -119,7 +119,7 @@ const Header = () => {
       {menuOchiq && (
         <div className="lg:hidden bg-white py-3 px-4 space-y-2 shadow-inner">
           <Link to="/" className="block py-2.5 px-3 text-gray-700 hover:text-[#009688] hover:bg-gray-50 rounded-md transition duration-200" onClick={() => setMenuOchiq(false)}>{t("Bosh sahifa")}</Link>
-          <Link to="/member" className="block py-2.5 px-3 text-gray-700 hover:text-[#009688] hover:bg-gray-50 rounded-md transition duration-200" onClick={() => setMenuOchiq(false)}>{t("A'zolar kengashi")}</Link>
+          <Link to="/member" className="block py-2.5 px-3 text-gray-700 hover:text-[#009688] hover:bg-gray-50 rounded-md transition duration-200" onClick={() => setMenuOchiq(false)}>{t("Islomiy moliya mutaxassislari")}</Link>
           <Link to="/contact" className="block py-2.5 px-3 text-gray-700 hover:text-[#009688] hover:bg-gray-50 rounded-md transition duration-200" onClick={() => setMenuOchiq(false)}>{t("Bog'lanish")}</Link>
         </div>
       )}
