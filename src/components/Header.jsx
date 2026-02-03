@@ -51,7 +51,7 @@ const Header = () => {
     <header ref={menuRef} className="bg-white shadow-md py-3 px-4 sm:px-6 sticky top-0 z-[99999]">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <div className="flex items-center space-x-2 md:space-x-3 cursor-pointer" onClick={() => navigate('/')}>
-          <img src={Logo} alt="AL MUAMALAT" className="md:h-[50px] md:w-[102px] lg:h-[65px] lg:w-[165px] object-contain" />
+          <img src={Logo} alt="AL MUAMALAT" className="h-[50px] md:h-[50px] md:w-[102px] lg:h-[65px] lg:w-[165px] object-contain" />
         </div>
 
         <nav className="hidden lg:flex items-center space-x-4 lg:space-x-6 xl:space-x-8">

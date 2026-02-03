@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { members } from "../../data";
 import { useState } from "react";
+import { X } from "lucide-react";
 
 function TeamMemberModal({ member, isOpen, onClose }) {
   const { i18n } = useTranslation();
@@ -9,11 +10,11 @@ function TeamMemberModal({ member, isOpen, onClose }) {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm p-4"
+      className="fixed inset-0 z-50 flex top-[60px] lg:top-0 items-center justify-center bg-black/50 backdrop-blur-sm p-4"
       onClick={onClose}
     >
       <div
-        className="relative bg-white rounded-2xl shadow-2xl max-w-3xl w-full max-h-[90vh] overflow-hidden"
+        className="relative bg-white rounded-2xl shadow-2xl max-w-6xl w-full max-h-[90vh] overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}
@@ -28,20 +29,23 @@ function TeamMemberModal({ member, isOpen, onClose }) {
         {/* Content */}
         <div className="flex flex-col md:flex-row">
           {/* Left - Image */}
-          <div className="w-full md:w-2/5 flex-shrink-0">
+          <div className="w-full md:w-1/3 flex-shrink-0 p-8  ">
             <img
               src={member.image || "/placeholder.svg"}
               alt={member.name_uz}
-              className="w-full h-64 md:h-full object-cover object-top"
+              className="w-full h-84 md:h-[450px] object-cover rounded-lg lg:object-top"
             />
           </div>
 
           {/* Right - Info */}
           <div className="w-full md:w-3/5 p-6 md:p-8 flex flex-col justify-center">
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
+            <h2 className="text-2xl font-bold text-slate-900 mb-4">
               {member[`name_${i18n?.language}`] || member.name_uz}
             </h2>
-            <p className="text-slate-600 leading-relaxed text-base md:text-lg">
+            <h4 className="text-base md:text-lg font-bold text-slate-900 mb-2">
+              {member?.certificate}
+            </h4>
+            <p className="text-slate-600 leading-relaxed text-xs line-clamp-10 lg:line-clamp-14">
               {member[`description_${i18n?.language}`] ||
                 member.description_uz ||
                 "Bu mutaxassis haqida batafsil ma'lumot mavjud emas."}
@@ -64,7 +68,7 @@ function TeamMemberCard({ member, onClick }) {
         src={member.image}
         alt={member.name_uz}
         fill
-        className="object-cover object-top h-[300px] w-full"
+        className="object-cover lg:object-top h-[250px] lg:h-[300px] w-full"
       />
       <div className="text-center px-2">
         <h3 className="font-semibold text-slate-800 my-2 text-base md:text-lg mb-1 group-hover:text-emerald-700 transition-colors duration-300">
@@ -96,7 +100,7 @@ export function TeamSection() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8 mb-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8 mb-8">
           {members?.map((member) => (
             <TeamMemberCard key={member.id} member={member} onClick={() => handleCardClick(member)} />
           ))}
