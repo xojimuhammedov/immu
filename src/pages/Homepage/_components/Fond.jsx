@@ -64,7 +64,7 @@ export function CommunitySection() {
                 <div className="grid grid-cols-3 gap-2 md:gap-4">
                   <div className="bg-white/95 backdrop-blur-sm rounded-xl p-3 md:p-4 text-center shadow-lg border border-slate-100">
                     <p className="text-emerald-600 text-xl md:text-2xl lg:text-3xl font-bold">50+</p>
-                    <p className="text-slate-600 text-xs md:text-sm">Mutaxassislar</p>
+                    <p className="text-slate-600 text-xs md:text-sm">{t("Mutaxassislar")}</p>
                   </div>
                   <div className="bg-white/95 backdrop-blur-sm rounded-xl p-3 md:p-4 text-center shadow-lg border border-slate-100">
                     <p className="text-emerald-600 text-xl md:text-2xl lg:text-3xl font-bold">20+</p>
@@ -72,7 +72,7 @@ export function CommunitySection() {
                   </div>
                   <div className="bg-white/95 backdrop-blur-sm rounded-xl p-3 md:p-4 text-center shadow-lg border border-slate-100">
                     <p className="text-emerald-600 text-xl md:text-2xl lg:text-3xl font-bold">10+</p>
-                    <p className="text-slate-600 text-xs md:text-sm">Hamkorlar</p>
+                    <p className="text-slate-600 text-xs md:text-sm">{t("Hamkorlar")}</p>
                   </div>
                 </div>
               </div>
