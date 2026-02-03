@@ -3,12 +3,12 @@ import { members } from "../../data";
 
 
 function TeamMemberCard({ member }) {
+  const { t, i18n } = useTranslation()
   return (
     <div className="flex flex-col items-center ] bg-[rgb(242,242,248)] shadow-[0px_9px_18px_0px_rgba(144,173,248,0.25)]">
-      {/* Image Container */}
       <img
         src={member.image}
-        alt={member.name}
+        alt={member.name_uz}
         fill
         className="object-cover object-top h-[250px]"
       />
@@ -16,11 +16,8 @@ function TeamMemberCard({ member }) {
       {/* Text Content */}
       <div className="text-center px-2">
         <h3 className="font-semibold text-slate-800 my-2 text-base md:text-lg mb-1 group-hover:text-emerald-700 transition-colors duration-300">
-          {member.name}
+          {member[`name_${i18n?.language}`]}
         </h3>
-        <p className="text-slate-500 text-sm leading-relaxed">
-          {member.position}
-        </p>
       </div>
     </div>
   );
@@ -32,9 +29,6 @@ export function TeamSection() {
     <section className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 md:mb-16">
-          {/* <span className="inline-block px-4 py-1.5 bg-emerald-50 text-emerald-700 text-sm font-medium rounded-full mb-4">
-            Bizning Jamoa
-          </span> */}
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
             {t("A'zolar kengashi")}
           </h2>
