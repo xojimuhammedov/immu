@@ -10,7 +10,7 @@ function TeamMemberCard({ member }) {
         src={member.image}
         alt={member.name_uz}
         fill
-        className="object-cover object-top h-[250px]"
+        className="object-cover object-top h-[250px] w-full"
       />
 
       {/* Text Content */}
