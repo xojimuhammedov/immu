@@ -35,14 +35,7 @@ export function TeamSection() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8 mb-8">
-          {members.slice(0, 5).map((member) => (
-            <TeamMemberCard key={member.id} member={member} />
-          ))}
-        </div>
-
-        {/* Team Grid - Second Row (4 members, centered) */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 max-w-5xl mx-auto">
-          {members.slice(5).map((member) => (
+          {members?.map((member) => (
             <TeamMemberCard key={member.id} member={member} />
           ))}
         </div>
