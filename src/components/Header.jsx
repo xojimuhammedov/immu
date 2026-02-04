@@ -7,11 +7,13 @@ import { useTranslation } from 'react-i18next';
 
 const Header = () => {
   const navigate = useNavigate();
+
+  const menuRef = useRef(null);
+  const { t, i18n } = useTranslation();
+
   const [til, setTil] = useState(() => {
     return localStorage.getItem("language") || i18n.language || "uz";
   });
-  const menuRef = useRef(null);
-  const { t, i18n } = useTranslation();
 
   const [menuOchiq, setMenuOchiq] = useState(false);
   const [tilDropdownOchiq, setTilDropdownOchiq] = useState(false);
