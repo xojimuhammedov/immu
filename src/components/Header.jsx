@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useRef } from 'react';
-import Logo from '../assets/new-logo.jpg';
-import UzFlag from '../assets/uzb.png';
-import EnFlag from '../assets/eng.png';
-import { Link, useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import React, { useState, useEffect, useRef } from "react";
+import Logo from "../assets/new-logo.jpg";
+import UzFlag from "../assets/uzb.png";
+import EnFlag from "../assets/eng.png";
+import { Link, useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -28,9 +28,9 @@ const Header = () => {
       }
     };
 
-    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
 
@@ -40,8 +40,7 @@ const Header = () => {
   ];
 
   // ✅ tanlangan til object
-  const tanlanganTilObj =
-    tillar.find((x) => x.kod === til) || tillar[1]; // default uz
+  const tanlanganTilObj = tillar.find((x) => x.kod === til) || tillar[1]; // default uz
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -55,7 +54,6 @@ const Header = () => {
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
-
 
   useEffect(() => {
     i18n.changeLanguage(til);
@@ -73,54 +71,127 @@ const Header = () => {
   };
 
   return (
-    <header ref={menuRef} className="bg-white shadow-md py-3 px-4 sm:px-6 sticky top-0 z-[99999]">
+    <header
+      ref={menuRef}
+      className="bg-white shadow-md py-3 px-4 sm:px-6 sticky top-0 z-[99999]"
+    >
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <div className="flex items-center space-x-2 md:space-x-3 cursor-pointer" onClick={() => navigate('/')}>
-          <img src={Logo} alt="AL MUAMALAT" className="h-[50px] md:h-[50px] md:w-[102px] lg:h-[65px] lg:w-[165px] object-contain" />
+        <div
+          className="flex items-center space-x-2 md:space-x-3 cursor-pointer"
+          onClick={() => navigate("/")}
+        >
+          <img
+            src={Logo}
+            alt="AL MUAMALAT"
+            className="h-[50px] md:h-[50px] md:w-[102px] lg:h-[65px] lg:w-[165px] object-contain"
+          />
         </div>
 
         <nav className="hidden lg:flex items-center space-x-4 lg:space-x-6 xl:space-x-8">
-
-          <Link to="/" className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1" >{t("Bosh sahifa")}</Link>
-          <Link to="/special/council" className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1" >{t("Maxsus Kengash")}</Link>
-          <Link to="/member" className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1" >{t("Islomiy moliya mutaxassislari")}</Link>
-          <Link to="/contact" className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1" >{t("Bog'lanish")}</Link>
+          <Link
+            onClick={() => window.scrollTo({ top: 0 })}
+            to="/"
+            className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1"
+          >
+            {t("Bosh sahifa")}
+          </Link>
+          <Link
+            onClick={() => window.scrollTo({ top: 0 })}
+            to="/special/council"
+            className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1"
+          >
+            {t("Maxsus Kengash")}
+          </Link>
+          <Link
+            onClick={() => window.scrollTo({ top: 0 })}
+            to="/member"
+            className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1"
+          >
+            {t("Islomiy moliya mutaxassislari")}
+          </Link>
+          <Link
+            onClick={() => window.scrollTo({ top: 0 })}
+            to="/contact"
+            className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1"
+          >
+            {t("Bog'lanish")}
+          </Link>
         </nav>
 
         <div className="hidden lg:flex items-center space-x-4 lg:space-x-6">
           <div className="relative">
-            <button onClick={() => setTilDropdownOchiq(!tilDropdownOchiq)} className="flex cursor-pointer items-center text-gray-700 hover:text-indigo-600 px-3 py-1 rounded-md hover:bg-gray-100 transition duration-200">
-              <img src={tanlanganTilObj.bayroq}
-                alt={tanlanganTilObj.nomi} className="w-[30px] h-5 mr-2" />
-              <span className="hidden lg:inline text-[18px]">{tanlanganTilObj.nomi}</span>
-              <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            <button
+              onClick={() => setTilDropdownOchiq(!tilDropdownOchiq)}
+              className="flex cursor-pointer items-center text-gray-700 hover:text-indigo-600 px-3 py-1 rounded-md hover:bg-gray-100 transition duration-200"
+            >
+              <img
+                src={tanlanganTilObj.bayroq}
+                alt={tanlanganTilObj.nomi}
+                className="w-[30px] h-5 mr-2"
+              />
+              <span className="hidden lg:inline text-[18px]">
+                {tanlanganTilObj.nomi}
+              </span>
+              <svg
+                className="ml-1 w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 9l-7 7-7-7"
+                />
               </svg>
             </button>
             {tilDropdownOchiq && (
               <div className="absolute right-0 mt-2 w-40 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-100">
                 {tillar.map((t) => (
-                  <button key={t.kod} onClick={() => tilTanlash(t.kod)} className={`flex items-center w-full px-4 py-2 text-gray-700 cursor-pointer hover:bg-indigo-50 ${til === t.kod ? 'bg-indigo-50 font-medium' : ''}`}>
-                    <img src={t.bayroq} alt={t.value} className="w-[30px] h-5 mr-2" />
-                    <span >{t.nomi}</span>
+                  <button
+                    key={t.kod}
+                    onClick={() => tilTanlash(t.kod)}
+                    className={`flex items-center w-full px-4 py-2 text-gray-700 cursor-pointer hover:bg-indigo-50 ${til === t.kod ? "bg-indigo-50 font-medium" : ""}`}
+                  >
+                    <img
+                      src={t.bayroq}
+                      alt={t.value}
+                      className="w-[30px] h-5 mr-2"
+                    />
+                    <span>{t.nomi}</span>
                   </button>
                 ))}
               </div>
             )}
           </div>
-
         </div>
 
         <div className="flex lg:hidden items-center space-x-3">
           <div className="relative">
-            <button onClick={() => setTilDropdownOchiq(!tilDropdownOchiq)} className="flex cursor-pointer items-center p-1 rounded-full hover:bg-gray-100">
-              <img src={tanlanganTilObj.bayroq} alt={tanlanganTilObj.value} className="w-[35px] h-6" />
+            <button
+              onClick={() => setTilDropdownOchiq(!tilDropdownOchiq)}
+              className="flex cursor-pointer items-center p-1 rounded-full hover:bg-gray-100"
+            >
+              <img
+                src={tanlanganTilObj.bayroq}
+                alt={tanlanganTilObj.value}
+                className="w-[35px] h-6"
+              />
             </button>
             {tilDropdownOchiq && (
               <div className="absolute right-0 mt-2 w-40 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-100">
                 {tillar.map((t) => (
-                  <button key={t.kod} onClick={() => tilTanlash(t.kod)} className={`flex cursor-pointer items-center w-full px-4 py-2 text-gray-700 hover:bg-indigo-50 ${til === t.kod ? 'bg-indigo-50 font-medium' : ''}`}>
-                    <img src={t.bayroq} alt={t.kod} className="w-[30px] h-5 mr-2" />
+                  <button
+                    key={t.kod}
+                    onClick={() => tilTanlash(t.kod)}
+                    className={`flex cursor-pointer items-center w-full px-4 py-2 text-gray-700 hover:bg-indigo-50 ${til === t.kod ? "bg-indigo-50 font-medium" : ""}`}
+                  >
+                    <img
+                      src={t.bayroq}
+                      alt={t.kod}
+                      className="w-[30px] h-5 mr-2"
+                    />
                     <span>{t.nomi}</span>
                   </button>
                 ))}
@@ -128,15 +199,40 @@ const Header = () => {
             )}
           </div>
 
-
-          <button onClick={() => setMenuOchiq(!menuOchiq)} className="text-gray-700 p-1 rounded-full hover:bg-gray-100" aria-label="Menyu">
+          <button
+            onClick={() => setMenuOchiq(!menuOchiq)}
+            className="text-gray-700 p-1 rounded-full hover:bg-gray-100"
+            aria-label="Menyu"
+          >
             {menuOchiq ? (
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
               </svg>
             ) : (
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
               </svg>
             )}
           </button>
@@ -145,9 +241,46 @@ const Header = () => {
 
       {menuOchiq && (
         <div className="lg:hidden bg-white py-3 px-4 space-y-2 shadow-inner">
-          <Link to="/" className="block py-2.5 px-3 text-gray-700 hover:text-[#009688] hover:bg-gray-50 rounded-md transition duration-200" onClick={() => setMenuOchiq(false)}>{t("Bosh sahifa")}</Link>
-          <Link to="/member" className="block py-2.5 px-3 text-gray-700 hover:text-[#009688] hover:bg-gray-50 rounded-md transition duration-200" onClick={() => setMenuOchiq(false)}>{t("Islomiy moliya mutaxassislari")}</Link>
-          <Link to="/contact" className="block py-2.5 px-3 text-gray-700 hover:text-[#009688] hover:bg-gray-50 rounded-md transition duration-200" onClick={() => setMenuOchiq(false)}>{t("Bog'lanish")}</Link>
+          <Link
+            to="/"
+            className="block py-2.5 px-3 text-gray-700 hover:text-[#009688] hover:bg-gray-50 rounded-md transition duration-200"
+            onClick={() => {
+              setMenuOchiq(false);
+              window.scrollTo({ top: 0 });
+            }}
+          >
+            {t("Bosh sahifa")}
+          </Link>
+          <Link
+            to="/special/council"
+            className="block py-2.5 px-3 text-gray-700 hover:text-[#009688] hover:bg-gray-50 rounded-md transition duration-200"
+            onClick={() => {
+              setMenuOchiq(false);
+              window.scrollTo({ top: 0 });
+            }}
+          >
+            {t("Maxsus Kengash")}
+          </Link>
+          <Link
+            to="/member"
+            className="block py-2.5 px-3 text-gray-700 hover:text-[#009688] hover:bg-gray-50 rounded-md transition duration-200"
+            onClick={() => {
+              setMenuOchiq(false);
+              window.scrollTo({ top: 0 });
+            }}
+          >
+            {t("Islomiy moliya mutaxassislari")}
+          </Link>
+          <Link
+            to="/contact"
+            className="block py-2.5 px-3 text-gray-700 hover:text-[#009688] hover:bg-gray-50 rounded-md transition duration-200"
+            onClick={() => {
+              setMenuOchiq(false);
+              window.scrollTo({ top: 0 });
+            }}
+          >
+            {t("Bog'lanish")}
+          </Link>
         </div>
       )}
     </header>

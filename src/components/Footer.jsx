@@ -56,10 +56,8 @@ export function Footer() {
 
   return (
     <footer className="bg-emerald-600 from-teal-600 to-teal-700 text-white">
-      {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
-          {/* Logo & Description */}
           <div>
             <div className="flex items-center gap-3 mb-4">
               <div>
@@ -71,7 +69,6 @@ export function Footer() {
             </p>
           </div>
 
-          {/* Quick Links */}
           <div>
             <h4 className="text-lg font-semibold mb-4 relative inline-block">
               {t("Tezkor havolalar")}
@@ -91,7 +88,6 @@ export function Footer() {
             </nav>
           </div>
 
-          {/* Contact Info */}
           <div>
             <h4 className="text-lg font-semibold mb-4 relative inline-block">
               {t("Bog'lanish")}
@@ -174,12 +170,9 @@ export function Footer() {
         </div>
       </div>
 
-      {/* Bottom Bar */}
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row items-center justify-end gap-4">
-
-            {/* Social Links */}
             <div className="flex items-center gap-3">
               {socialLinks.map((social) => (
                 <a
