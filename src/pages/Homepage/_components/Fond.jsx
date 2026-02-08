@@ -4,7 +4,6 @@ import MapImage from '../../../assets/map.jpg'
 import { useTranslation } from "react-i18next"
 
 
-
 export function CommunitySection() {
   const { t } = useTranslation()
 

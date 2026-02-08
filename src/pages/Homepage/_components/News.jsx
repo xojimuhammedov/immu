@@ -1,7 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import DateIcon from '../../../assets/DateIcon';
-import EyeIcon from '../../../assets/EyeIcon';
-import axios from 'axios';
+import React from 'react';
 import { posts } from '../../../data';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';

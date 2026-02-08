@@ -1,7 +1,5 @@
 import React from 'react';
 import { Phone,Mail } from 'lucide-react';
-import CallIcon from '../../../assets/CallIcon';
-import MailIcon from '../../../assets/MailIcon';
 import { useTranslation } from 'react-i18next';
 import { members } from '../../../data';
 const TeamMembers = () => {

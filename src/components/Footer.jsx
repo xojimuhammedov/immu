@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import FooterLogo from '../assets/footerlogo.jpg'
+import FooterLogo from '../assets/remove-bg.png'
 
 export function Footer() {
   const { t } = useTranslation()
@@ -58,9 +58,9 @@ export function Footer() {
     <footer className="bg-emerald-600 from-teal-600 to-teal-700 text-white">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
           {/* Logo & Description */}
-          <div className="lg:col-span-2">
+          <div>
             <div className="flex items-center gap-3 mb-4">
               <div>
                  <img src={FooterLogo} className="w-[150px] object-top" alt="" />
@@ -167,7 +167,7 @@ export function Footer() {
                     />
                   </svg>
                 </span>
-                <span className="text-sm">{"Toshkent, O'zbekiston"}</span>
+                <span className="text-sm">{t("Toshkent sh., Mirzo Ulug'bek tumani, Lashkarbegi MFY, Mustaqillik shoh ko'chasi 59-uy")}</span>
               </div>
             </div>
           </div>

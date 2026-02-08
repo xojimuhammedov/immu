@@ -144,7 +144,7 @@ export function ContactSection() {
                                 </div>
                                 <div>
                                     <p className="text-sm text-slate-400">{t("Manzil")}</p>
-                                    <p className="text-white font-medium">{"Toshkent sh., Mirzo Ulug'bek tumani, Lashkarbegi MFY, Mustaqillik shoh ko'chasi 59-uy"}</p>
+                                    <p className="text-white font-medium">{t("Toshkent sh., Mirzo Ulug'bek tumani, Lashkarbegi MFY, Mustaqillik shoh ko'chasi 59-uy")}</p>
                                 </div>
                             </div>
                         </div>
