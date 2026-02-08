@@ -41,7 +41,7 @@ export function CommunitySection() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-2 text-balance">
              {t("Islomiy Moliya Mutaxassislari Hamjamiyati")}
           </h2>
-          <p className="text-slate-600 text-lg md:text-xl max-w-4xl mx-auto leading-relaxed">
+          <p className="text-slate-600 text-lg md:text-xl max-w-5xl mx-auto leading-relaxed">
             {t("Islomiy moliya sohasida faoliyat yuritayotgan hamda ushbu yo'nalishga qiziqish bildirayotgan mutaxassislarni birlashtirib, bilim va tajriba almashish hamda professional hamkorlikni rivojlantirishga xizmat qiluvchi professional platformadir.")}
           </p>
         </div>
