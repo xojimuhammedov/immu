@@ -42,7 +42,7 @@ function TeamMemberModal({ member, isOpen, onClose }) {
             <h2 className="text-2xl font-bold text-slate-900 mb-4">
               {member[`name_${i18n?.language}`] || member.name_uz}
             </h2>
-            <p className="text-slate-600 leading-relaxed text-xs line-clamp-10 lg:line-clamp-14">
+            <p className="text-slate-600 leading-relaxed text-xs line-clamp-10 lg:line-clamp-16">
               {member[`description_${i18n?.language}`] ||
                 member.description_uz ||
                 "Bu mutaxassis haqida batafsil ma'lumot mavjud emas."}
