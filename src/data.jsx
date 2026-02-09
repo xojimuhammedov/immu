@@ -1,43 +1,49 @@
-import ISSFImage from './assets/issf2025.jpg'
-import NewsTwoImage from './assets/news2.jpg'
-import NewsThreeImage from './assets/news3.jpg'
-import NewsFourImage from './assets/news4.jpg'
+import ISSFImage from "./assets/issf2025.jpg";
+import NewsTwoImage from "./assets/news2.jpg";
+import NewsThreeImage from "./assets/news3.jpg";
+import NewsFourImage from "./assets/news4.jpg";
 
-import MemberOne from './assets/member1.jpg'
-import MemberTwo from './assets/member2.jpg'
-import MemberThree from './assets/member3.jpg'
-import MemberFour from './assets/member4.jpg'
-import MemberFive from './assets/member5.jpg'
-import MemberSix from './assets/member6.jpg'
-import MemberSeven from './assets/member7.jpg'
-import MemberEight from './assets/member8.jpg'
-import MemberNine from './assets/member9.jpg'
-import MemberTen from './assets/member10.jpg'
-import MemberEleven from './assets/member11.png'
-import MemberTwelf from './assets/member12.png'
-import MemberThirsteen from './assets/member13.jpg'
-import MemberFourteen from './assets/member14.jpg'
+import MemberOne from "./assets/member1.jpg";
+import MemberTwo from "./assets/member2.jpg";
+import MemberThree from "./assets/member3.jpg";
+import MemberFour from "./assets/member4.jpg";
+import MemberFive from "./assets/member5.jpg";
+import MemberSix from "./assets/member6.jpg";
+import MemberSeven from "./assets/member7.jpg";
+import MemberEight from "./assets/member8.jpg";
+import MemberNine from "./assets/member9.jpg";
+import MemberTen from "./assets/member10.jpg";
+import MemberEleven from "./assets/member11.png";
+import MemberTwelf from "./assets/member12.png";
+import MemberThirsteen from "./assets/member13.jpg";
+import MemberFourteen from "./assets/member14.jpg";
+import MemberFiveteen from "./assets/member15.jpg";
+import MemberSixteen from "./assets/member16.jpg";
+import MemberSeventeen from "./assets/member17.jpg";
+import MemberEighteen from "./assets/member18.jpg";
 
-import CouncilOne from './assets/council1.jpg'
-import CouncilTwo from './assets/council2.jpg'
-import CouncilThree from './assets/council3.png'
-import CouncilFour from './assets/council4.png'
-import CouncilFive from './assets/council5.png'
-import CouncilSix from './assets/council6.png'
-import CouncilSeven from './assets/council7.png'
-import CouncilEight from './assets/council8.png'
-import CouncilNine from './assets/council9.png'
-import CouncilTen from './assets/council10.png'
-import CouncilEleven from './assets/council11.png'
-import CouncilTwelf from './assets/council12.png'
-import CouncilThirsteen from './assets/council13.png'
-import CouncilFourteen from './assets/council14.png'
+import CouncilOne from "./assets/council1.jpg";
+import CouncilTwo from "./assets/council2.jpg";
+import CouncilThree from "./assets/council3.png";
+import CouncilFour from "./assets/council4.png";
+import CouncilFive from "./assets/council5.png";
+import CouncilSix from "./assets/council6.png";
+import CouncilSeven from "./assets/council7.png";
+import CouncilEight from "./assets/council8.png";
+import CouncilNine from "./assets/council9.png";
+import CouncilTen from "./assets/council10.png";
+import CouncilEleven from "./assets/council11.png";
+import CouncilTwelf from "./assets/council12.png";
+import CouncilThirsteen from "./assets/council13.png";
+import CouncilFourteen from "./assets/council14.png";
 
 export const members = [
   {
     id: 1,
-    name_uz: "Iskandar Tursunov",
-    name_en: "Iskandar Tursunov",
+    name_uz: "Iskandar Tursunov (MIFP, CSAA)",
+    name_en: "Iskandar Tursunov (MIFP, CSAA)",
+    job_uz: "Al Muamalat Consulting asoschisi va Bosh ijrochi direktori (CEO)",
+    job_en: "Founder & CEO at Al Muamalat Consulting",
     image: MemberOne,
     certificate:
       "Master in Islamic Finance Practice (MIFP) from INCEIF University, Certified Shari’ah Advisor & Auditor (CSAA)",
@@ -49,8 +55,10 @@ export const members = [
 
   {
     id: 2,
-    name_uz: "Hayotjon Azimov",
-    name_en: "Hayotjon Azimov",
+    name_uz: "Hayotjon Azimov (CIFP, CSAA)",
+    name_en: "Hayotjon Azimov (CIFP, CSAA)",
+    job_uz: "Al Muamalat Consultingda Maslahat bo‘limi rahbari",
+    job_en: "Head of Advisory at Al Muamalat Consulting",
     image: MemberTwo,
     certificate:
       "Chartered Islamic Finance Professional (CIFP) from INCEIF, Certified Shari’ah Advisor & Auditor (CSAA)",
@@ -61,8 +69,10 @@ export const members = [
   },
   {
     id: 3,
-    name_uz: "Baxtiyorjon Fayzullayev",
-    name_en: "Bakhtiyorjon Fayzullaev",
+    name_uz: "Baxtiyorjon Fayzullayev (CPSS, FMVA)",
+    name_en: "Bakhtiyorjon Fayzullaev (CPSS, FMVA)",
+    job_en: "Senior Associate at Al Muamalat Consulting",
+    job_uz: "Al Muamalat Consultingda katta maslahatchi",
     image: MemberThree,
     certificate:
       "Certificate of Proficiency in Shari’ah Standards (CPSS), Financial Modeling & Valuation Analyst (FMVA)",
@@ -74,8 +84,11 @@ export const members = [
 
   {
     id: 4,
-    name_uz: "Oybek Xojimamatov",
-    name_en: "Oybek Khojimamatov",
+    name_uz: "Oybek Xojimamatov (CPSS, CPFAS)",
+    name_en: "Oybek Khojimamatov (CPSS, CPFAS)",
+    job_en: "Islamic Finance & Accounting Specialist at Al Muamalat Consulting",
+    job_uz:
+      "Al Muamalat Consultingda islomiy moliya va buxgalteriya hisobi bo‘yicha mutaxassis",
     image: MemberFour,
     certificate:
       "Certificate of Proficiency in Shari’ah Standards (CPSS), Certificate of Proficiency in Financial Accounting Standards (CPFAS)",
@@ -87,8 +100,10 @@ export const members = [
 
   {
     id: 5,
-    name_uz: "Nurali Saidov",
-    name_en: "Nurali Saidov",
+    name_uz: "Nurali Saidov (CPSS, CPFAS)",
+    name_en: "Nurali Saidov (CPSS, CPFAS)",
+    job_en: "Finance & Accounting Specialist",
+    job_uz: "Moliya va buxgalteriya hisobi bo‘yicha mutaxassis",
     image: MemberFive,
     certificate:
       "Certificate of Proficiency in Shari’ah Standards (CPSS) & Certificate of Proficiency in Financial Accounting Standards (CPFAS)",
@@ -100,8 +115,12 @@ export const members = [
 
   {
     id: 6,
-    name_uz: "Onaxon Raximova",
-    name_en: "Onakhon Rakhimova",
+    name_uz: "Onaxon Raximova (CPFAS)",
+    name_en: "Onakhon Rakhimova (CPFAS)",
+    job_en:
+      "Chief Accountant at “Xadicha Kubro” Women’s Secondary Specialized Islamic Education Institution",
+    job_uz:
+      "“Xadicha Kubro” ayollar o‘rta maxsus Islom ta’lim muassasasida bosh buxgalter",
     image: MemberSix,
     certificate:
       "Certificate of Proficiency in Financial Accounting Standards (CPFAS)",
@@ -113,8 +132,10 @@ export const members = [
 
   {
     id: 7,
-    name_uz: "Oybek Abdurahimov",
-    name_en: "Oybek Abdurakhimov",
+    name_uz: "Oybek Abdurahimov (CPSS, CPFAS)",
+    name_en: "Oybek Abdurakhimov (CPSS, CPFAS)",
+    job_en: "Auditor at a Private Company",
+    job_uz: "Xususiy kompaniyada auditor",
     image: MemberSeven,
     certificate:
       "Certificate of Proficiency in Shari’ah Standards (CPSS) & Certificate of Proficiency in Financial Accounting Standards (CPFAS)",
@@ -126,11 +147,13 @@ export const members = [
 
   {
     id: 8,
-    name_uz: "Nilufar Babanazarova",
-    name_en: "Nilufar Babanazarova",
+    name_uz: "Nilufar Babanazarova (CPSS)",
+    name_en: "Nilufar Babanazarova (CPSS)",
+    job_en:
+      "Lecturer at the Banking and Finance Academy of the Republic of Uzbekistan",
+    job_uz: "O‘zbekiston Respublikasi Bank-moliya akademiyasi professori",
     image: MemberEight,
-    certificate:
-      "Certificate of Proficiency in Shari’ah Standards (CPSS)",
+    certificate: "Certificate of Proficiency in Shari’ah Standards (CPSS)",
     description_uz:
       "Nilufar Babanazarova bank ishi hamda bank va kredit risklarini boshqarish yo‘nalishlarida mustahkam akademik tayyorgarlikka ega bo‘lib, bank, audit va ta’lim sohalarida izchil amaliy tajriba to‘plagan mutaxassisdir. U Toshkent Moliya institutida “Bank ishi” yo‘nalishi bo‘yicha bakalavr hamda “Bank va kredit risklari” yo‘nalishi bo‘yicha magistr darajasini olgan. Faoliyati davomida “Hamkorbank”da ma’muriy-boshqaruv xarajatlarini boshqarish yo‘nalishida moliyaviy rejalashtirish va xarajatlar nazorati bilan shug‘ullangan, keyinchalik “Smart Audit” kompaniyasida buxgalter-konsultant va auditor yordamchisi sifatida moliyaviy hisobotlarni tahlil qilish, audit jarayonlarini qo‘llab-quvvatlash va buxgalteriya masalalari bo‘yicha maslahatlar berish bo‘yicha muhim ko‘nikmalarni shakllantirgan. Shuningdek, u O‘zbekiston Respublikasi Bank-moliya akademiyasida o‘qituvchi sifatida bank-moliya yo‘nalishida bilim va tajribasini ulashgan, hozirda esa ushbu akademiyada doktorant sifatida ilmiy izlanishlar olib bormoqda. Nilufar Babanazarova AAOIFIning Certificate of Proficiency in Shari’ah Standards (CPSS) sertifikatiga ega bo‘lib, islomiy moliya standartlari bo‘yicha professional bilimini tasdiqlaydi. Umuman olganda, u tizimli fikrlash, mas’uliyatli yondashuv, analitik salohiyat va doimiy rivojlanishga intilish kabi professional fazilatlari bilan ajralib turadi.",
     description_en:
@@ -139,24 +162,29 @@ export const members = [
 
   {
     id: 9,
-    name_uz: "Olmos Xolboboyev",
-    name_en: "Olmos Kholboboyev",
+    name_uz: "Olmos Xolboboyev (CSAA, CPFAS)",
+    name_en: "Olmos Kholboboyev (CSAA, CPFAS)",
+    job_en: "Islamic Finance Consultant",
+    job_uz: "Islomiy moliya bo‘yicha konsultant",
     image: MemberNine,
     certificate:
       "Master’s degree in Islamic Economics and Finance from Istanbul Sabahattin Zaim University (Türkiye), Certified Shari’ah Advisor and Auditor (CSAA), Certificate of Proficiency in Financial Accounting Standards (CPFAS)",
     description_uz:
-      "Olmos Xolboboyev iqtisodiyot va islom iqtisodi-moliyasi yo‘nalishlarida kuchli akademik tayyorgarlikka ega bo‘lib, bank tizimi hamda tartibga solish (regulyator) muhitida keng ko‘lamli amaliy tajriba to‘plagan yuqori malakali mutaxassisdir. U Toshkent Davlat Iqtisodiyot Universitetida “Iqtisodiyot” yo‘nalishida bakalavr, AQShdagi University of Colorado Denverda “Iqtisodiyot” yo‘nalishida magistr hamda Istanbul Sabahattin Zaim Universitetida (Turkiya) “Islom iqtisodi va moliyasi” yo‘nalishida magistr darajalarini olgan. Professional faoliyati davomida Markaziy bank tizimida tijorat banklarini inspeksiya qilish yo‘nalishida mas’ul lavozimlarda ishlab, bank nazorati va prudensial talablar bo‘yicha amaliy tajriba shakllantirgan. Keyinchalik KDB Bank Uzbekistan’da kredit tahlili, pul muomalasi, mintaqaviy maslahat va moliyaviy tahlil yo‘nalishlarida rahbarlik lavozimlarida faoliyat yuritgan, bankning xalqaro bosh ofisi bilan hamkorlikda ishlagan hamda filial boshqaruvchisi sifatida operatsion boshqaruv, risklarni nazorat qilish va kredit portfeli sifatini ta’minlashda muhim natijalarga erishgan. Shuningdek, u biznes moliyasi yo‘nalishida lektor sifatida faoliyat yuritib, amaliy tajribani ta’lim jarayoniga samarali integratsiya qilgan. Hozirda u islom moliyasi bo‘yicha konsultant sifatida faoliyat olib bormoqda. Olmos Xolboboyev AAOIFIning CSAA va CPFAS sertifikatlariga ega bo‘lib, shariatga muvofiqlik, shariat boshqaruvi va audit yo‘nalishlarida professional kompetensiyasini tasdiqlaydi. Umuman olganda, u chuqur tahliliy salohiyat, yuqori mas’uliyat va xalqaro standartlarga tayangan holda ishlash madaniyati bilan ajralib turadi.",
+      "Olmos Xolboboyev — iqtisodiyot hamda islomiy iqtisodiyot va moliya yo‘nalishlarida kuchli akademik tayyorgarlik va bank tizimida amaliy boshqaruv tajribasiga ega mutaxassis. U Toshkent davlat iqtisodiyot universitetida bakalavr, AQShdagi University of Colorado Denver’da iqtisodiyot bo‘yicha magistr hamda Turkiyadagi Istanbul Sabahattin Zaim University’da islom iqtisodiyoti va moliyasi bo‘yicha magistr darajalarini olgan. Faoliyati davomida Markaziy bank tizimida bank inspeksiyalari va prudensial talablar yo‘nalishlarida ishlagan, keyinchalik KDB Bank Uzbekistan’da kredit tahlili va risk yo‘nalishlarida rahbarlik lavozimlarida faoliyat yuritgan. Hozir islomiy moliya bo‘yicha konsultant sifatida shariatga muvofiqlik, boshqaruv va standartlar asosida mahsulot va jarayonlarni takomillashtirishga ko‘maklashadi. AAOIFI CSAA va CPFAS sertifikatlariga ega.",
     description_en:
-      "Olmos Kholboboyev is a highly qualified specialist with a strong academic background in economics and Islamic economics and finance, and extensive practical experience in both the banking system and the regulatory environment. He earned a Bachelor’s degree in Economics from the Tashkent State University of Economics, a Master’s degree in Economics from the University of Colorado Denver (USA), and a Master’s degree in Islamic Economics and Finance from Istanbul Sabahattin Zaim University (Türkiye). During his professional career, he held responsible positions within the Central Bank system in commercial bank inspections, gaining hands-on experience in banking supervision and prudential requirements. He later served in various leadership roles at KDB Bank Uzbekistan, managing departments in credit analysis, cash circulation, and regional advisory and financial analysis, cooperating with the bank’s international head office, and achieving significant results in operational management, risk control, and credit portfolio quality as a branch manager. He has also worked as a lecturer in business finance, effectively integrating practical experience into education. He currently operates as a consultant in Islamic finance. He holds the AAOIFI Certified Shari’ah Advisor and Auditor (CSAA) and the Certificate of Proficiency in Financial Accounting Standards (CPFAS), confirming his professional competence in Shari’ah compliance, governance, and audit. Overall, he is a trusted and accomplished professional distinguished by deep analytical capability, a high sense of responsibility, a structured management approach, and strong adherence to international standards.",
+      "Olmos Kholboboyev is a banking and Islamic finance professional with strong academic credentials and practical leadership experience across supervision, credit, and risk functions. He holds a Bachelor’s degree from Tashkent State University of Economics, a Master’s in Economics from the University of Colorado Denver (USA), and a Master’s in Islamic Economics and Finance from Istanbul Sabahattin Zaim University (Türkiye). He began his career within the Central Bank system, working on commercial bank inspections and prudential requirements, and later held managerial roles at KDB Bank Uzbekistan covering credit analysis and risk-related functions. He currently works as an Islamic finance consultant, supporting Shariah-compliant governance and the implementation of international standards. He holds AAOIFI CSAA and CPFAS certifications.",
   },
 
   {
     id: 10,
-    name_uz: "Paxlavon Chinpulotov",
-    name_en: "Pakhlavon Chinpulatov",
+    name_uz: "Paxlavon Chinpulotov (CSAA)",
+    name_en: "Pakhlavon Chinpulatov (CSAA)",
+    job_en:
+      "Head of the Department for Services to Foreign Nominee Holders and SWIFT Messaging at the Central Securities Depository",
+    job_uz:
+      "Markaziy depozitariyda Xorijiy nominal holderlarga xizmat ko‘rsatish va SWIFT xabar almashinuvi bo‘yicha bo‘lim boshlig‘i",
     image: MemberTen,
-    certificate:
-      "Certified Shari’ah Advisor and Auditor (CSAA)",
+    certificate: "Certified Shari’ah Advisor and Auditor (CSAA)",
     description_uz:
       "Paxlavon Chinpulotov xalqaro iqtisodiyot va moliya yo‘nalishlarida mustahkam akademik tayyorgarlikka ega, kapital bozori infratuzilmasida amaliy tajribaga ega mutaxassisdir. U Jahon iqtisodiyoti va diplomatiya universitetida “Xalqaro iqtisodiyot va menejment” yo‘nalishi bo‘yicha bakalavr darajasini olgan hamda O‘zbekiston Respublikasi Bank-moliya akademiyasida “Korporativ moliya va qimmatli qog‘ozlar bozori” yo‘nalishida magistratura bosqichida tahsil olmoqda. Professional faoliyati davomida “Qimmatli qog‘ozlar markaziy depozitariysi” AJda turli lavozimlarda ishlab, qimmatli qog‘ozlar bozorining post-treyd infratuzilmasi, hisob-kitob va saqlash jarayonlari, shuningdek institutsional mijozlar bilan ishlash bo‘yicha muhim amaliy ko‘nikmalarni shakllantirgan. Hozirda u ushbu tashkilotda chet ellik nominal saqlovchilarga xizmat ko‘rsatish va SWIFT xabarlari bilan ishlash bo‘limi boshlig‘i sifatida xalqaro amaliyotga mos operatsion jarayonlarni boshqarib, xizmatlar sifati va tartib-taomillarning aniq bajarilishini ta’minlamoqda. Shuningdek, u AAOIFIning Certified Shari’ah Advisor and Auditor (CSAA) sertifikatiga ega bo‘lib, islomiy moliya tamoyillariga muvofiqlik, shariat boshqaruvi va audit bo‘yicha professional kompetensiyasini tasdiqlaydi. Umuman olganda, Paxlavon Chinpulotov tizimli fikrlash, yuqori mas’uliyat, xalqaro standartlar bilan ishlash madaniyati va natijadorlikka yo‘naltirilgan professional yondashuvi bilan ajralib turadi.",
     description_en:
@@ -165,34 +193,41 @@ export const members = [
 
   {
     id: 11,
-    name_uz: "Axrorjon Sadullayev",
-    name_en: "Akhrorjon Sadullaev",
+    name_uz: "Axrorjon Sadullayev (MBA Islamic Finance, CSAA)",
+    name_en: "Akhrorjon Sadullaev (MBA Islamic Finance, CSAA)",
+    job_en: "Managing Partner at an Audit Firm",
+    job_uz: "Audit kompaniyasida boshqaruvchi hamkor (Managing Partner)",
     image: MemberEleven,
     certificate:
       "MBA in Islamic Finance at the Banking and Finance Academy of Uzbekistan, Certified Shari’ah Advisor and Auditor (CSAA)",
     description_uz:
-      "Axrorjon Sadullayev buxgalteriya hisobi, audit va islomiy moliya yo‘nalishlarida puxta akademik tayyorgarlikka ega hamda bank sektori va xalqaro auditorlik amaliyotida katta tajriba to‘plagan yuqori malakali mutaxassisdir. U Toshkent Moliya institutida “Buxgalteriya hisobi va audit” yo‘nalishi bo‘yicha bakalavr darajasini olgan, shuningdek O‘zbekiston Bank-moliya akademiyasida MBA in Islamic Finance yo‘nalishi bo‘yicha magistratura bosqichini tamomlagan. Professional faoliyati davomida bank tizimida buxgalteriya nazorati va ichki audit yo‘nalishlarida bosqichma-bosqich yetuklashib, Markaziy bankda bosh iqtisodchi lavozimida makro va moliyaviy tahlil hamda tartibga solish muhitida faol ishtirok etgan. Keyinchalik u tijorat banklarida ichki auditor sifatida risklarni boshqarish, nazorat muhitini kuchaytirish va operatsion samaradorlikni oshirishga xizmat qilgan audit tekshiruvlarini olib borgan. Shundan so‘ng u “Katta to‘rtlik” tarkibiga kiruvchi KPMG auditorlik tashkilotida bosh auditor sifatida faoliyat yuritib, murakkab audit loyihalarini boshqarish, moliyaviy hisobotlarning ishonchliligini baholash hamda korporativ boshqaruv va komplayens amaliyotlarini takomillashtirish yo‘nalishlarida yuqori natijalar ko‘rsatgan. Hozirda u auditorlik tashkilotida boshqaruvchi sherik sifatida rahbarlik qilib, mijozlarga yuqori standartlarga mos audit va maslahat xizmatlarini taqdim etmoqda. Shuningdek, u AAOIFIning Certified Shari’ah Advisor and Auditor (CSAA) sertifikatiga ega bo‘lib, islomiy moliya tamoyillariga muvofiqlik, shariat boshqaruvi va audit bo‘yicha professional kompetensiyasini tasdiqlaydi. Umuman olganda, Axrorjon Sadullayev tizimli fikrlash, yuqori kasbiy mas’uliyat, xalqaro audit standartlari bo‘yicha chuqur bilim va natijaga yo‘naltirilgan yondashuvi bilan ajralib turadigan ishonchli mutaxassisdir.",
+      "Axrorjon Sadullayev — buxgalteriya hisobi, audit va islomiy moliya yo‘nalishlarida puxta tayyorgarlik va katta amaliy tajribaga ega mutaxassis. U Toshkent Moliya institutida “Buxgalteriya hisobi va audit” bo‘yicha bakalavr, O‘zbekiston Bank-moliya akademiyasida MBA in Islamic Finance darajasini olgan. Faoliyati davomida bank tizimida ichki audit va nazorat yo‘nalishlarida ishlagan, Markaziy bankda bosh iqtisodchi sifatida makro va moliyaviy tahlil hamda tartibga solish jarayonlarida ishtirok etgan. Keyinchalik tijorat banklarida ichki auditor bo‘lib risklarni boshqarish, nazorat muhitini kuchaytirish va operatsion samaradorlikni oshirishga qaratilgan auditlar o‘tkazgan. So‘ng **KPMG (Big Four)**da katta auditor sifatida murakkab audit loyihalarini boshqargan, moliyaviy hisobotlar ishonchliligini baholagan hamda korporativ boshqaruv va komplaens amaliyotlarini takomillashtirish bo‘yicha ishlagan. Hozirda auditorlik tashkilotida boshqaruvchi sherik sifatida yuqori standartlarga mos audit va maslahat xizmatlarini taqdim etadi. AAOIFI CSAA sertifikatiga ega.",
     description_en:
-      "Akhrorjon Sadullaev is a highly qualified specialist with a strong academic foundation in accounting, audit, and Islamic finance, and substantial experience in both the banking sector and international audit practice. He earned a Bachelor’s degree in Accounting and Audit from the Tashkent Institute of Finance and completed an MBA in Islamic Finance at the Banking and Finance Academy of Uzbekistan. Throughout his professional career, he progressively developed expertise in accounting control and internal audit within the banking system, including serving as a Chief Economist at the Central Bank, where he actively contributed to macroeconomic and financial analysis and worked within the regulatory environment. He subsequently worked as an internal auditor at commercial banks, conducting audits aimed at strengthening risk management, enhancing the control environment, and improving operational efficiency. He later joined KPMG, a member of the “Big Four,” as a senior auditor, where he delivered strong results in managing complex audit engagements, assessing the reliability of financial statements, and supporting improvements in corporate governance and compliance practices. He currently serves as a Managing Partner at an audit firm, providing clients with audit and advisory services aligned with high professional standards. He also holds the AAOIFI Certified Shari’ah Advisor and Auditor (CSAA) certificate, confirming his professional competence in Shari’ah compliance, Shari’ah governance, and audit in line with Islamic finance principles. Overall, he is a reliable professional distinguished by structured thinking, a high level of professional responsibility, sound knowledge of international auditing standards, and a results-oriented approach.",
+      "Akhrorjon Sadullaev is an experienced professional in accounting, audit, and Islamic finance with a strong academic background and extensive practice in both banking and international audit. He holds a Bachelor’s degree in Accounting and Audit from the Tashkent Institute of Finance and an MBA in Islamic Finance from the Banking and Finance Academy of Uzbekistan. He developed expertise in internal control and audit within the banking system and served as a Chief Economist at the Central Bank, contributing to macroeconomic and financial analysis and regulatory work. He later worked as an internal auditor at commercial banks, conducting audits aimed at strengthening risk management, improving the control environment, and enhancing operational efficiency. He then joined KPMG (Big Four) as a senior auditor, managing complex engagements, assessing financial reporting reliability, and supporting improvements in corporate governance and compliance. He currently serves as a Managing Partner at an audit firm, delivering audit and advisory services aligned with high professional standards. He holds the AAOIFI CSAA certification.",
   },
 
   {
     id: 12,
-    name_uz: "Surayyo Shaamirova",
-    name_en: "Surayyo Shaamirova",
+    name_uz: "Surayyo Shaamirova (PhD, CSAA)",
+    name_en: "Surayyo Shaamirova (PhD, CSAA)",
+    job_en: "Senior Lecturer at the Banking and Finance Academy",
+    job_uz:
+      "O‘zbekiston Respublikasi Bank-moliya akademiyasida katta o‘qituvchi (Senior Lecturer)",
     image: MemberTwelf,
     certificate:
       "PhD from Institute of Islamic Economics and Finance, Istanbul University, Master’s degree in Islamic Banking and Finance at International Islamic University Malaysia (IIUM), Certified Shari’ah Advisor and Auditor (CSAA)",
     description_uz:
-      "Surayyo Shaamirova moliya va islomiy bank ishi sohalarida kuchli akademik tayyorgarlikka ega bo‘lib, xalqaro ta’lim va amaliy tajribani uyg‘unlashtirgan yuqori malakali mutaxassisdir. U International Islamic University Malaysia (IIUM)ning Iqtisodiyot va boshqaruv fanlari fakultetida moliya yo‘nalishida bakalavr darajasini olgan hamda IIUMda Islomiy moliya va bank ishi yo‘nalishi bo‘yicha magistratura bosqichini tamomlagan. Bundan tashqari, u Istanbul Universiteti qoshidagi Institute of Islamic Economics and Finance’da PhD bosqichida ilmiy salohiyatini rivojlantirgan. Professional faoliyati davomida u audit sohasida auditor sifatida ishlab, moliyaviy hisobotlar va nazorat jarayonlari bo‘yicha amaliy tajriba orttirgan, keyinchalik shartnomalar boshqaruvi va marketing yo‘nalishlarida mas’ul lavozimlarda faoliyat yuritib, biznes jarayonlarini boshqarish va bozor tahlili bo‘yicha kompetensiyalarini kengaytirgan. Shuningdek, u Toshkent shahridagi Xalqaro Vestminster universitetida strategik rivojlanish va ma’lumotlarni boshqarish bo‘yicha rahbarlik vazifalarini bajargan, bozor tadqiqotlari va analitika yo‘nalishida yetakchi mutaxassis sifatida ishlagan hamda keyinchalik universitetda o‘qituvchi sifatida ta’lim va ilmiy faoliyat olib borgan. Hozirda u Bank-moliya akademiyasida katta o‘qituvchi sifatida islomiy moliya va bank ishi yo‘nalishlarida yuqori sifatli ta’lim va ilmiy-amaliy yondashuvni ta’minlab kelmoqda. Surayyo Shaamirova AAOIFIning Certified Shari’ah Advisor and Auditor (CSAA) sertifikatiga ega bo‘lib, shariatga muvofiqlik, shariat boshqaruvi va audit yo‘nalishlarida professional kompetensiyasini tasdiqlaydi. Umuman olganda, u xalqaro akademik baza, tahliliy fikrlash, yuqori mas’uliyat va pedagogik mahorat uyg‘unligi bilan ajralib turadigan yetuk mutaxassisdir.",
+      "Surayyo Shaamirova — moliya va islomiy bank ishi yo‘nalishlarida xalqaro akademik tayyorgarlik hamda ko‘p tarmoqli amaliy tajribaga ega mutaxassis. U International Islamic University Malaysia (IIUM)da moliya bo‘yicha bakalavr hamda islomiy bankchilik va moliya bo‘yicha magistr darajalarini olgan. Shuningdek, Istanbul University qoshidagi Institute of Islamic Economics and Financeda PhD bosqichida ilmiy izlanishlar olib borgan. Professional faoliyati davomida auditor sifatida moliyaviy hisobotlar, nazorat va muvofiqlik jarayonlari bo‘yicha amaliy ko‘nikmalarni shakllantirgan; keyinchalik shartnomalar boshqaruvi va marketing yo‘nalishlarida mas’ul lavozimlarda ishlab, biznes jarayonlarini boshqarish va bozor tahlili bo‘yicha tajribasini kengaytirgan. Toshkent shahridagi Westminster International University (WIUT)da strategik rivojlanish va ma’lumotlarni boshqarish bo‘yicha rahbarlik vazifalarini bajargan, bozor tadqiqotlari va analitika yo‘nalishida yetakchi mutaxassis sifatida faoliyat yuritgan hamda universitetda o‘qituvchilik qilgan. Hozirda Bank-moliya akademiyasida katta o‘qituvchi sifatida islomiy moliya va bank ishi bo‘yicha amaliyotga yo‘naltirilgan ta’lim beradi. AAOIFI’ning Certified Shari’ah Advisor and Auditor (CSAA) sertifikatiga ega.",
     description_en:
-      "Surayyo Shaamirova is a highly qualified specialist with a strong academic background in finance and Islamic banking, combining international education with solid practical experience. She earned a Bachelor’s degree in Finance from the Faculty of Economics and Management Sciences at the International Islamic University Malaysia (IIUM) and completed a Master’s degree in Islamic Banking and Finance at IIUM. In addition, she strengthened her academic profile through PhD-level research at the Institute of Islamic Economics and Finance at Istanbul University. During her professional career, she gained hands-on experience in financial reporting and control processes by working as an auditor, and later broadened her competencies through roles in contract management and marketing, developing strong capabilities in business process management and market analysis. She also held leadership responsibilities in strategic development and data management at Westminster International University in Tashkent, worked as a senior specialist in market research and analytics, and subsequently contributed to teaching and academic activities at the university. She currently serves as a Senior Lecturer at the Banking and Finance Academy, delivering high-quality education and an applied academic approach in Islamic finance and banking. Surayyo Shaamirova holds the AAOIFI Certified Shari’ah Advisor and Auditor (CSAA) certificate, confirming her professional competence in Shari’ah compliance, Shari’ah governance, and audit. Overall, she is a trusted and accomplished professional distinguished by an international academic foundation, strong analytical thinking, a high sense of responsibility, and proven pedagogical expertise.",
+      "Surayyo Shaamirova is a finance and Islamic banking professional with a strong international academic background and diverse practical experience. She earned a Bachelor’s degree in Finance and a Master’s degree in Islamic Banking and Finance from the International Islamic University Malaysia (IIUM). She also pursued PhD-level research at the Institute of Islamic Economics and Finance at Istanbul University. Professionally, she gained hands-on experience in financial reporting, internal control, and compliance processes while working as an auditor, and later expanded her expertise through roles in contract management and marketing, strengthening her capabilities in business process management and market analysis. In Tashkent, she held leadership responsibilities in strategic development and data management at Westminster International University (WIUT), worked in market research and analytics, and contributed to teaching activities. She currently serves as a Senior Lecturer at the Banking and Finance Academy, delivering practice-oriented education in Islamic finance and banking. She holds the AAOIFI Certified Shari’ah Advisor and Auditor (CSAA) certification.",
   },
 
   {
     id: 13,
-    name_uz: "Umrбек Rajabov",
-    name_en: "Umrbek Rajabov",
+    name_uz: "Umrбек Rajabov (MSc Islamic Finance, CPSS)",
+    name_en: "Umrbek Rajabov (MSc Islamic Finance, CPSS)",
+    job_en: "Islamic Finance Specialist",
+    job_uz: "Islomiy moliya bo‘yicha mutaxassis",
     image: MemberThirsteen,
     certificate:
       "Master’s degree in Islamic Finance at INCEIF University, Certificate of Proficiency in Shari’ah Standards (CPSS)",
@@ -204,53 +239,128 @@ export const members = [
 
   {
     id: 14,
-    name_uz: "Baxrom Xojiev",
-    name_en: "Bakhrom Khojiev",
+    name_uz: "Baxrom Xojiev (CSAA)",
+    name_en: "Bakhrom Khojiev (CSAA)",
+    job_en:
+      "Project Manager for Shari’ah-compliant Financial Solutions at Open Bank",
+    job_uz:
+      "Open Bank’da shariatga mos moliyaviy yechimlar bo‘yicha loyiha menejeri",
     image: MemberFourteen,
-    certificate:
-      "Certified Shari’ah Advisor and Auditor (CSAA)",
+    certificate: "Certified Shari’ah Advisor and Auditor (CSAA)",
     description_uz:
       "Baxrom Xojiev bank va moliya sohasida 20 yildan ortiq tajribaga ega bo‘lgan, chakana bank biznesi, komplayens va raqamli transformatsiya yo‘nalishlarida yetuk mutaxassisdir. U Bank-moliya akademiyasida “Bank auditi” mutaxassisligi bo‘yicha magistr, Toshkent Moliya institutida “Buxgalteriya hisobi va audit” yo‘nalishi bo‘yicha bakalavr darajasini olgan hamda AAOIFI Certified Shari’ah Advisor and Auditor (CSAA) sertifikatiga ega. Professional faoliyati davomida u “Asia Alliance Bank” ATBda ichki nazorat, chakana kreditlash, chakana biznes va elektron tijoratni rivojlantirish bo‘limlariga rahbarlik qilib, mobil banking platformalari, CRM tizimlari, kredit skoring modellari va raqamli moliyaviy xizmatlarni joriy etgan. Keyinchalik “Xalq Banki” ATBda komplayens va ichki nazorat departamenti direktor o‘rinbosari sifatida AML/CFT jarayonlarini avtomatlashtirish va nazorat tizimlarini transformatsiya qilishga boshchilik qilgan. 2023–2024-yillarda “Anor Bank”da chakana biznes departamenti direktori o‘rinbosari sifatida faoliyat yuritgan. 2024-yildan buyon esa “Open Bank” AJda loyiha menejeri sifatida shariatga muvofiq moliyaviy yechimlar bo‘yicha mahsulotlarni loyihalash va joriy etishga rahbarlik qilib kelmoqda. Umuman olganda, Baxrom Xojiev strategik fikrlashi, kuchli boshqaruv salohiyati hamda axloqiy va barqaror moliya tamoyillariga sodiqligi bilan ajralib turadi.",
     description_en:
       "Bakhrom Khojiev is a senior banking and finance professional with over 20 years of experience in banking, compliance, and digital transformation. He holds a Master’s degree in Banking Audit from the Banking and Finance Academy of the Republic of Uzbekistan and a Bachelor’s degree in Accounting and Audit from Tashkent Financial Institute, and also holds the AAOIFI Certified Shari’ah Advisor and Auditor (CSAA) certificate. Throughout his career, he has held leadership roles at major Uzbek banks, including Asia Alliance Bank, where he led internal control, retail lending, retail business, and e-commerce development, delivering mobile banking platforms, CRM systems, credit scoring models, and digital financial services. He later served at Xalq Bank as Deputy Director of Compliance and Internal Control, leading AML/CFT automation and compliance system transformation, and at Anor Bank as Deputy Director of Retail Business. Since 2024, he has been working at Open Bank as a Project Manager for Shari’ah-compliant financial solutions, leading the design and implementation of financial products. He is recognized for his strategic mindset, strong leadership, and commitment to ethical and sustainable finance.",
+  },
+
+  {
+    id: 15,
+    name_uz: "Odiljon Axmadjonov (CPFAS)",
+    name_en: "Odiljon Akhmadjonov (CPFAS)",
+    job_en:
+      "Master’s Student (Islamic Banking and Finance) at the International Islamic University Malaysia (IIUM)",
+    job_uz:
+      "IIUM’da “Islom bankchiligi va moliyasi” yo‘nalishida magistratura talabasi",
+    image: MemberFiveteen,
+    description_uz:
+      "Odiljon Axmadjonov — bank-moliya va fintech yo‘nalishlarida shakllanayotgan yosh mutaxassis. 2004-yil 25-iyunda O‘zbekiston Respublikasi, Andijon viloyati, Shahrixon tumanida tug‘ilgan. Toshkent davlat iqtisodiyoti universitetida “Moliya va moliyaviy texnologiyalar” yo‘nalishi bo‘yicha bakalavr darajasini tamomlagan. 2023-yil iyun–avgust oylarida AT “Aloqabank”da Korporativ akademiya menejeri, 2023-yil sentyabr–2025-yil sentyabr davrida esa Innovatsion bank xizmatlarini joriy qilish bo‘limida menejer sifatida faoliyat yuritgan. 2025-yil oktyabrdan hozirgacha Malayziya Xalqaro Islom Universitetida (IIUM) “Islom bankchiligi va moliyasi” yo‘nalishida magistratura bosqichida tahsil olmoqda. AAOIFI’ning CPFAS sertifikatiga ega.",
+    description_en:
+      "Odiljon Akhmadjonov is an emerging banking, finance, and fintech professional. Born on 25 June 2004 in Shahrixon district, Andijan region, Uzbekistan, he holds a Bachelor’s degree from Tashkent State University of Economics, specializing in Finance and Financial Technologies. He gained practical banking experience at Aloqabank, serving as a Corporate Academy Manager (Jun–Aug 2023) and later as a Manager in the Innovative Banking Services Implementation Department (Sep 2023–Sep 2025). Since October 2025, he has been pursuing a Master’s degree at the International Islamic University Malaysia (IIUM) in Islamic Banking and Finance. He is an AAOIFI CPFAS certificate holder",
+    certificate:
+      "Certified Proficiency in Financial Accounting Standards (CPFAS)",
+  },
+  {
+    id: 16,
+    name_uz: "Shaxzodbek Usmonov (CPFAS)",
+    name_en: "Shakhzodbek Usmonov (CPFAS)",
+    job_en: "Head of the Trade Finance Department at ATB Kapitalbank",
+    job_uz: "ATB Kapitalbank’da savdolarni moliyalashtirish bo‘limi boshlig‘i",
+    image: MemberSixteen,
+    description_uz:
+      "Shaxzodbek Usmonov — bank-moliya sohasida tajribaga ega mutaxassis. 1994-yil 28-iyul kuni O‘zbekiston Respublikasi, Samarqand viloyati, Kattaqo‘rg‘on shahrida tug‘ilgan. Toshkent shahridagi Singapur Menejmentni Rivojlantirish Institutida “Bank ishi va moliya” fakulteti bo‘yicha bakalavr darajasini tamomlagan. 2017-yildan hozirgi kungacha “ATB Kapitalbank”da Savdolarni moliyalashtirish boshqarmasi boshlig‘i lavozimida faoliyat yuritib kelmoqda. AAOIFI’ning CPFAS sertifikatiga ega.",
+    description_en:
+      "Shakhzodbek Usmonov is a banking and finance professional with strong practical experience. He was born on 28 July 1994 in Kattakurgan city, Samarkand region, Uzbekistan. He holds a Bachelor’s degree in Banking and Finance from the Management Development Institute of Singapore (MDIS) in Tashkent. Since 2017, he has been working at ATB Kapitalbank as the Head of the Trade Finance Department. He holds the AAOIFI CPFAS certificate.",
+    certificate:
+      "Certified Proficiency in Financial Accounting Standards (CPFAS)",
+  },
+  {
+    id: 17,
+    name_uz: "Damira Amanova (CPFAS)",
+    name_en: "Damira Amanova (CPFAS)",
+    job_en:
+      "Director, Department for Cooperation with Financial Institutions at Kapitalbank",
+    job_uz:
+      "ATB Kapitalbank’da moliyaviy institutlar bilan hamkorlik bo‘yicha departament direktori",
+    image: MemberSeventeen,
+    description_uz:
+      "Damira Amanova — bank sohasida ko‘p yillik tajribaga ega mutaxassis bo‘lib, savdo moliyalashtirish, loyiha moliyalashtirish hamda moliyaviy institutlar bilan hamkorlik yo‘nalishlarida faoliyat yuritadi. 2004-yilda Toshkent davlat iqtisodiyoti universitetida “Ishlab chiqarish menejmenti” yo‘nalishi bo‘yicha bakalavr, 2010-yilda Bank-moliya akademiyasida “Loyiha moliyalashtirish” yo‘nalishi bo‘yicha magistr darajasini olgan. 2021-yildan buyon ATB “Kapitalbank”da Moliyaviy institutlar bilan hamkorlik departamenti direktori lavozimida ishlaydi. Avval “KDB Bank Uzbekistan” hamda “Paxtabank/Agrobank” tizimlarida savdo moliyalashtirish, kredit va tashqi iqtisodiy faoliyat yo‘nalishlarida rahbarlik lavozimlarida ishlagan. AAOIFI’ning CPFAS sertifikatiga ega.",
+    description_en:
+      "Damira Amanova is a seasoned banking professional with extensive experience in trade finance, project finance, and cooperation with financial institutions. She earned her Bachelor’s degree from Tashkent State University of Economics (2004, Production Management) and her Master’s degree from the Banking and Finance Academy of Uzbekistan (2010, Project Finance). Since 2021, she has been serving at Kapitalbank as Director within the Department for Cooperation with Financial Institutions. Previously, she held managerial roles at KDB Bank Uzbekistan and built strong expertise in foreign economic activity and banking operations at Pakhtabank/Agrobank. She holds the AAOIFI CPFAS certificate.",
+    certificate:
+      "Certified Proficiency in Financial Accounting Standards (CPFAS)",
+  },
+  {
+    id: 18,
+    name_uz: "Jaxonbek Sayfidinov (CPFAS)",
+    name_en: "Jakhonbek Sayfidinov (CPFAS)",
+    job_en: "Senior Specialist at Poytaxt Bank JSC",
+    job_uz: "Poytaxt bank AJ’da bosh mutaxassis",
+    image: MemberEighteen,
+    description_uz:
+      "Jaxonbek Sayfidinov — bank amaliyoti va mijozlarga xizmat ko‘rsatish yo‘nalishida tajribaga ega mutaxassis. 1998-yil 17-dekabr kuni O‘zbekiston Respublikasi, Samarqand viloyati, Payariq tumanida tug‘ilgan. Toshkent irrigatsiya va qishloq xo‘jaligini mexanizatsiyalash muhandislari institutida bakalavr, Toshkent davlat iqtisodiyot universitetida magistr darajasini olgan. 2021-yildan buyon “Poytaxt bank” AJda faoliyat yuritib, dastlab Amaliyot boshqarmasining Bek-ofis (buxgalteriya hisobi va hisoboti) bo‘limida buxgalter-nazoratchi sifatida, keyinchalik Front-ofisda yuridik shaxslarga xizmat ko‘rsatish bo‘limida 1-toifali mutaxassis, yetakchi mutaxassis, 2024-yil fevraldan esa bosh mutaxassis lavozimlarida ishlamoqda. AAOIFI’ning CPFAS sertifikatiga ega.",
+    description_en:
+      "Jakhonbek Sayfidinov is a banking professional with experience in operations and corporate customer service. Born on 17 December 1998 in Payariq district, Samarkand region, Uzbekistan, he holds a Bachelor’s degree from the Tashkent Institute of Irrigation and Agricultural Mechanization Engineers and a Master’s degree from Tashkent State University of Economics. Since 2021, he has worked at Poytaxt Bank JSC, starting in the Operations Department (back office—accounting and reporting) and progressing to front-office roles serving legal entities, including positions as Specialist, Leading Specialist, and since February 2024 as Senior Specialist. He holds the AAOIFI CPFAS certificate.",
+    certificate:
+      "Certified Proficiency in Financial Accounting Standards (CPFAS)",
   },
 ];
 
 export const posts = [
   {
     id: 1,
-    title_uz: "ISSF 2025 forumi - islom moliyasini joriy etish yo'lidagi muhim qadam",
-    title_en: "ISSF 2025 Forum - An Important Step Towards Implementing Islamic Finance",
+    title_uz:
+      "ISSF 2025 forumi - islom moliyasini joriy etish yo'lidagi muhim qadam",
+    title_en:
+      "ISSF 2025 Forum - An Important Step Towards Implementing Islamic Finance",
     image: ISSFImage,
-    description_uz: "Oʻzbekiston “Islomiy bank tizimini joriy etish: Barqaror moliyaviy tizim sari yuksalish” mavzusida XX Xalqaro islomiy moliya olimlari forumi (ISSF 2025) ga mezbonlik qildi<br><br>Oʻzbekiston poytaxtidagi Hyatt Regency Tashkent mehmonxonasida “Islomiy bank tizimini joriy etish: Barqaror moliyaviy tizim sari yuksalish” mavzusida XX Xalqaro islomiy moliya olimlari forumi (ISSF 2025) boʻlib oʻtdi. Forumni INCEIF universiteti va uning ISRA instituti Al Muamalat Consulting (Oʻzbekiston) bilan hamkorlikda tashkil etildi.<br><br>Oʻzbekiston Respublikasi Markaziy banki tadbirning strategik hamkori sifatida uni xalqaro darajada oʻtkazilishini taʼminladi. Shuningdek, mamlakatdagi yetakchi tijorat banklari va moliya tashkilotlari forumni qoʻllab-quvvatladi.<br><br><b>Forumning asosiy maqsadi</b><br>Forumning asosiy mavzusi islomiy moliyani rivojlantirish, ilgʻor amaliyotlarni moliya tizimiga joriy etish, olimlar, regulyatorlar, standartlarni belgilovchi tashkilotlar va soha mutaxassislari oʻrtasida hamkorlikni mustahkamlash hamda islomiy huquqqa oid masalalar yuzasidan fikr almashish maydonini yaratishga qaratildi.<br><br>Forum doirasida islomiy bank tizimiga oʻtish jarayoni, bankni islomiy bankka transformatsiya qilishda korporativ boshqaruv masalalari, moliyaviy mahsulotlar, huquqiy va meʼyoriy qiyinchiliklar, amaliyotdagi muammolar va ularning yechimlari muhokama qilindi.<br><br><b>Forum ishtirokchilari</b><br>ISSF 2025 dunyo miqyosidagi yetakchi olimlar, mutaxassislar va amaliyotchilarni birlashtiradi. Forumda Xalqaro musulmon ulamolari ittifoqi prezidenti prof. d-r Ali Muxyiddin al-Qoradogʻiy, islom iqtisodi va moliyasi boʻyicha ekspert prof. d-r Monzer Kahf, islom bankchiligi boʻyicha maslahatchi d-r Muhammad Imron Usmoniy, shuningdek INCEIF va ISRAdan taniqli olimlar — Datuk prof. d-r Mohamad Akram Laldin, prof. d-r Aznan Hasan, prof. d-r Enku Rabiya Adaviya, prof. d-r Said Buxeraua, prof. d-r Yunus Sualhi, prof. d-r Obiyatulla Ismat Bacha, d-r Marjan Muhammad qatnashdi. Shuningdek, xalqaro ekspertlardan d-r Nizom Yakubiy va d-r Sami al-Suvaylem (IsDB Institute) ham ishtirok etdi.",
-    description_en: "Uzbekistan hosted the 20th International Shariah Scholars Forum (ISSF 2025) on the theme “Implementing the Islamic Banking System: Advancing Towards a Sustainable Financial System.”<br><br>The forum was held at the Hyatt Regency Tashkent Hotel under the theme “Implementing the Islamic Banking System: Advancing Towards a Sustainable Financial System.” It was organized by INCEIF University and its ISRA Institute in collaboration with Al Muamalat Consulting (Uzbekistan).<br><br>The Central Bank of the Republic of Uzbekistan acted as the strategic partner, ensuring the event was held at an international level. In addition, leading commercial banks and financial institutions in the country supported the forum.<br><br><b>Main Goal of the Forum</b><br>The main focus of the forum was to promote the development of Islamic finance, integrate best practices into the financial system, strengthen cooperation among scholars, regulators, standard-setting organizations, and industry professionals, as well as to create a platform for discussions on Shariah-related issues.<br><br>During the forum, the process of transitioning to an Islamic banking system, corporate governance in transforming banks into Islamic banks, financial products, legal and regulatory challenges, practical issues, and their solutions were discussed.<br><br><b>Forum Participants</b><br>ISSF 2025 brought together leading scholars, experts, and practitioners from around the world. The forum featured Prof. Dr. Ali Muhyiddin al-Qaradaghi, President of the International Union of Muslim Scholars, Islamic economics and finance expert Prof. Dr. Monzer Kahf, Islamic banking advisor Dr. Muhammad Imran Usmani, as well as distinguished scholars from INCEIF and ISRA — Datuk Prof. Dr. Mohamad Akram Laldin, Prof. Dr. Aznan Hasan, Prof. Dr. Enku Rabiah Adawiah, Prof. Dr. Syed Bouherwa, Prof. Dr. Yunus Suahili, Prof. Dr. Obiyatullah Ismat Bacha, and Dr. Marjan Muhammad. International experts including Dr. Nizam Yaquby and Dr. Sami al-Suwailem (IsDB Institute) also participated."
+    description_uz:
+      "Oʻzbekiston “Islomiy bank tizimini joriy etish: Barqaror moliyaviy tizim sari yuksalish” mavzusida XX Xalqaro islomiy moliya olimlari forumi (ISSF 2025) ga mezbonlik qildi<br><br>Oʻzbekiston poytaxtidagi Hyatt Regency Tashkent mehmonxonasida “Islomiy bank tizimini joriy etish: Barqaror moliyaviy tizim sari yuksalish” mavzusida XX Xalqaro islomiy moliya olimlari forumi (ISSF 2025) boʻlib oʻtdi. Forumni INCEIF universiteti va uning ISRA instituti Al Muamalat Consulting (Oʻzbekiston) bilan hamkorlikda tashkil etildi.<br><br>Oʻzbekiston Respublikasi Markaziy banki tadbirning strategik hamkori sifatida uni xalqaro darajada oʻtkazilishini taʼminladi. Shuningdek, mamlakatdagi yetakchi tijorat banklari va moliya tashkilotlari forumni qoʻllab-quvvatladi.<br><br><b>Forumning asosiy maqsadi</b><br>Forumning asosiy mavzusi islomiy moliyani rivojlantirish, ilgʻor amaliyotlarni moliya tizimiga joriy etish, olimlar, regulyatorlar, standartlarni belgilovchi tashkilotlar va soha mutaxassislari oʻrtasida hamkorlikni mustahkamlash hamda islomiy huquqqa oid masalalar yuzasidan fikr almashish maydonini yaratishga qaratildi.<br><br>Forum doirasida islomiy bank tizimiga oʻtish jarayoni, bankni islomiy bankka transformatsiya qilishda korporativ boshqaruv masalalari, moliyaviy mahsulotlar, huquqiy va meʼyoriy qiyinchiliklar, amaliyotdagi muammolar va ularning yechimlari muhokama qilindi.<br><br><b>Forum ishtirokchilari</b><br>ISSF 2025 dunyo miqyosidagi yetakchi olimlar, mutaxassislar va amaliyotchilarni birlashtiradi. Forumda Xalqaro musulmon ulamolari ittifoqi prezidenti prof. d-r Ali Muxyiddin al-Qoradogʻiy, islom iqtisodi va moliyasi boʻyicha ekspert prof. d-r Monzer Kahf, islom bankchiligi boʻyicha maslahatchi d-r Muhammad Imron Usmoniy, shuningdek INCEIF va ISRAdan taniqli olimlar — Datuk prof. d-r Mohamad Akram Laldin, prof. d-r Aznan Hasan, prof. d-r Enku Rabiya Adaviya, prof. d-r Said Buxeraua, prof. d-r Yunus Sualhi, prof. d-r Obiyatulla Ismat Bacha, d-r Marjan Muhammad qatnashdi. Shuningdek, xalqaro ekspertlardan d-r Nizom Yakubiy va d-r Sami al-Suvaylem (IsDB Institute) ham ishtirok etdi.",
+    description_en:
+      "Uzbekistan hosted the 20th International Shariah Scholars Forum (ISSF 2025) on the theme “Implementing the Islamic Banking System: Advancing Towards a Sustainable Financial System.”<br><br>The forum was held at the Hyatt Regency Tashkent Hotel under the theme “Implementing the Islamic Banking System: Advancing Towards a Sustainable Financial System.” It was organized by INCEIF University and its ISRA Institute in collaboration with Al Muamalat Consulting (Uzbekistan).<br><br>The Central Bank of the Republic of Uzbekistan acted as the strategic partner, ensuring the event was held at an international level. In addition, leading commercial banks and financial institutions in the country supported the forum.<br><br><b>Main Goal of the Forum</b><br>The main focus of the forum was to promote the development of Islamic finance, integrate best practices into the financial system, strengthen cooperation among scholars, regulators, standard-setting organizations, and industry professionals, as well as to create a platform for discussions on Shariah-related issues.<br><br>During the forum, the process of transitioning to an Islamic banking system, corporate governance in transforming banks into Islamic banks, financial products, legal and regulatory challenges, practical issues, and their solutions were discussed.<br><br><b>Forum Participants</b><br>ISSF 2025 brought together leading scholars, experts, and practitioners from around the world. The forum featured Prof. Dr. Ali Muhyiddin al-Qaradaghi, President of the International Union of Muslim Scholars, Islamic economics and finance expert Prof. Dr. Monzer Kahf, Islamic banking advisor Dr. Muhammad Imran Usmani, as well as distinguished scholars from INCEIF and ISRA — Datuk Prof. Dr. Mohamad Akram Laldin, Prof. Dr. Aznan Hasan, Prof. Dr. Enku Rabiah Adawiah, Prof. Dr. Syed Bouherwa, Prof. Dr. Yunus Suahili, Prof. Dr. Obiyatullah Ismat Bacha, and Dr. Marjan Muhammad. International experts including Dr. Nizam Yaquby and Dr. Sami al-Suwailem (IsDB Institute) also participated.",
   },
   {
     id: 2,
-    title_uz: "Islom moliyasi bo‘yicha 20-xalqaro forum Toshkentda bo‘lib o‘tdi",
-    title_en: "The 20th International Forum on Islamic Finance Held in Tashkent",
+    title_uz:
+      "Islom moliyasi bo‘yicha 20-xalqaro forum Toshkentda bo‘lib o‘tdi",
+    title_en:
+      "The 20th International Forum on Islamic Finance Held in Tashkent",
     image: NewsThreeImage,
-    description_uz: "Birinchi bor ISSF – Islom moliyasi bo‘yicha shariat olimlari forumi Malayziyani tark etib, ilk bor Toshkentda bo‘lib o‘tdi. Forum O‘zbekiston banklarida islomiy darchalar joriy etilishi jarayonini tezlashtirishiga umid qilingan.",
-    description_en: "For the first time, the ISSF – International Shariah Scholars Forum on Islamic Finance – was held outside Malaysia, taking place in Tashkent. The forum is expected to accelerate the process of introducing Islamic windows in Uzbekistan's banks."
+    description_uz:
+      "Birinchi bor ISSF – Islom moliyasi bo‘yicha shariat olimlari forumi Malayziyani tark etib, ilk bor Toshkentda bo‘lib o‘tdi. Forum O‘zbekiston banklarida islomiy darchalar joriy etilishi jarayonini tezlashtirishiga umid qilingan.",
+    description_en:
+      "For the first time, the ISSF – International Shariah Scholars Forum on Islamic Finance – was held outside Malaysia, taking place in Tashkent. The forum is expected to accelerate the process of introducing Islamic windows in Uzbekistan's banks.",
   },
   {
     id: 3,
     title_uz: "Islomiy moliya olimlari Toshkentda yig‘ildi",
     title_en: "Islamic Finance Scholars Gathered in Tashkent",
     image: NewsTwoImage,
-    description_uz: "Toshkentda 20-Xalqaro islomiy moliya olimlari forumi bo‘lib o‘tdi. Unda islomiy moliyani rivojlantirish, ilg‘or amaliyotlarni moliya tizimiga joriy etish, olimlar, regulyatorlar, standartlarni belgilovchi tashkilotlar va soha mutaxassislari o‘rtasida hamkorlikni mustahkamlash hamda islomiy huquqqa oid masalalar yuzasidan fikr almashildi.<br><br>Shuningdek, islom bank tizimiga o‘tish jarayoni, bank konversiyasida korporativ boshqaruv, moliyaviy mahsulotlar, huquqiy va meʼyoriy qiyinchiliklar, amaliyotdagi muammolar va ularning yechimlari muhokama qilinadi.",
-    description_en: "The 20th International Forum of Islamic Finance Scholars was held in Tashkent. The event focused on the development of Islamic finance, the introduction of best practices into the financial system, strengthening cooperation among scholars, regulators, standard-setting organizations, and industry professionals, as well as exchanging views on Shariah-related issues.<br><br>In addition, discussions were held on the transition to the Islamic banking system, corporate governance during bank conversion, financial products, legal and regulatory challenges, practical issues, and possible solutions."
+    description_uz:
+      "Toshkentda 20-Xalqaro islomiy moliya olimlari forumi bo‘lib o‘tdi. Unda islomiy moliyani rivojlantirish, ilg‘or amaliyotlarni moliya tizimiga joriy etish, olimlar, regulyatorlar, standartlarni belgilovchi tashkilotlar va soha mutaxassislari o‘rtasida hamkorlikni mustahkamlash hamda islomiy huquqqa oid masalalar yuzasidan fikr almashildi.<br><br>Shuningdek, islom bank tizimiga o‘tish jarayoni, bank konversiyasida korporativ boshqaruv, moliyaviy mahsulotlar, huquqiy va meʼyoriy qiyinchiliklar, amaliyotdagi muammolar va ularning yechimlari muhokama qilinadi.",
+    description_en:
+      "The 20th International Forum of Islamic Finance Scholars was held in Tashkent. The event focused on the development of Islamic finance, the introduction of best practices into the financial system, strengthening cooperation among scholars, regulators, standard-setting organizations, and industry professionals, as well as exchanging views on Shariah-related issues.<br><br>In addition, discussions were held on the transition to the Islamic banking system, corporate governance during bank conversion, financial products, legal and regulatory challenges, practical issues, and possible solutions.",
   },
   {
     id: 4,
     title_uz: "Islomiy moliya olimlari Toshkentda yig‘ildi",
     title_en: "Islamic Finance Scholars Gathered in Tashkent",
     image: NewsFourImage,
-    description_uz: "ISSF 2025 Oʻzbekiston uchun islom moliyasi sohasida muhim qadam boʻlib, tegishli huquqiy va meʼyoriy asoslarni takomillashtirishga, inson kapitali va institutsional salohiyatni rivojlantirishga, shuningdek mamlakatning islom moliyasida mintaqaviy markaz sifatidagi mavqeini mustahkamlashga xizmat qiladi.",
-    description_en: "ISSF 2025 represents an important step for Uzbekistan in the field of Islamic finance, contributing to the improvement of the legal and regulatory framework, the development of human capital and institutional capacity, as well as strengthening the country’s position as a regional hub for Islamic finance."
-  }
+    description_uz:
+      "ISSF 2025 Oʻzbekiston uchun islom moliyasi sohasida muhim qadam boʻlib, tegishli huquqiy va meʼyoriy asoslarni takomillashtirishga, inson kapitali va institutsional salohiyatni rivojlantirishga, shuningdek mamlakatning islom moliyasida mintaqaviy markaz sifatidagi mavqeini mustahkamlashga xizmat qiladi.",
+    description_en:
+      "ISSF 2025 represents an important step for Uzbekistan in the field of Islamic finance, contributing to the improvement of the legal and regulatory framework, the development of human capital and institutional capacity, as well as strengthening the country’s position as a regional hub for Islamic finance.",
+  },
 ];
-
 
 export const specialCouncilData = [
   {
@@ -393,4 +503,4 @@ export const specialCouncilData = [
     description_en:
       "Karimov Sherzodjon Mukhtarovich is an Islamic scholar, imam-khatib, and specialist at the Fatwa Center. He has received comprehensive religious education and possesses deep knowledge in Islamic studies. He began his career as a deputy imam at a mosque, gaining extensive experience in working with the community and explaining religious matters. He holds both a bachelor’s and a master’s degree, enabling him to analyze and address complex religious issues from an academic perspective. During his professional career, he obtained a certificate in Shari’ah standards, giving him the ability to provide professional guidance on religious and financial matters. Currently, Sherzodjon Karimov works as a specialist at the Fatwa Center of the Spiritual Administration of Muslims of Uzbekistan. He combines academic knowledge with practical experience by preparing fatwas, advising on religious matters, and promoting Islamic values in society. Overall, he is recognized as both knowledgeable and experienced, contributing meaningfully to the community through his work and expertise.",
   },
-]
+];

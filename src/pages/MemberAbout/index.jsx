@@ -42,9 +42,12 @@ function TeamMemberModal({ member, isOpen, onClose }) {
             <h2 className="text-2xl font-bold text-slate-900 mb-4">
               {member[`name_${i18n?.language}`] || member.name_uz}
             </h2>
-            <h4 className="text-base md:text-lg font-bold text-slate-900 mb-2">
+            <h4 className="text-base md:text-lg font-medium text-slate-900 mb-2">
               {member?.certificate}
             </h4>
+            <h3 className="text-xl font-medium text-slate-900 mb-4">
+              {member[`job_${i18n?.language}`] || member.job_uz}
+            </h3>
             <p className="text-slate-600 leading-relaxed text-xs line-clamp-10 lg:line-clamp-14">
               {member[`description_${i18n?.language}`] ||
                 member.description_uz ||
@@ -71,7 +74,7 @@ function TeamMemberCard({ member, onClick }) {
         className="object-cover lg:object-top h-[250px] lg:h-[300px] w-full"
       />
       <div className="text-center px-2">
-        <h3 className="font-semibold text-slate-800 my-2 text-base md:text-lg mb-1 group-hover:text-emerald-700 transition-colors duration-300">
+        <h3 className="font-semibold text-slate-800 my-2 text-base  mb-1 group-hover:text-emerald-700 transition-colors duration-300">
           {member[`name_${i18n?.language}`]}
         </h3>
       </div>
