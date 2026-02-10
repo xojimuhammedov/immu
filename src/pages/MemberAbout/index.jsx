@@ -42,9 +42,9 @@ function TeamMemberModal({ member, isOpen, onClose }) {
             <h2 className="text-2xl font-bold text-slate-900 mb-4">
               {member[`name_${i18n?.language}`] || member.name_uz}
             </h2>
-            <h4 className="text-base md:text-lg font-medium text-slate-900 mb-2">
+            {/* <h4 className="text-base md:text-lg font-medium text-slate-900 mb-2">
               {member?.certificate}
-            </h4>
+            </h4> */}
             <h3 className="text-xl font-medium text-slate-900 mb-4">
               {member[`job_${i18n?.language}`] || member.job_uz}
             </h3>
