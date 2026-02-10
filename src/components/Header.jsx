@@ -83,7 +83,7 @@ const Header = () => {
           <img
             src={Logo}
             alt="AL MUAMALAT"
-            className="h-[50px] md:h-[50px] md:w-[102px] lg:h-[65px] lg:w-[165px] object-contain"
+            className="h-[50px] md:h-[50px] md:w-[102px] lg:h-[65px] lg:w-[205px] object-contain"
           />
         </div>
 

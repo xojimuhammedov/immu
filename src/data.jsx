@@ -15,7 +15,7 @@ import MemberNine from "./assets/member9.jpg";
 import MemberTen from "./assets/member10.jpg";
 import MemberEleven from "./assets/member11.png";
 import MemberTwelf from "./assets/member12.png";
-import MemberThirsteen from "./assets/member13.jpg";
+import MemberThirsteen from "./assets/member13.png";
 import MemberFourteen from "./assets/member14.jpg";
 import MemberFiveteen from "./assets/member15.jpg";
 import MemberSixteen from "./assets/member16.jpg";
@@ -86,9 +86,9 @@ export const members = [
     id: 4,
     name_uz: "Oybek Xojimamatov (CPSS, CPFAS)",
     name_en: "Oybek Khojimamatov (CPSS, CPFAS)",
-    job_en: "Islamic Finance & Accounting Specialist at Al Muamalat Consulting",
+    job_en: "Leading specialists in The Fund of Guarantee Citizens' Deposits in Banks",
     job_uz:
-      "Al Muamalat Consultingda islomiy moliya va buxgalteriya hisobi bo‘yicha mutaxassis",
+      "Omonatlarni Kafolatlash Agentligida yetakchi mutaxassis",
     image: MemberFour,
     certificate:
       "Certificate of Proficiency in Shari’ah Standards (CPSS), Certificate of Proficiency in Financial Accounting Standards (CPFAS)",

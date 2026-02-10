@@ -82,7 +82,7 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <div>
-                <img src={FooterLogo} className="w-[150px] object-top" alt="" />
+                <img src={FooterLogo} className="w-[180px] object-top" alt="" />
               </div>
             </div>
             <p className="text-teal-100 text-sm leading-relaxed max-w-md mt-4">
