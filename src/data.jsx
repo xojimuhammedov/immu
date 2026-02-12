@@ -21,6 +21,7 @@ import MemberFiveteen from "./assets/member15.jpg";
 import MemberSixteen from "./assets/member16.jpg";
 import MemberSeventeen from "./assets/member17.jpg";
 import MemberEighteen from "./assets/member18.jpg";
+import MemberNineteen from "./assets/member19.jpg";
 
 import CouncilOne from "./assets/council1.jpg";
 import CouncilTwo from "./assets/council2.jpg";
@@ -69,6 +70,18 @@ export const members = [
   },
   {
     id: 3,
+    image: MemberNineteen,
+    name_uz: "Dr. A'lam Asadov (PhD, CSAA)",
+    name_en: "Dr. Alam Asadov (PhD, CSAA)",
+    job_uz: "Dotsent, Prince Sultan Universiteti, Saudiya Arabistoni",
+    job_en: "Associate Professor, Prince Sultan University, Saudi Arabia",
+    description_uz:
+      "Doktor A’lam Asadov – Ar-Riyod shahridagi Prince Sultan Universitetida moliya yo‘nalishida dotsent lavozimida faoliyat yuritadi. U Malayziyadagi INCEIF universitetida Islom moliyasi bo‘yicha PhD darajasini olgan hamda CSAA (Certified Shari’ah Advisor and Auditor) xalqaro professional sertifikatiga ega. Uning ilmiy va o‘quv faoliyati asosan islom moliyasi, moliya bozorlari va zamonaviy moliyaviy texnologiyalar yo‘nalishlariga qaratilgan. Ayniqsa, Markaziy Osiyoda, xususan O‘zbekistonda islom moliyaviy tizimini joriy etish va rivojlantirish masalalarini chuqur o‘rganadi. U sukuklarga talabni tahlil qilish, islom kapital bozorini shakllantirish, qonunchilik va tartibga solish masalalari, shuningdek tadbirkorlarning islom moliyasiga qiziqishi va uni qo‘llash omillari bo‘yicha bir qator ilmiy ishlar muallifi. Dr. Asadov global islom moliyasi tajribasini Markaziy Osiyo sharoitiga moslashtirish, ayniqsa O‘zbekiston misolida amaliy taklif va tavsiyalar ishlab chiqishga e’tibor qaratadi. Shuningdek, u hammualliflikda yozilgan “Development of Islamic Finance in CIS Countries – In the Example of Uzbekistan” nomli kitob hammuallifi bo‘lib, unda MDH davlatlarida, ayniqsa O‘zbekistonda, islom moliyasini rivojlantirish imkoniyatlari va mavjud muammolar tahlil qilingan.",
+    description_en:
+      "Dr. Alam Asadov is an Associate Professor of Finance at Prince Sultan University in Riyadh with a PhD in Islamic Finance from INCEIF, Malaysia, and a Certified Shari’ah Advisor and Auditor (CSAA). His academic and research work centers on Islamic finance, financial markets, and fintech, with a particular focus on advancing Shariah-compliant financial systems in Central Asia, especially Uzbekistan. He has produced empirical and policy-oriented research on sukuk demand, Islamic capital market development, regulatory and legal frameworks, and entrepreneurial adoption of Islamic finance, connecting global Islamic finance theory with the practical reform needs of emerging Central Asian economies. He is also co-author of the book “Development of Islamic Finance in CIS Countries – In the Example of Uzbekistan,” which examines the prospects, institutional challenges, and strategic pathways for expanding Islamic finance across the CIS region through the case of Uzbekistan.",
+  },
+  {
+    id: 4,
     name_uz: "Baxtiyorjon Fayzullayev (CPSS, FMVA)",
     name_en: "Bakhtiyorjon Fayzullaev (CPSS, FMVA)",
     job_en: "Senior Associate at Al Muamalat Consulting",
@@ -83,23 +96,23 @@ export const members = [
   },
 
   {
-    id: 4,
+    id: 5,
     name_uz: "Oybek Xojimamatov (CPSS, CPFAS)",
     name_en: "Oybek Khojimamatov (CPSS, CPFAS)",
-    job_en: "Leading specialists in The Fund of Guarantee Citizens' Deposits in Banks",
-    job_uz:
-      "Omonatlarni Kafolatlash Agentligida yetakchi mutaxassis",
+    job_en:
+      "Leading specialists in The Fund of Guarantee Citizens' Deposits in Banks",
+    job_uz: "Omonatlarni Kafolatlash Agentligida yetakchi mutaxassis",
     image: MemberFour,
     certificate:
       "Certificate of Proficiency in Shari’ah Standards (CPSS), Certificate of Proficiency in Financial Accounting Standards (CPFAS)",
     description_uz:
-      "Oybek Xojimamatov islomiy moliya va buxgalteriya hisobi yo‘nalishida shakillanib borayotgan mutaxassis bo‘lib, kuchli akademik tayyorgarlikka ega. U University of South Florida universitetida buxgalteriya hisobi bo‘yicha bakalavr darajasini olgan hamda Université Lavalda xalqaro study-abroad dasturini muvaffaqiyatli yakunlagan, shuningdek avvalroq biznes ta’limi bo‘yicha tayyorgarlikdan o‘tgan. U AAOIFIning Certificate of Proficiency in Shari’ah Standards (CPSS) va Certificate of Proficiency in Financial Accounting Standards (CPFAS) sertifikatlariga ega bo‘lib, islomiy moliya standartlari va islomiy moliyaviy hisob talablari bo‘yicha tizimli bilimga ega ekanini namoyon etadi. Uning amaliy tajribasi universitetdagi o‘qish jarayonida Talabalar yetakchisi sifatidagi akademik faoliyat hamda Al-Muamalat Consulting bilan structured learning orqali kasbiy rivojlanishda faol ishtirok etishini o‘z ichiga oladi. Umuman olganda, u tirishqoqligi, uzluksiz o‘rganishga intilishi va islomiy moliyani halollik hamda qat’iy professional mezonlar asosida rivojlantirishga sodiqligi bilan ajralib turadi.",
+      "Oybek Xojimamatov islomiy moliya bo‘yicha mutaxassis bo‘lib, buxgalteriya hisobi hamda islomiy moliyani rivojlantirish sohalarida tajribaga ega. Hozirda u Omonatlarni kafolatlash agentligining Yuridik xizmat va metodologik ta’minlash departamentida yetakchi mutaxassis lavozimida faoliyat yuritib, islomiy omonatlarni himoya qilish tizimini rivojlantirmoqda. U AQShning Janubiy Florida universitetida buxgalteriya hisobi yo‘nalishi bo‘yicha bakalavr darajasini olgan va AAOIFI tomonidan e’tirof etilgan ikki xalqaro sertifikat CPSS va CPFAS egasidir. Ushbu sertifikatlar uning shariat standartlari va islomiy moliyaviy hisob sohasidagi tizimli bilim va malakasini tasdiqlaydi. Avvalroq u Al Muamalat Consulting kompaniyasida faoliyat yuritib, treninglar tashkil etish, konsalting va biznesni rivojlantirish loyihalarida ishtirok etgan. Jumladan, INCEIF universiteti Malayziya va O‘zbekiston Markaziy banki hamkorligida o‘tkazilgan ISSF forumini tashkil etishda qatnashgan.",
     description_en:
-      "Oybek Khojimamatov is an emerging Islamic finance and accounting specialist with a strong academic foundation. He holds a B.S. in Accounting from the University of South Florida and completed an international study-abroad program at Université Laval, supported by earlier business education training. He has obtained two AAOIFI certifications — the Certificate of Proficiency in Shari’ah Standards (CPSS) and the Certificate of Proficiency in Financial Accounting Standards (CPFAS) — demonstrating structured knowledge of Shari’ah standards and Islamic financial accounting requirements. His practical experience includes academic engagement as a Student Assistant and active professional development through structured learning with Al-Muamalat Consulting. Overall, he is distinguished by diligence, continuous learning, and a strong professional commitment to advancing Islamic finance with integrity and rigor.",
+      "Oybek Khojimamatov is an Islamic Finance Specialist with a background in accounting and Islamic finance development. He currently serves as a Lead Specialist at the Deposits Guarantee Agency within the Legal Services and Methodological Support Department, where he is involved in developing an Islamic deposit protection framework. He holds a bachelor’s degree in accounting from the University of South Florida (USA) and has earned two internationally recognized AAOIFI certifications: CPSS and CPFAS, reflecting his structured expertise in Shariah standards and Islamic financial accounting. Previously, he worked with Al Muamalat Consulting, contributing to training, consultancy, and business development initiatives, including the organization of the ISSF Forum in partnership with INCEIF University (Malaysia) and the Central Bank of Uzbekistan.",
   },
 
   {
-    id: 5,
+    id: 6,
     name_uz: "Nurali Saidov (CPSS, CPFAS)",
     name_en: "Nurali Saidov (CPSS, CPFAS)",
     job_en: "Finance & Accounting Specialist",
@@ -114,7 +127,7 @@ export const members = [
   },
 
   {
-    id: 6,
+    id: 7,
     name_uz: "Onaxon Raximova (CPFAS)",
     name_en: "Onakhon Rakhimova (CPFAS)",
     job_en:
@@ -131,7 +144,7 @@ export const members = [
   },
 
   {
-    id: 7,
+    id: 8,
     name_uz: "Oybek Abdurahimov (CPSS, CPFAS)",
     name_en: "Oybek Abdurakhimov (CPSS, CPFAS)",
     job_en: "Auditor at a Private Company",
@@ -146,7 +159,7 @@ export const members = [
   },
 
   {
-    id: 8,
+    id: 9,
     name_uz: "Nilufar Babanazarova (CPSS)",
     name_en: "Nilufar Babanazarova (CPSS)",
     job_en:
@@ -161,7 +174,7 @@ export const members = [
   },
 
   {
-    id: 9,
+    id: 10,
     name_uz: "Olmos Xolboboyev (CSAA, CPFAS)",
     name_en: "Olmos Kholboboyev (CSAA, CPFAS)",
     job_en: "Islamic Finance Consultant",
@@ -176,7 +189,7 @@ export const members = [
   },
 
   {
-    id: 10,
+    id: 11,
     name_uz: "Paxlavon Chinpulotov (CSAA)",
     name_en: "Pakhlavon Chinpulatov (CSAA)",
     job_en:
@@ -192,7 +205,7 @@ export const members = [
   },
 
   {
-    id: 11,
+    id: 12,
     name_uz: "Axrorjon Sadullayev (MBA Islamic Finance, CSAA)",
     name_en: "Akhrorjon Sadullaev (MBA Islamic Finance, CSAA)",
     job_en: "Managing Partner at an Audit Firm",
@@ -207,7 +220,7 @@ export const members = [
   },
 
   {
-    id: 12,
+    id: 13,
     name_uz: "Surayyo Shaamirova (PhD, CSAA)",
     name_en: "Surayyo Shaamirova (PhD, CSAA)",
     job_en: "Senior Lecturer at the Banking and Finance Academy",
@@ -223,7 +236,7 @@ export const members = [
   },
 
   {
-    id: 13,
+    id: 14,
     name_uz: "Umrбек Rajabov (MSc Islamic Finance, CPSS)",
     name_en: "Umrbek Rajabov (MSc Islamic Finance, CPSS)",
     job_en: "Islamic Finance Specialist",
@@ -238,7 +251,7 @@ export const members = [
   },
 
   {
-    id: 14,
+    id: 15,
     name_uz: "Baxrom Xojiev (CSAA)",
     name_en: "Bakhrom Khojiev (CSAA)",
     job_en:
@@ -254,7 +267,7 @@ export const members = [
   },
 
   {
-    id: 15,
+    id: 16,
     name_uz: "Odiljon Axmadjonov (CPFAS)",
     name_en: "Odiljon Akhmadjonov (CPFAS)",
     job_en:
@@ -270,7 +283,7 @@ export const members = [
       "Certified Proficiency in Financial Accounting Standards (CPFAS)",
   },
   {
-    id: 16,
+    id: 17,
     name_uz: "Shaxzodbek Usmonov (CPFAS)",
     name_en: "Shakhzodbek Usmonov (CPFAS)",
     job_en: "Head of the Trade Finance Department at ATB Kapitalbank",
@@ -284,7 +297,7 @@ export const members = [
       "Certified Proficiency in Financial Accounting Standards (CPFAS)",
   },
   {
-    id: 17,
+    id: 18,
     name_uz: "Damira Amanova (CPFAS)",
     name_en: "Damira Amanova (CPFAS)",
     job_en:
@@ -300,7 +313,7 @@ export const members = [
       "Certified Proficiency in Financial Accounting Standards (CPFAS)",
   },
   {
-    id: 18,
+    id: 19,
     name_uz: "Jaxonbek Sayfidinov (CPFAS)",
     name_en: "Jakhonbek Sayfidinov (CPFAS)",
     job_en: "Senior Specialist at Poytaxt Bank JSC",

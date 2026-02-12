@@ -53,13 +53,6 @@ export function ContactSection() {
         return () => document.removeEventListener("mousedown", handleClickOutside);
     }, []);
 
-    // const handleSubmit = async (e) => {
-    //     e.preventDefault();
-    //     setIsSubmitting(true);
-    //     await new Promise((resolve) => setTimeout(resolve, 1000));
-    //     setIsSubmitting(false);
-    //     setFormData({ name: "", organization: "", phone: "", message: "" });
-    // };
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -120,10 +113,10 @@ export function ContactSection() {
                         <span className="inline-block px-4 py-1.5 bg-emerald-500/20 text-emerald-400 text-sm font-medium rounded-full mb-6">
                             {t("Bog'lanish")}
                         </span>
-                        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-balance">
+                        <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold mb-6 leading-tight text-balance">
                             {t("Ma'lumotlaringizni qoldiring")}
                         </h2>
-                        <p className="text-lg text-slate-300 mb-8 leading-relaxed">
+                        <p className="text-base text-slate-300 mb-8 leading-relaxed">
                             {t("Biz siz bilan bog'lanamiz. Islomiy moliya xizmatlari bo'yicha savollaringizga javob berishdan mamnun bo'lamiz.")}
                         </p>
 
