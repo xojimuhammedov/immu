@@ -45,6 +45,7 @@ export const members = [
     name_en: "Iskandar Tursunov (MIFP, CSAA)",
     job_uz: "Al Muamalat Consulting asoschisi va Bosh ijrochi direktori (CEO)",
     job_en: "Founder & CEO at Al Muamalat Consulting",
+    code: "UZ",
     image: MemberOne,
     certificate:
       "Master in Islamic Finance Practice (MIFP) from INCEIF University, Certified Shari’ah Advisor & Auditor (CSAA)",
@@ -60,6 +61,7 @@ export const members = [
     name_en: "Hayotjon Azimov (CIFP, CSAA)",
     job_uz: "Al Muamalat Consultingda Maslahat bo‘limi rahbari",
     job_en: "Head of Advisory at Al Muamalat Consulting",
+    code: "UZ",
     image: MemberTwo,
     certificate:
       "Chartered Islamic Finance Professional (CIFP) from INCEIF, Certified Shari’ah Advisor & Auditor (CSAA)",
@@ -75,6 +77,7 @@ export const members = [
     name_en: "Dr. Alam Asadov (PhD, CSAA)",
     job_uz: "Dotsent, Prince Sultan Universiteti, Saudiya Arabistoni",
     job_en: "Associate Professor, Prince Sultan University, Saudi Arabia",
+    code: "UZ",
     description_uz:
       "Doktor A’lam Asadov – Ar-Riyod shahridagi Prince Sultan Universitetida moliya yo‘nalishida dotsent lavozimida faoliyat yuritadi. U Malayziyadagi INCEIF universitetida Islom moliyasi bo‘yicha PhD darajasini olgan hamda CSAA (Certified Shari’ah Advisor and Auditor) xalqaro professional sertifikatiga ega. Uning ilmiy va o‘quv faoliyati asosan islom moliyasi, moliya bozorlari va zamonaviy moliyaviy texnologiyalar yo‘nalishlariga qaratilgan. Ayniqsa, Markaziy Osiyoda, xususan O‘zbekistonda islom moliyaviy tizimini joriy etish va rivojlantirish masalalarini chuqur o‘rganadi. U sukuklarga talabni tahlil qilish, islom kapital bozorini shakllantirish, qonunchilik va tartibga solish masalalari, shuningdek tadbirkorlarning islom moliyasiga qiziqishi va uni qo‘llash omillari bo‘yicha bir qator ilmiy ishlar muallifi. Dr. Asadov global islom moliyasi tajribasini Markaziy Osiyo sharoitiga moslashtirish, ayniqsa O‘zbekiston misolida amaliy taklif va tavsiyalar ishlab chiqishga e’tibor qaratadi. Shuningdek, u hammualliflikda yozilgan “Development of Islamic Finance in CIS Countries – In the Example of Uzbekistan” nomli kitob hammuallifi bo‘lib, unda MDH davlatlarida, ayniqsa O‘zbekistonda, islom moliyasini rivojlantirish imkoniyatlari va mavjud muammolar tahlil qilingan.",
     description_en:
@@ -86,6 +89,7 @@ export const members = [
     name_en: "Bakhtiyorjon Fayzullaev (CPSS, FMVA)",
     job_en: "Senior Associate at Al Muamalat Consulting",
     job_uz: "Al Muamalat Consultingda katta maslahatchi",
+    code: "UZ",
     image: MemberThree,
     certificate:
       "Certificate of Proficiency in Shari’ah Standards (CPSS), Financial Modeling & Valuation Analyst (FMVA)",
@@ -102,6 +106,7 @@ export const members = [
     job_en:
       "Leading specialists in The Fund of Guarantee Citizens' Deposits in Banks",
     job_uz: "Omonatlarni Kafolatlash Agentligida yetakchi mutaxassis",
+    code: "UZ",
     image: MemberFour,
     certificate:
       "Certificate of Proficiency in Shari’ah Standards (CPSS), Certificate of Proficiency in Financial Accounting Standards (CPFAS)",
@@ -117,6 +122,7 @@ export const members = [
     name_en: "Nurali Saidov (CPSS, CPFAS)",
     job_en: "Finance & Accounting Specialist",
     job_uz: "Moliya va buxgalteriya hisobi bo‘yicha mutaxassis",
+    code: "UZ",
     image: MemberFive,
     certificate:
       "Certificate of Proficiency in Shari’ah Standards (CPSS) & Certificate of Proficiency in Financial Accounting Standards (CPFAS)",
@@ -134,6 +140,7 @@ export const members = [
       "Chief Accountant at “Xadicha Kubro” Women’s Secondary Specialized Islamic Education Institution",
     job_uz:
       "“Xadicha Kubro” ayollar o‘rta maxsus Islom ta’lim muassasasida bosh buxgalter",
+    code: "UZ",
     image: MemberSix,
     certificate:
       "Certificate of Proficiency in Financial Accounting Standards (CPFAS)",
@@ -149,6 +156,7 @@ export const members = [
     name_en: "Oybek Abdurakhimov (CPSS, CPFAS)",
     job_en: "Auditor at a Private Company",
     job_uz: "Xususiy kompaniyada auditor",
+    code: "UZ",
     image: MemberSeven,
     certificate:
       "Certificate of Proficiency in Shari’ah Standards (CPSS) & Certificate of Proficiency in Financial Accounting Standards (CPFAS)",
@@ -165,6 +173,7 @@ export const members = [
     job_en:
       "Lecturer at the Banking and Finance Academy of the Republic of Uzbekistan",
     job_uz: "O‘zbekiston Respublikasi Bank-moliya akademiyasi professori",
+    code: "UZ",
     image: MemberEight,
     certificate: "Certificate of Proficiency in Shari’ah Standards (CPSS)",
     description_uz:
@@ -179,6 +188,7 @@ export const members = [
     name_en: "Olmos Kholboboyev (CSAA, CPFAS)",
     job_en: "Islamic Finance Consultant",
     job_uz: "Islomiy moliya bo‘yicha konsultant",
+    code: "UZ",
     image: MemberNine,
     certificate:
       "Master’s degree in Islamic Economics and Finance from Istanbul Sabahattin Zaim University (Türkiye), Certified Shari’ah Advisor and Auditor (CSAA), Certificate of Proficiency in Financial Accounting Standards (CPFAS)",
@@ -192,6 +202,7 @@ export const members = [
     id: 11,
     name_uz: "Paxlavon Chinpulotov (CSAA)",
     name_en: "Pakhlavon Chinpulatov (CSAA)",
+    code: "UZ",
     job_en:
       "Head of the Department for Services to Foreign Nominee Holders and SWIFT Messaging at the Central Securities Depository",
     job_uz:
@@ -210,6 +221,7 @@ export const members = [
     name_en: "Akhrorjon Sadullaev (MBA Islamic Finance, CSAA)",
     job_en: "Managing Partner at an Audit Firm",
     job_uz: "Audit kompaniyasida boshqaruvchi hamkor (Managing Partner)",
+    code: "UZ",
     image: MemberEleven,
     certificate:
       "MBA in Islamic Finance at the Banking and Finance Academy of Uzbekistan, Certified Shari’ah Advisor and Auditor (CSAA)",
@@ -224,6 +236,7 @@ export const members = [
     name_uz: "Surayyo Shaamirova (PhD, CSAA)",
     name_en: "Surayyo Shaamirova (PhD, CSAA)",
     job_en: "Senior Lecturer at the Banking and Finance Academy",
+    code: "UZ",
     job_uz:
       "O‘zbekiston Respublikasi Bank-moliya akademiyasida katta o‘qituvchi (Senior Lecturer)",
     image: MemberTwelf,
@@ -241,6 +254,7 @@ export const members = [
     name_en: "Umrbek Rajabov (MSc Islamic Finance, CPSS)",
     job_en: "Islamic Finance Specialist",
     job_uz: "Islomiy moliya bo‘yicha mutaxassis",
+    code: "UZ",
     image: MemberThirsteen,
     certificate:
       "Master’s degree in Islamic Finance at INCEIF University, Certificate of Proficiency in Shari’ah Standards (CPSS)",
@@ -258,6 +272,7 @@ export const members = [
       "Project Manager for Shari’ah-compliant Financial Solutions at Open Bank",
     job_uz:
       "Open Bank’da shariatga mos moliyaviy yechimlar bo‘yicha loyiha menejeri",
+    code: "UZ",
     image: MemberFourteen,
     certificate: "Certified Shari’ah Advisor and Auditor (CSAA)",
     description_uz:
@@ -274,6 +289,7 @@ export const members = [
       "Master’s Student (Islamic Banking and Finance) at the International Islamic University Malaysia (IIUM)",
     job_uz:
       "IIUM’da “Islom bankchiligi va moliyasi” yo‘nalishida magistratura talabasi",
+    code: "UZ",
     image: MemberFiveteen,
     description_uz:
       "Odiljon Axmadjonov — bank-moliya va fintech yo‘nalishlarida shakllanayotgan yosh mutaxassis. 2004-yil 25-iyunda O‘zbekiston Respublikasi, Andijon viloyati, Shahrixon tumanida tug‘ilgan. Toshkent davlat iqtisodiyoti universitetida “Moliya va moliyaviy texnologiyalar” yo‘nalishi bo‘yicha bakalavr darajasini tamomlagan. 2023-yil iyun–avgust oylarida AT “Aloqabank”da Korporativ akademiya menejeri, 2023-yil sentyabr–2025-yil sentyabr davrida esa Innovatsion bank xizmatlarini joriy qilish bo‘limida menejer sifatida faoliyat yuritgan. 2025-yil oktyabrdan hozirgacha Malayziya Xalqaro Islom Universitetida (IIUM) “Islom bankchiligi va moliyasi” yo‘nalishida magistratura bosqichida tahsil olmoqda. AAOIFI’ning CPFAS sertifikatiga ega.",
@@ -288,6 +304,7 @@ export const members = [
     name_en: "Shakhzodbek Usmonov (CPFAS)",
     job_en: "Head of the Trade Finance Department at ATB Kapitalbank",
     job_uz: "ATB Kapitalbank’da savdolarni moliyalashtirish bo‘limi boshlig‘i",
+    code: "UZ",
     image: MemberSixteen,
     description_uz:
       "Shaxzodbek Usmonov — bank-moliya sohasida tajribaga ega mutaxassis. 1994-yil 28-iyul kuni O‘zbekiston Respublikasi, Samarqand viloyati, Kattaqo‘rg‘on shahrida tug‘ilgan. Toshkent shahridagi Singapur Menejmentni Rivojlantirish Institutida “Bank ishi va moliya” fakulteti bo‘yicha bakalavr darajasini tamomlagan. 2017-yildan hozirgi kungacha “ATB Kapitalbank”da Savdolarni moliyalashtirish boshqarmasi boshlig‘i lavozimida faoliyat yuritib kelmoqda. AAOIFI’ning CPFAS sertifikatiga ega.",
@@ -304,6 +321,7 @@ export const members = [
       "Director, Department for Cooperation with Financial Institutions at Kapitalbank",
     job_uz:
       "ATB Kapitalbank’da moliyaviy institutlar bilan hamkorlik bo‘yicha departament direktori",
+    code: "UZ",
     image: MemberSeventeen,
     description_uz:
       "Damira Amanova — bank sohasida ko‘p yillik tajribaga ega mutaxassis bo‘lib, savdo moliyalashtirish, loyiha moliyalashtirish hamda moliyaviy institutlar bilan hamkorlik yo‘nalishlarida faoliyat yuritadi. 2004-yilda Toshkent davlat iqtisodiyoti universitetida “Ishlab chiqarish menejmenti” yo‘nalishi bo‘yicha bakalavr, 2010-yilda Bank-moliya akademiyasida “Loyiha moliyalashtirish” yo‘nalishi bo‘yicha magistr darajasini olgan. 2021-yildan buyon ATB “Kapitalbank”da Moliyaviy institutlar bilan hamkorlik departamenti direktori lavozimida ishlaydi. Avval “KDB Bank Uzbekistan” hamda “Paxtabank/Agrobank” tizimlarida savdo moliyalashtirish, kredit va tashqi iqtisodiy faoliyat yo‘nalishlarida rahbarlik lavozimlarida ishlagan. AAOIFI’ning CPFAS sertifikatiga ega.",
@@ -318,6 +336,7 @@ export const members = [
     name_en: "Jakhonbek Sayfidinov (CPFAS)",
     job_en: "Senior Specialist at Poytaxt Bank JSC",
     job_uz: "Poytaxt bank AJ’da bosh mutaxassis",
+    code: "UZ",
     image: MemberEighteen,
     description_uz:
       "Jaxonbek Sayfidinov — bank amaliyoti va mijozlarga xizmat ko‘rsatish yo‘nalishida tajribaga ega mutaxassis. 1998-yil 17-dekabr kuni O‘zbekiston Respublikasi, Samarqand viloyati, Payariq tumanida tug‘ilgan. Toshkent irrigatsiya va qishloq xo‘jaligini mexanizatsiyalash muhandislari institutida bakalavr, Toshkent davlat iqtisodiyot universitetida magistr darajasini olgan. 2021-yildan buyon “Poytaxt bank” AJda faoliyat yuritib, dastlab Amaliyot boshqarmasining Bek-ofis (buxgalteriya hisobi va hisoboti) bo‘limida buxgalter-nazoratchi sifatida, keyinchalik Front-ofisda yuridik shaxslarga xizmat ko‘rsatish bo‘limida 1-toifali mutaxassis, yetakchi mutaxassis, 2024-yil fevraldan esa bosh mutaxassis lavozimlarida ishlamoqda. AAOIFI’ning CPFAS sertifikatiga ega.",
