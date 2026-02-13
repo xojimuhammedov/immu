@@ -13,11 +13,22 @@ function TeamMemberModal({ member, isOpen, onClose }) {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex top-[60px] lg:top-0 items-center justify-center bg-black/50 backdrop-blur-sm p-4"
+      className="
+      fixed inset-0 z-[999999999] bg-black/50 backdrop-blur-sm
+      flex items-start lg:items-center justify-center
+      p-0 lg:p-4
+      top-[10px] lg:top-0
+  "
       onClick={onClose}
     >
       <div
-        className="relative bg-white rounded-2xl shadow-2xl max-w-6xl w-full max-h-[90vh] overflow-hidden"
+        className="
+        relative bg-white shadow-2xl overflow-hidden
+        w-full
+        h-[calc(100svh-10px)] lg:h-auto
+        rounded-none lg:rounded-2xl
+        max-w-none lg:max-w-6xl
+    "
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}
@@ -30,32 +41,36 @@ function TeamMemberModal({ member, isOpen, onClose }) {
         </button>
 
         {/* Content */}
-        <div className="flex flex-col md:flex-row">
+        <div className="flex flex-col md:flex-row h-full">
           {/* Left - Image */}
-          <div className="w-full md:w-1/3 flex-shrink-0 p-8  ">
+          <div className="w-full md:w-1/3 flex-shrink-0 p-4 md:p-8">
             <img
               src={member.image || "/placeholder.svg"}
               alt={member.name_uz}
-              className="w-full h-84 md:h-[450px] object-cover rounded-lg lg:object-top"
+              className="
+              w-full object-cover rounded-lg lg:object-top
+              h-[420px] sm:h-[320px] md:h-[450px]"
             />
           </div>
 
-          {/* Right - Info */}
-          <div className="w-full md:w-3/5 p-6 md:p-8 flex flex-col justify-center">
-            <h2 className="text-2xl font-bold text-slate-900 mb-4">
+          {/* Right - Info (SCROLL) */}
+          <div className="w-full md:w-3/5 px-4 pb-6 md:p-8 flex flex-col min-h-0">
+            <h2 className="text-2xl font-bold text-slate-900 mb-3">
               {member[`name_${i18n?.language}`] || member.name_uz}
             </h2>
-            {/* <h4 className="text-base md:text-lg font-medium text-slate-900 mb-2">
-              {member?.certificate}
-            </h4> */}
+
             <h3 className="text-xl font-medium text-slate-900 mb-4">
               {member[`job_${i18n?.language}`] || member.job_uz}
             </h3>
-            <p className="text-slate-600 leading-relaxed text-xs line-clamp-10 lg:line-clamp-14">
-              {member[`description_${i18n?.language}`] ||
-                member.description_uz ||
-                "Bu mutaxassis haqida batafsil ma'lumot mavjud emas."}
-            </p>
+
+            {/* shu div scroll bo'ladi */}
+            <div className="min-h-0 flex-1 overflow-y-auto pr-1">
+              <p className="text-slate-600 leading-relaxed text-base md:text-xs whitespace-pre-line">
+                {member[`description_${i18n?.language}`] ||
+                  member.description_uz ||
+                  "Bu mutaxassis haqida batafsil ma'lumot mavjud emas."}
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -112,13 +127,13 @@ export function TeamSection() {
           </h2>
         </div>
 
-          <CountryFilter
-            countryList={countryList}
-            selectedCountry={selectedCountry}
-            onCountryChange={setSelectedCountry}
-            totalCount={members.length}
-            filteredCount={filteredMembers.length}
-          />
+        <CountryFilter
+          countryList={countryList}
+          selectedCountry={selectedCountry}
+          onCountryChange={setSelectedCountry}
+          totalCount={members.length}
+          filteredCount={filteredMembers.length}
+        />
 
         {filteredMembers.length === 0 && <NoData />}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-8 md:gap-8 mb-8">

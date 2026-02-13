@@ -7,7 +7,7 @@ const Select = SelectPrimitive.Root
 const SelectGroup = SelectPrimitive.Group
 const SelectValue = SelectPrimitive.Value
 
-// Trigger (button)
+
 const SelectTrigger = React.forwardRef(function SelectTrigger(
   { className, children, ...props },
   ref
@@ -37,7 +37,7 @@ const SelectTrigger = React.forwardRef(function SelectTrigger(
 })
 SelectTrigger.displayName = "SelectTrigger"
 
-// Scroll buttons
+
 const SelectScrollUpButton = React.forwardRef(function SelectScrollUpButton(
   { className, ...props },
   ref
