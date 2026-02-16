@@ -1,7 +1,10 @@
 import { useTranslation } from "react-i18next";
 import { specialCouncilData } from "../../data";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { X } from "lucide-react";
+import { CountryFilter } from "../../filter/country-filter";
+import { countryList } from "../../lib/data";
+import NoData from "../../components/NoData";
 
 function TeamMemberModal({ member, isOpen, onClose }) {
   const { i18n } = useTranslation();
@@ -55,11 +58,12 @@ function TeamMemberModal({ member, isOpen, onClose }) {
 }
 
 function TeamMemberCard({ member, onClick }) {
-  const { t, i18n } = useTranslation()
+  const { t, i18n } = useTranslation();
   return (
     <div
       onClick={onClick}
-      className="flex flex-col items-center ] bg-[rgb(242,242,248)] shadow-[0px_9px_18px_0px_rgba(144,173,248,0.25)]">
+      className="flex flex-col items-center ] bg-[rgb(242,242,248)] shadow-[0px_9px_18px_0px_rgba(144,173,248,0.25)]"
+    >
       <img
         src={member.image}
         alt={member.name_uz}
@@ -76,40 +80,59 @@ function TeamMemberCard({ member, onClick }) {
 }
 
 export function SpecialCouncil() {
-    const { t } = useTranslation()
-    const [selectedMember, setSelectedMember] = useState(null);
-  
-    const handleCardClick = (member) => {
-      setSelectedMember(member);
-    };
-  
-    const handleCloseModal = () => {
-      setSelectedMember(null);
-    };
-  
-    return (
-      <section className="py-12 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 md:mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
-              {t("Maxsus Kengash")}
-            </h2>
-          </div>
-  
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-6 mb-8">
-            {specialCouncilData?.map((member) => (
-              <TeamMemberCard key={member.id} member={member} onClick={() => handleCardClick(member)} />
-            ))}
-          </div>
+  const { t } = useTranslation();
+  const [selectedMember, setSelectedMember] = useState(null);
+  const [selectedCountry, setSelectedCountry] = useState("all");
+
+  const filteredMembers = useMemo(() => {
+    if (selectedCountry === "all") return specialCouncilData;
+    return specialCouncilData.filter((m) => m.code === selectedCountry);
+  }, [selectedCountry]);
+
+  const handleCardClick = (member) => {
+    setSelectedMember(member);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedMember(null);
+  };
+
+  return (
+    <section className="py-12 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
+            {t("Maxsus Kengash")}
+          </h2>
         </div>
-        {selectedMember && (
-          <TeamMemberModal
-            member={selectedMember}
-            isOpen={!!selectedMember}
-            onClose={handleCloseModal}
-          />
-        )}
-      </section>
-    );
-  }
-  
+
+        <CountryFilter
+          countryList={countryList}
+          selectedCountry={selectedCountry}
+          onCountryChange={setSelectedCountry}
+          totalCount={specialCouncilData.length}
+          filteredCount={filteredMembers.length}
+        />
+
+        {filteredMembers.length === 0 && <NoData />}
+        <div className="grid grid-cols-2 mt-6 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-6 mb-8">
+          {filteredMembers &&
+            filteredMembers?.map((member) => (
+              <TeamMemberCard
+                key={member.id}
+                member={member}
+                onClick={() => handleCardClick(member)}
+              />
+            ))}
+        </div>
+      </div>
+      {selectedMember && (
+        <TeamMemberModal
+          member={selectedMember}
+          isOpen={!!selectedMember}
+          onClose={handleCloseModal}
+        />
+      )}
+    </section>
+  );
+}

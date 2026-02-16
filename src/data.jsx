@@ -399,6 +399,7 @@ export const specialCouncilData = [
     id: 1,
     name_uz: "Xikmatilla Abiev",
     name_en: "Khikmatilla Abiev",
+    code: "UZ",
     image: CouncilOne,
     description_uz:
       "Abiev Xikmatilla Hasanovich islomshunos, imom-noibi va tadqiqotchi bo‘lib, islomiy ilm, hadis va tafsir sohalarida katta tajribaga ega. U ta’lim faoliyatini Marg‘ilon shahrida boshlagan. 1997-yilda Pokiston Islom Respublikasi, Karachi shahridagi Dorul-Ulum islom universitetida bakalavr va magistratura bosqichlarini tamomlagan. Shuningdek, Andijon shahridagi islom bilim yurtida ham tahsil olgan. U uzoq yillar davomida imom-xatib, masjid noib imomi hamda ilmiy tadqiqotchi sifatida faoliyat yuritgan. 2020-yildan buyon Imom Termiziy xalqaro ilmiy-tadqiqot markazida kichik ilmiy xodim sifatida xizmat qilmoqda. Hozirda islomiy ilm, hadis va tafsir yo‘nalishlarida faol ilmiy tadqiqot olib bormoqda.",
@@ -409,6 +410,7 @@ export const specialCouncilData = [
     id: 2,
     name_uz: "Hasan Qodirov",
     name_en: "Hasan Kodirov",
+    code: "UZ",
     image: CouncilTwo,
     description_uz:
       "Qodirov Hasan Karimberdiyevich — islom ilmlari va islom ta’limi sohasida chuqur bilimga ega mutaxassisdir. U Samarqand viloyati “Xo‘ja Ahror Vali” o‘rta maxsus islom bilim yurtini hamda Imom Buxoriy nomidagi Toshkent islom institutini tamomlagan. Shuningdek, Alisher Navoiy nomidagi Toshkent davlat o‘zbek tili va adabiyoti universitetida magistratura bosqichini bitirgan. Faoliyati davomida u Samarqand viloyati “Xo‘ja Abdi Berun” jome masjidida imom-xatib, Toshkent shahar turli tumanlaridagi “Siroj-Solih”, “Yunusobod” va “Mulla Xolmirza ota” jome masjidlarida noib-imom va imom-xatib lavozimlarida ishlagan. Shuningdek, u Toshkent shahar “Ko‘kaldosh” o‘rta maxsus bilim yurtida mudarris va Toshkent islom institutida katta o‘qituvchi sifatida ta’lim sohasida faoliyat yuritgan. Hozirda Toshkent shahar Olmazor tumani “Siroj-Solih” jome masjidida imom-xatib sifatida xizmat qilmoqda. Umuman olganda, Qodirov Hasan Karimberdiyevich islom ta’limi va diniy xizmat sohalarini birlashtirgan, boy amaliy tajribaga ega ishonchli mutaxassis va pedagog sifatida e’tirof etiladi.",
@@ -419,6 +421,7 @@ export const specialCouncilData = [
     id: 3,
     name_uz: "Mas’udxon Ismoilov",
     name_en: "Mas’udkhon Ismoilov",
+    code: "UZ",
     image: CouncilThree,
     description_uz:
       "Ismoilov Mas’udxon Mahdievich — islomshunoslik va islom sivilizatsiyasini o‘rganish yo‘nalishida kuchli akademik tayyorgarlikka ega olim va pedagog. Toshkent Islom institutida bakalavr, O‘zbekiston Milliy universitetida magistratura bosqichlarini tamomlagan; tarix fanlari bo‘yicha PhD ilmiy darajasiga hamda dotsent ilmiy unvoniga ega. O‘zbekiston FA Sharqshunoslik instituti va O‘zbekiston Milliy universitetida ilmiy-pedagogik faoliyat olib borgan. Hozirda O‘zbekiston Xalqaro islomshunoslik akademiyasida “Islomshunoslik va islom sivilizatsiyasini o‘rganish (ICESCO)” kafedrasi dotsenti. Gerda Henkel jamg‘armasi qo‘llab-quvvatlagan qo‘lyozmalar bo‘yicha ilmiy elektron katalog loyihasida ishtirok etgan, O‘zbekiston Islom sivilizatsiyasi markazi ilmiy loyihalarida rahbar va ishtirokchi. Noyob qo‘lyozmalar va tarixiy hujjatlar bilan ishlash bo‘yicha ekspert. AAOIFI sertifikat(lar)iga ega.",
@@ -429,6 +432,7 @@ export const specialCouncilData = [
     id: 4,
     name_uz: "Botirjon Abdullayev",
     name_en: "Botirjon Abdullaev",
+    code: "UZ",
     image: CouncilFour,
     description_uz:
       "Abdullayev Botirjon Qosimovich — tarix fanlari bo‘yicha falsafa doktori (PhD) hamda Abu Rayhon Beruniy nomidagi Sharqshunoslik instituti “Sharq xalqlari fani va madaniyati” bo‘limida kichik ilmiy xodim sifatida faoliyat yuritadi. U Toshkent davlat universitetining Fizika fakultetida hamda Sharqshunoslik fakultetida arab tili kursini tamomlagan. Faoliyati davomida O‘zbekistondagi qator ilmiy loyihalarda rahbar va ishtirokchi bo‘lib qatnashgan, jumladan O‘zbekiston Islom sivilizatsiyasi markazi va O‘zbekiston FA Astronomiya instituti loyihalarida faol ishtirok etgan. Shuningdek, u noyob qo‘lyozmalar, toshbosma kitoblar va tarixiy hujjatlar bilan fondlarni boyitish bo‘yicha ekspert hisoblanadi. Germaniya, Turkiya va Afg‘onistonda o‘tkazilgan xalqaro ilmiy anjumanlarda ma’ruzalar qilgan. AAOIFI sertifikatiga ega bo‘lib, islom moliyasi bo‘yicha xalqaro standartlar bilan ishlash bo‘yicha yuqori kompetensiyaga ega. Umuman olganda, Botirjon Abdullayev ilmiy merosni tadqiq etish, saqlash va rivojlantirishga salmoqli hissa qo‘shayotgan yetuk olim va ekspert sifatida e’tirof etiladi.",
@@ -439,6 +443,7 @@ export const specialCouncilData = [
     id: 5,
     name_uz: "Jamoliddin Ummatov",
     name_en: "Jamoliddin Ummatov",
+    code: "UZ",
     image: CouncilFive,
     description_uz:
       "Ummatov Jamoliddin Qodirovich — imom-xatib, islomshunos va arab tili o‘qituvchisi. U Sayyid Muhyiddin Maxdum O‘rta Maxsus Islom Ta’lim Muassasasi hamda Toshkent Islom Institutida tahsil olgan, shuningdek Aniq va Ijtimoiy Fanlar Universitetida magistratura bosqichini tamomlagan. U Jizzax viloyatidagi bir qator masjidlar va diniy markazlarda imom-xatib sifatida faoliyat yuritgan, jumladan Jizzax shahridagi “Havastlik” jome masjidida xizmat qilgan. Hozirda Jizzax shahridagi Qur’on Karim va Tajvid o‘quv markazida uslubchi sifatida faoliyat olib bormoqda. Umuman olganda, Jamoliddin Ummatov diniy ta’lim va arab tili sohasida katta tajribaga ega bo‘lgan mutaxassis sifatida e’tirof etiladi.",
@@ -449,6 +454,7 @@ export const specialCouncilData = [
     id: 6,
     name_uz: "Shavkatjon Xalilov",
     name_en: "Shavkatjon Khalilov",
+    code: "UZ",
     image: CouncilSix,
     description_uz:
       "Xalilov Shavkatjon Baxrom o‘g‘li — islom huquqi va moliyasi sohasida chuqur bilimga ega mutaxassis. U Toshkent Islom Institutida bakalavr bosqichini, O‘zbekiston Xalqaro Islom Akademiyasida esa magistratura va doktorantura bosqichlarini tamomlagan. U AAOIFI tomonidan tasdiqlangan CSE (Certified Shari’ah Expert) sertifikatiga ega bo‘lib, uning SS (Shari’iy Standartlar) va IFSD (Islom Moliyasi va Shariat Maqsadlari) modullarini muvaffaqiyatli tugatgan. Ushbu sertifikatlar uning islom moliyasi va shariat standartlari bo‘yicha professional bilimini tasdiqlaydi. Faoliyati davomida u MAXZAN FINANS va Assodiq MChJda islom moliyasi bo‘yicha mutaxassis sifatida amaliy tajriba to‘plagan hamda islom moliyasi prinsiplarini biznes amaliyotiga joriy etish bo‘yicha muhim ko‘nikmalarga ega bo‘lgan. Hozirda u MAXZAN FINANS va Assodiq MChJda islom moliyasi bo‘yicha mutaxassis sifatida faoliyat yuritmoqda. Umuman olganda, Shavkatjon Xalilov islom huquqi va moliyasini akademik va amaliy jihatdan uyg‘unlashtirgan, xalqaro standartlar bo‘yicha malakali va ishonchli mutaxassisdir.",
@@ -459,6 +465,7 @@ export const specialCouncilData = [
     id: 7,
     name_uz: "Xamidulla Aminov",
     name_en: "Khamidulla Aminov",
+    code: "UZ",
     image: CouncilSeven,
     description_uz:
       "Aminov Xamidulla Abdirahimovich — islomshunoslik va tarix sohasida chuqur bilimga ega mutaxassis. U Imom Buxoriy nomidagi Toshkent Islom institutida bakalavr, Abdulla Qodiriy nomidagi Toshkent Davlat Madaniyat institutida magistratura bosqichini tamomlagan hamda tarix fanlari nomzodi va tarix fanlari doktori (DSc) ilmiy darajalariga ega. Faoliyati davomida O‘zbekiston Respublikasi Fanlar akademiyasi Abu Rayhon Beruniy nomidagi Sharqshunoslik institutida aspirant, kichik ilmiy xodim va katta ilmiy xodim lavozimlarida ishlagan. O‘zbekiston Xalqaro Islom akademiyasida “Sahihi Buxoriy” sharhlari fanidan ma’ruzalar o‘qigan. U AAOIFI sertifikatiga hamda “Iqtisodiyot asoslari” kursi sertifikatiga ega bo‘lib, islom moliyasi bo‘yicha professional bilimini tasdiqlagan. Xalqaro faoliyati doirasida Germaniya va Turkiyada ilmiy anjumanlarda ishtirok etgan, Gerda Henkel fondi loyihasida qo‘lyozmalar elektron katalogini yaratishda faol qatnashgan hamda O‘zbekiston Islom sivilizatsiyasi markazi ilmiy loyihalarida rahbar va ishtirokchi bo‘lgan. Hozirda Sharqshunoslik institutining “Islomshunoslik va ijtimoiy fikr” bo‘limida katta ilmiy xodim sifatida faoliyat yuritmoqda. Umuman olganda, Xamidulla Aminov islomshunoslik, tarix va islom moliyasi yo‘nalishlarini birlashtirgan, xalqaro tajribaga ega nufuzli va ishonchli olim hisoblanadi.",
@@ -469,6 +476,7 @@ export const specialCouncilData = [
     id: 8,
     name_uz: "Abduvosi Ganiyev",
     name_en: "Abduvosi Ganiyev",
+    code: "UZ",
     image: CouncilEight,
     description_uz:
       "Ganiyev Abduvosi Abdumalikovich — islom huquqi sohasida chuqur bilimga ega mutaxassis. U Samarqand viloyatidagi Imom al-Buxoriy madrasasida tahsil olgan, Toshkent Islom universitetida “Yurisprudensiya (islom huquqi)” yo‘nalishida bakalavr hamda “Musulmon mamlakatlar huquqiy tizimi” yo‘nalishida magistratura darajasini olgan. Faoliyati davomida u “Ko‘kaldosh” o‘rta maxsus islom ta’lim muassasasida o‘qituvchi, ma’naviy-ma’rifiy ishlar bo‘yicha mudir o‘rinbosari hamda Yoshlar bilan ishlash, ma’naviyat va ma’rifat bo‘limi boshlig‘i lavozimlarida faoliyat yuritgan. U AAOIFI sertifikatiga ega bo‘lib, islom moliyasi bo‘yicha professional bilimini tasdiqlagan. Hozirda “Ko‘kaldosh” o‘rta maxsus islom ta’lim muassasasida ma’naviy-ma’rifiy ishlar bo‘yicha mudir o‘rinbosari sifatida faoliyat olib bormoqda. Umuman olganda, Abduvosi Ganiyev islom huquqi va ta’lim-tarbiya sohalarini uyg‘unlashtirgan, boy amaliy tajribaga ega ishonchli mutaxassis va pedagog sifatida e’tirof etiladi.",
@@ -479,6 +487,7 @@ export const specialCouncilData = [
     id: 9,
     name_uz: "Jaloliddin Xolmo'minov",
     name_en: "Jaloliddin Kholmominov",
+    code: "UZ",
     image: CouncilNine,
     description_uz:
       "Xolmo‘minov Jaloliddin Yusupalievich — islomshunoslik va islom huquqi sohasida chuqur bilimga ega mutaxassis. U Toshkent Islom institutida bakalavr, O‘zbekiston Xalqaro Islom akademiyasida magistratura bosqichini tamomlagan. Faoliyati davomida “Ko‘kaldosh” o‘rta maxsus islom bilim yurtida fiqh fani o‘qituvchisi, uslubiy birlashma raisi, o‘quv ishlari bo‘yicha mudir o‘rinbosari va o‘quv-uslubiy bo‘lim boshlig‘i lavozimlarida ishlagan. Shuningdek, u Toshkent shahar Olmazor tumanidagi “Ahmadjon qori” jome masjidida imom-noib va “Kohota buzukr” jome masjidida imom-xatib sifatida diniy xizmat olib borgan. U AAOIFI Shari’iy standartlar sertifikatiga ega bo‘lib, islom moliyasi bo‘yicha professional bilimini tasdiqlagan. Hozirda “Ko‘kaldosh” o‘rta maxsus islom bilim yurtida katta o‘qituvchi sifatida faoliyat yuritmoqda hamda O‘zbekiston musulmonlari idorasi ulamolar kengashi a’zosi hisoblanadi. Umuman olganda, Jaloliddin Xolmo‘minov islom ilmlari, fiqh va ta’lim-tarbiya sohalarini uyg‘unlashtirgan, boy amaliy tajribaga ega nufuzli ustoz va ishonchli mutaxassis sifatida e’tirof etiladi.",
@@ -490,6 +499,7 @@ export const specialCouncilData = [
     name_uz: "Muhammadraxim Abduqodirov",
     name_en: "Muhammadrakhim Abduqodirov",
     image: CouncilTen,
+    code: "UZ",
     description_uz:
       "Abduqodirov Muhammadraxim Abdullayevich — islomshunoslik va islom ilmlari sohasida chuqur bilimga ega mutaxassis. U dastlabki fiqh va arab tili ilmlarini otasi Abdulloh domla nazarida o‘rgangan. Andijon viloyatidagi “Sayyid Muhyiddin Mahdum” islom o‘rta maxsus bilim yurtini tamomlagan hamda Imom Buxoriy nomidagi Toshkent Islom institutida bakalavr va “Aniq va ijtimoiy fanlar” universitetida magistratura bosqichini yakunlagan. Faoliyati davomida Toshkent shahridagi turli jome masjidlarda muazzin, imom-noib va imom-xatib lavozimlarida xizmat qilgan, jumladan “Siroj Solih”, “Chimir ota”, “Abu Hurayra” va “Islomobod” masjidlarida diniy xizmat olib borgan. U AAOIFI standartlari bo‘yicha maxsus kursni tugatib, sertifikat olgan bo‘lib, islom moliyasi bo‘yicha professional bilimini tasdiqlagan. Hozirda Toshkent shahar Shayxontohur tumanidagi “Dorussalom” jome masjidida imom-xatib sifatida faoliyat yuritmoqda. Umuman olganda, Muhammadraxim Abduqodirov islom ilmlari va diniy xizmatni uyg‘unlashtirgan, boy amaliy tajribaga ega ishonchli mutaxassis va imom-xatib sifatida e’tirof etiladi.",
     description_en:
@@ -499,6 +509,7 @@ export const specialCouncilData = [
     id: 11,
     name_uz: "Abdug‘afur Niyazqulov",
     name_en: "Abdugafur Niyazqulov",
+    code: "UZ",
     image: CouncilEleven,
     description_uz:
       "Niyazqulov Abdug‘afur Rabimqulovich — islomshunoslik, fiqh va arab tili sohalarida chuqur bilimga ega mutaxassis. U Andijon shahridagi “Sayyid Muhyiddin Mahdum” o‘rta maxsus islom bilim yurtida fiqh va arab tilini o‘rgangan, Andijon Davlat Universiteti hamda Toshkent Islom institutida tahsilini davom ettirgan. “Aniq va ijtimoiy fanlar” universitetida magistratura bosqichini tamomlagan. Faoliyati davomida “Sayyid Muhyiddin Mahdum” o‘rta maxsus islom bilim yurtida “Tafsir” fanidan mudarris sifatida faoliyat yuritgan. U AAOIFI xalqaro sertifikatiga ega bo‘lib, islom moliyasi bo‘yicha professional bilimini tasdiqlagan. Hozirda O‘zbekiston musulmonlari idorasi huzuridagi Fatvo markazida bosh mutaxassis lavozimida faoliyat olib bormoqda. Umuman olganda, Abdug‘afur Niyazqulov islomshunoslik, fiqh va fatvo berish sohalarini uyg‘unlashtirgan, boy amaliy tajribaga ega ishonchli mutaxassis va olim sifatida e’tirof etiladi.",
@@ -509,6 +520,7 @@ export const specialCouncilData = [
     id: 12,
     name_uz: "Zikriyo Boboraximov",
     name_en: "Zikriyo Boborakhimov",
+    code: "UZ",
     image: CouncilTwelf,
     description_uz:
       "Boboraximov Zikriyo Karimberdiyevich — islomshunoslik va shar’iy ilmlar sohasida chuqur bilimga ega mutaxassis. U “Sayyid Muhyiddin Mahdum” islom bilim yurtida shar’iy ilmlarni o‘rgangan, Toshkent Islom institutida tahsilini davom ettirgan hamda Oriental universitetida magistratura bosqichini tamomlagan. Faoliyati davomida “Madamin-Qori” jome masjidida imom-xatib sifatida diniy xizmat olib borgan. U AAOIFI sertifikatiga ega bo‘lib, islom moliyasi bo‘yicha professional bilimini tasdiqlagan. Hozirda O‘zbekiston musulmonlari idorasi huzuridagi Fatvo markazida yetakchi mutaxassis lavozimida faoliyat yuritmoqda. Umuman olganda, Zikriyo Boboraximov islomshunoslik, shar’iy ilmlar va fatvo berish yo‘nalishlarini uyg‘unlashtirgan, boy amaliy tajribaga ega ishonchli mutaxassis sifatida e’tirof etiladi.",
@@ -519,6 +531,7 @@ export const specialCouncilData = [
     id: 13,
     name_uz: "Muhammadjon Ibragimov",
     name_en: "Muhammadjon Ibragimov",
+    code: "UZ",
     image: CouncilThirsteen,
     description_uz:
       "Ibragimov Muhammadjon Sharipovich — islomshunoslik va fiqh sohasida chuqur bilimga ega mutaxassis. U dastlab bobosi va otasidan boshlang‘ich Qur’on va tajvid ilmlarini o‘rgangan. Andijon shahridagi “Sayyid Muhyiddin Mahdum” o‘rta maxsus islom bilim yurtida fiqh va islomiy ilmlarni egallagan, Toshkent Islom institutida tahsilini davom ettirgan hamda Oriental universitetida magistratura bosqichini tamomlagan. U AAOIFI xalqaro sertifikatiga ega bo‘lib, islom moliyasi bo‘yicha professional bilimini tasdiqlagan. Hozirda O‘zbekiston musulmonlari idorasi huzuridagi Fatvo markazida yetakchi mutaxassis sifatida faoliyat yuritmoqda. Umuman olganda, Muhammadjon Ibragimov islomshunoslik, fiqh va fatvo berish sohalarini uyg‘unlashtirgan, islomiy an’analar asosida tarbiyalangan ishonchli mutaxassis sifatida e’tirof etiladi.",
@@ -529,6 +542,7 @@ export const specialCouncilData = [
     id: 14,
     name_uz: "Sherzodjon Karimov",
     name_en: "Sherzodjon Karimov",
+    code: "UZ",
     image: CouncilFourteen,
     description_uz:
       "Karimov Sherzodjon Muxtarovich — islomshunos, imom-xatib va fatvo markazi mutaxassisi. U diniy ta’limni mukammal o‘rganib, islom ilmlari sohasida chuqur bilimga ega bo‘lgan. Faoliyatini masjidda noib imom sifatida boshlagan bo‘lib, jamoat bilan ishlash va diniy masalalarni tushuntirish bo‘yicha katta tajriba to‘plagan. U bakalavr va magistratura darajalariga ega bo‘lib, murakkab diniy masalalarni ilmiy asosda tahlil qilish imkoniyatiga ega. Professional faoliyati davomida shar’iy standartlar bo‘yicha sertifikat olib, diniy va moliyaviy masalalarda malakali tavsiyalar berish salohiyatini shakllantirgan. Hozirda Sherzodjon Karimov O‘zbekiston musulmonlari idorasi huzuridagi Fatvo markazida mutaxassis sifatida faoliyat yuritmoqda. U o‘z bilimini amaliy tajriba bilan uyg‘unlashtirib, fatvolar tayyorlash, diniy masalalarda maslahat berish va jamiyatda islomiy qadriyatlarni targ‘ib qilish bilan shug‘ullanadi. Umuman olganda, u bilimli va tajribali mutaxassis bo‘lib, jamiyat hayotiga amaliy faoliyati orqali munosib hissa qo‘shmoqda.",
