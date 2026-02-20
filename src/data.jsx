@@ -104,7 +104,7 @@ export const members = [
     name_uz: "Oybek Xojimamatov (CPSS, CPFAS)",
     name_en: "Oybek Khojimamatov (CPSS, CPFAS)",
     job_en:
-      "Leading specialists in The Fund of Guarantee Citizens' Deposits in Banks",
+      "Lead Specialist at the Deposits Guarantee Agency",
     job_uz: "Omonatlarni Kafolatlash Agentligida yetakchi mutaxassis",
     code: "UZ",
     image: MemberFour,
