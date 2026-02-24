@@ -279,6 +279,16 @@ const Header = () => {
             {t("Islomiy moliya mutaxassislari")}
           </Link>
           <Link
+            onClick={() => {
+              window.scrollTo({ top: 0 });
+              setMenuOchiq(false);
+            }}
+            to="/articles"
+            className="block py-2.5 px-3 text-gray-700 hover:text-[#009688] hover:bg-gray-50 rounded-md transition duration-200"
+          >
+            {t("Articles")}
+          </Link>
+          <Link
             to="/contact"
             className="block py-2.5 px-3 text-gray-700 hover:text-[#009688] hover:bg-gray-50 rounded-md transition duration-200"
             onClick={() => {
