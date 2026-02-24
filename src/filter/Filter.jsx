@@ -7,15 +7,24 @@ import {
   SelectValue,
 } from "./ui/select";
 import { useTranslation } from "react-i18next";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
-export function CountryFilter({
-  countryList,
+export function CountriesFilter({
   selectedCountry,
   onCountryChange,
   totalCount,
   filteredCount,
 }) {
   const { t } = useTranslation();
+  const [country, setCountry] = useState([]);
+
+  useEffect(() => {
+    axios.get("https://api.ifpc.uz/countries").then((res) => {
+      setCountry(res?.data);
+    });
+  }, []);
+  if (!country) return <div>Loading...</div>;
   return (
     <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
       <div className="flex items-center gap-3">
@@ -47,13 +56,13 @@ export function CountryFilter({
             </div>
           </SelectItem>
 
-          {countryList.map((country) => (
-            <SelectItem key={country.code} value={country.code}>
+          {country?.data?.slice()?.reverse()?.map((country) => (
+            <SelectItem key={country?.id} value={country?.id}>
               <div className="flex items-center gap-2 pr-6">
-                <span className="text-base leading-none">{country.flag}</span>
-                <span className="font-medium">{country.name_uz}</span>
+                <img className="w-4.5 h-4.5 object-cover" src={`https://api.ifpc.uz/files/${country?.icon}`} alt="" />
+                <span className="font-medium">{country?.name_uz}</span>
                 <span className="text-muted-foreground">
-                  ({country.name_en})
+                  ({country?.name_en})
                 </span>
               </div>
             </SelectItem>

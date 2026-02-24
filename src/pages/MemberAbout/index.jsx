@@ -1,10 +1,10 @@
 import { useTranslation } from "react-i18next";
-import { members } from "../../data";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { X } from "lucide-react";
-import { CountryFilter } from "../../filter/country-filter";
 import { countryList } from "../../lib/data";
 import NoData from "../../components/NoData";
+import { CountriesFilter } from "../../filter/Filter";
+import axios from "axios";
 
 function TeamMemberModal({ member, isOpen, onClose }) {
   const { i18n } = useTranslation();
@@ -45,7 +45,7 @@ function TeamMemberModal({ member, isOpen, onClose }) {
           {/* Left - Image */}
           <div className="w-full md:w-1/3 flex-shrink-0 p-4 md:p-8">
             <img
-              src={member.image || "/placeholder.svg"}
+              src={`https://api.ifpc.uz/files/${member?.image}`}
               alt={member.name_uz}
               className="
               w-full object-cover rounded-lg lg:object-top
@@ -86,7 +86,7 @@ function TeamMemberCard({ member, onClick }) {
       className="flex flex-col items-center ] bg-[rgb(242,242,248)] shadow-[0px_9px_18px_0px_rgba(144,173,248,0.25)]"
     >
       <img
-        src={member.image}
+        src={`https://api.ifpc.uz/files/${member?.image}`}
         alt={member.name_uz}
         fill
         className="object-cover lg:object-top h-[250px] lg:h-[300px] w-full"
@@ -104,11 +104,18 @@ export function TeamSection() {
   const { t } = useTranslation();
   const [selectedMember, setSelectedMember] = useState(null);
   const [selectedCountry, setSelectedCountry] = useState("all");
+  const [member, setMember] = useState([]);
+
+  useEffect(() => {
+    axios.get("https://api.ifpc.uz/members?limit=100").then((res) => {
+      setMember(res?.data?.data);
+    });
+  }, [selectedCountry]);
 
   const filteredMembers = useMemo(() => {
-    if (selectedCountry === "all") return members;
-    return members.filter((m) => m.code === selectedCountry);
-  }, [selectedCountry]);
+    if (selectedCountry === "all") return member;
+    return member.filter((m) => m.country_id === selectedCountry);
+  }, [selectedCountry, member]);
 
   const handleCardClick = (member) => {
     setSelectedMember(member);
@@ -127,18 +134,18 @@ export function TeamSection() {
           </h2>
         </div>
 
-        <CountryFilter
+        <CountriesFilter
           countryList={countryList}
           selectedCountry={selectedCountry}
           onCountryChange={setSelectedCountry}
-          totalCount={members.length}
+          totalCount={member.length}
           filteredCount={filteredMembers.length}
         />
 
         {filteredMembers.length === 0 && <NoData />}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-8 md:gap-8 mb-8">
           {filteredMembers &&
-            filteredMembers?.map((member) => (
+            filteredMembers?.slice()?.reverse()?.map((member) => (
               <TeamMemberCard
                 key={member.id}
                 member={member}
