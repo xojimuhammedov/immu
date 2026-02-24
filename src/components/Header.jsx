@@ -111,6 +111,13 @@ const Header = () => {
           </Link>
           <Link
             onClick={() => window.scrollTo({ top: 0 })}
+            to="/article"
+            className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1"
+          >
+            {t("Articles")}
+          </Link>
+          <Link
+            onClick={() => window.scrollTo({ top: 0 })}
             to="/contact"
             className="text-gray-700 hover:text-[#009688] font-medium transition duration-200 px-2 py-1"
           >

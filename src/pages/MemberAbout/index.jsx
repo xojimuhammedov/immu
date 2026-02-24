@@ -65,11 +65,12 @@ function TeamMemberModal({ member, isOpen, onClose }) {
 
             {/* shu div scroll bo'ladi */}
             <div className="min-h-0 flex-1 overflow-y-auto pr-1">
-              <p className="text-slate-600 leading-relaxed text-base md:text-xs whitespace-pre-line">
-                {member[`description_${i18n?.language}`] ||
-                  member.description_uz ||
-                  "Bu mutaxassis haqida batafsil ma'lumot mavjud emas."}
-              </p>
+              <p
+                className="text-slate-600 leading-relaxed text-base md:text-xs whitespace-pre-line"
+                dangerouslySetInnerHTML={{
+                  __html: member[`description_${i18n?.language}`],
+                }}
+              />
             </div>
           </div>
         </div>
@@ -145,13 +146,16 @@ export function TeamSection() {
         {filteredMembers.length === 0 && <NoData />}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-8 md:gap-8 mb-8">
           {filteredMembers &&
-            filteredMembers?.slice()?.reverse()?.map((member) => (
-              <TeamMemberCard
-                key={member.id}
-                member={member}
-                onClick={() => handleCardClick(member)}
-              />
-            ))}
+            filteredMembers
+              ?.slice()
+              ?.reverse()
+              ?.map((member) => (
+                <TeamMemberCard
+                  key={member.id}
+                  member={member}
+                  onClick={() => handleCardClick(member)}
+                />
+              ))}
         </div>
       </div>
       {selectedMember && (
