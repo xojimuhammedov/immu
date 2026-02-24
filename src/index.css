@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
+
+.article-about-text * {
+  font-size: 16px !important;
+  max-width: 100% !important;
+  white-space: normal !important;
+  line-height: 1.6 !important; /* Matn o'qilishi oson bo'lishi uchun qatorlar orasini ham to'g'rilab ketish tavsiya etiladi */
+}
+

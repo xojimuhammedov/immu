@@ -1,18 +1,19 @@
-import React, { Suspense } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header.jsx';
-import Homepage from './pages/Homepage/index.jsx';
-import { SpecialCouncil } from './pages/SpecialCouncil/index.jsx';
-import 'react-toastify/dist/ReactToastify.css';
-import { ThreeDot } from 'react-loading-indicators';
+import React, { Suspense } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/Header.jsx";
+import Homepage from "./pages/Homepage/index.jsx";
+import { SpecialCouncil } from "./pages/SpecialCouncil/index.jsx";
+import "react-toastify/dist/ReactToastify.css";
+import { ThreeDot } from "react-loading-indicators";
 
-const AboutPage = React.lazy(() => import('./pages/About/index.jsx'));
-const ArticlePage = React.lazy(() => import('./pages/Articles/index.jsx'));
-const NewsPage = React.lazy(() => import('./pages/News/index.jsx'));
+const AboutPage = React.lazy(() => import("./pages/About/index.jsx"));
+const ArticlePage = React.lazy(() => import("./pages/Articles/index.jsx"));
+const NewsPage = React.lazy(() => import("./pages/News/index.jsx"));
+const ArticleAbout = React.lazy(() => import("./pages/ArticleAbout/index.jsx"));
 
-import { Footer } from './components/Footer';
-import { TeamSection } from './pages/MemberAbout/index.jsx';
-import { ContactSection } from './pages/Homepage/_components/Contact.jsx';
+import { Footer } from "./components/Footer";
+import { TeamSection } from "./pages/MemberAbout/index.jsx";
+import { ContactSection } from "./pages/Homepage/_components/Contact.jsx";
 
 function App() {
   return (
@@ -20,23 +21,22 @@ function App() {
       <div className="min-h-screen flex flex-col max-w-[1700px] m-auto ">
         <Header />
         <main className="flex-1">
-          <Suspense fallback={
-            <div className="flex justify-center items-center h-[80vh]">
-              <ThreeDot
-                variant="bounce"
-                color="#009688"
-                size="large"
-              />
-            </div>
-          }>
+          <Suspense
+            fallback={
+              <div className="flex justify-center items-center h-[80vh]">
+                <ThreeDot variant="bounce" color="#009688" size="large" />
+              </div>
+            }
+          >
             <Routes>
               <Route path="/" element={<Homepage />} />
               <Route path="/about" element={<AboutPage />} />
               <Route path="/articles" element={<ArticlePage />} />
+              <Route path="/articles/:id" element={<ArticleAbout />} />
               <Route path="/contact" element={<ContactSection />} />
-              <Route path='/member' element={<TeamSection />} />
+              <Route path="/member" element={<TeamSection />} />
               <Route path="/news/:id" element={<NewsPage />} />
-              <Route path='/special/council' element={<SpecialCouncil />} />
+              <Route path="/special/council" element={<SpecialCouncil />} />
             </Routes>
           </Suspense>
         </main>
