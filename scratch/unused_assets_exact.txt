@@ -1,0 +1,12 @@
+UNUSED: src/assets/News.png
+UNUSED: src/assets/support.jpg
+UNUSED: src/assets/hero.png
+UNUSED: src/assets/map.jpg
+UNUSED: src/assets/rus.png
+UNUSED: src/assets/Font.png
+UNUSED: src/assets/News/velo.png
+UNUSED: src/assets/News/card.png
+UNUSED: src/assets/News/rc.png
+UNUSED: src/assets/News/sec.png
+UNUSED: src/assets/Logo.png
+UNUSED: src/assets/react.svg
