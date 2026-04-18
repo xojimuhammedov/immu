@@ -8,7 +8,6 @@ import { ThreeDot } from "react-loading-indicators";
 
 const AboutPage = React.lazy(() => import("./pages/About/index.jsx"));
 const ArticlePage = React.lazy(() => import("./pages/Articles/index.jsx"));
-const NewsPage = React.lazy(() => import("./pages/News/index.jsx"));
 const ArticleAbout = React.lazy(() => import("./pages/ArticleAbout/index.jsx"));
 
 import { Footer } from "./components/Footer";
@@ -35,7 +34,6 @@ function App() {
               <Route path="/articles/:id" element={<ArticleAbout />} />
               <Route path="/contact" element={<ContactSection />} />
               <Route path="/member" element={<TeamSection />} />
-              <Route path="/news/:id" element={<NewsPage />} />
               <Route path="/special/council" element={<SpecialCouncil />} />
             </Routes>
           </Suspense>
