@@ -67,7 +67,6 @@ function TeamMemberCard({ member, onClick }) {
       <img
         src={member.image}
         alt={member.name_uz}
-        fill
         className="object-cover lg:object-top h-[250px] lg:h-[300px] w-full"
       />
       <div className="text-center px-2">

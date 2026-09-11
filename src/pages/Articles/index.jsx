@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ArticleCard from "./components/ArticleCard";
-import axios from "axios";
+import { api } from "../../lib/api";
 import { useTranslation } from "react-i18next";
 
 const Articles = () => {
@@ -8,9 +8,15 @@ const Articles = () => {
   const { t } = useTranslation();
 
   useEffect(() => {
-    axios.get("https://api.ifpc.uz/events?limit=100&type=news").then((res) => {
-      setArticle(res?.data?.data);
-    });
+    api
+      .get("/events", { params: { limit: 100, type: "news" } })
+      .then((res) => {
+        setArticle(res?.data?.data ?? []);
+      })
+      .catch((err) => {
+        console.error("Maqolalarni yuklab bo'lmadi:", err);
+        setArticle([]);
+      });
   }, []);
 
   return (

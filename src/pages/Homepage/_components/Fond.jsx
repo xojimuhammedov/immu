@@ -53,7 +53,6 @@ export function CommunitySection() {
                 <img
                   src={MapImage}
                   alt="Global tarmoq - Islomiy moliya hamjamiyati"
-                  fill
                   className="object-contain"
                 />
               </div>

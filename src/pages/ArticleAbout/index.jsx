@@ -1,4 +1,4 @@
-import axios from "axios";
+import { api, fileUrl } from "../../lib/api";
 import dayjs from "dayjs";
 import { ArrowLeft, Calendar } from "lucide-react";
 import React, { useEffect, useState } from "react";
@@ -11,9 +11,15 @@ const ArticleAbout = () => {
   const [article, setArticle] = useState([]);
 
   useEffect(() => {
-    axios.get(`https://api.ifpc.uz/events/${id}`).then((res) => {
-      setArticle(res?.data?.data);
-    });
+    api
+      .get(`/events/${id}`)
+      .then((res) => {
+        setArticle(res?.data?.data ?? null);
+      })
+      .catch((err) => {
+        console.error("Maqolani yuklab bo'lmadi:", err);
+        setArticle(null);
+      });
   }, [id]);
   return (
     <main className="min-h-screen">
@@ -28,7 +34,7 @@ const ArticleAbout = () => {
           </Link>
 
           <img
-            src={`https://api.ifpc.uz/files/${article?.images?.[0]?.file_name}`}
+            src={fileUrl(article?.images?.[0]?.file_name)}
             alt={article.name_uz}
             className="object-cover rounded-lg h-full w-full transition-transform group-hover:scale-105"
           />

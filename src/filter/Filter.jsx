@@ -7,7 +7,7 @@ import {
   SelectValue,
 } from "./ui/select";
 import { useTranslation } from "react-i18next";
-import axios from "axios";
+import { api, fileUrl } from "../lib/api";
 import { useEffect, useState } from "react";
 
 export function CountriesFilter({
@@ -20,9 +20,15 @@ export function CountriesFilter({
   const [country, setCountry] = useState([]);
 
   useEffect(() => {
-    axios.get("https://api.ifpc.uz/countries").then((res) => {
-      setCountry(res?.data);
-    });
+    api
+      .get("/countries")
+      .then((res) => {
+        setCountry(res?.data ?? []);
+      })
+      .catch((err) => {
+        console.error("Davlatlar ro'yxatini yuklab bo'lmadi:", err);
+        setCountry([]);
+      });
   }, []);
   if (!country) return <div>Loading...</div>;
   return (
@@ -59,7 +65,7 @@ export function CountriesFilter({
           {country?.data?.slice()?.reverse()?.map((country) => (
             <SelectItem key={country?.id} value={country?.id}>
               <div className="flex items-center gap-2 pr-6">
-                <img className="w-4.5 h-4.5 object-cover" src={`https://api.ifpc.uz/files/${country?.icon}`} alt="" />
+                <img className="w-4.5 h-4.5 object-cover" src={fileUrl(country?.icon)} alt="" />
                 <span className="font-medium">{country?.name_uz}</span>
                 <span className="text-muted-foreground">
                   ({country?.name_en})

@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "datagaze-dev",
+      "runtimeExecutable": "/Users/macbookair/Documents/IMMU/node_modules/.bin/vite",
+      "runtimeArgs": ["--port", "5173", "--strictPort"],
+      "port": 5173
+    }
+  ]
+}

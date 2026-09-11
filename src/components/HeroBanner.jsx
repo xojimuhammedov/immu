@@ -9,9 +9,7 @@ export function HeroBanner() {
             <img
                 src={HeroBannerImage}
                 alt="Zamonaviy shahar manzarasi - Islomiy moliya xizmatlari"
-                fill
                 className="object-cover object-center"
-                priority
             />
 
             <div className="absolute inset-0 bg-gradient-to-r" />

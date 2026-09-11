@@ -1,13 +1,13 @@
 import { useTranslation } from "react-i18next";
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { X } from "lucide-react";
 import { countryList } from "../../lib/data";
+import { membersData } from "../../lib/membersData";
 import NoData from "../../components/NoData";
-import { CountriesFilter } from "../../filter/Filter";
-import axios from "axios";
+import { CountryFilter } from "../../filter/country-filter";
 
 function TeamMemberModal({ member, isOpen, onClose }) {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   if (!isOpen) return null;
 
@@ -45,7 +45,7 @@ function TeamMemberModal({ member, isOpen, onClose }) {
           {/* Left - Image */}
           <div className="w-full md:w-1/3 flex-shrink-0 p-4 md:p-8">
             <img
-              src={`https://api.ifpc.uz/files/${member?.image}`}
+              src={member.image}
               alt={member.name_uz}
               className="
               w-full object-cover rounded-lg lg:object-top
@@ -55,22 +55,27 @@ function TeamMemberModal({ member, isOpen, onClose }) {
 
           {/* Right - Info (SCROLL) */}
           <div className="w-full md:w-3/5 px-4 pb-6 md:p-8 flex flex-col min-h-0">
-            <h2 className="text-2xl font-bold text-slate-900 mb-3">
+            <h2 className="text-2xl font-bold text-slate-900 mb-4">
               {member[`name_${i18n?.language}`] || member.name_uz}
             </h2>
 
-            <h3 className="text-xl font-medium text-slate-900 mb-4">
-              {member[`job_${i18n?.language}`] || member.job_uz}
-            </h3>
-
             {/* shu div scroll bo'ladi */}
             <div className="min-h-0 flex-1 overflow-y-auto pr-1">
-              <p
-                className="text-slate-600 leading-relaxed text-base md:text-xs whitespace-pre-line"
-                dangerouslySetInnerHTML={{
-                  __html: member[`description_${i18n?.language}`],
-                }}
-              />
+              <p className="text-slate-600 leading-relaxed text-base md:text-xs whitespace-pre-line">
+                {member[`description_${i18n?.language}`] ||
+                  member.description_uz}
+              </p>
+
+              {member.certificates && (
+                <div className="mt-6">
+                  <h3 className="text-sm font-semibold text-slate-900 mb-2">
+                    {t("Sertifikat va darajalar")}
+                  </h3>
+                  <p className="text-slate-600 leading-relaxed text-base md:text-xs">
+                    {member.certificates}
+                  </p>
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -80,21 +85,20 @@ function TeamMemberModal({ member, isOpen, onClose }) {
 }
 
 function TeamMemberCard({ member, onClick }) {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   return (
     <div
       onClick={onClick}
-      className="flex flex-col items-center ] bg-[rgb(242,242,248)] shadow-[0px_9px_18px_0px_rgba(144,173,248,0.25)]"
+      className="flex flex-col items-center cursor-pointer bg-[rgb(242,242,248)] shadow-[0px_9px_18px_0px_rgba(144,173,248,0.25)]"
     >
       <img
-        src={`https://api.ifpc.uz/files/${member?.image}`}
+        src={member.image}
         alt={member.name_uz}
-        fill
         className="object-cover lg:object-top h-[250px] lg:h-[300px] w-full"
       />
       <div className="text-center px-2">
-        <h3 className="font-semibold text-slate-800 my-2 text-base  mb-1 group-hover:text-emerald-700 transition-colors duration-300">
-          {member[`name_${i18n?.language}`]}
+        <h3 className="font-semibold text-slate-800 my-2 text-base mb-1 group-hover:text-emerald-700 transition-colors duration-300">
+          {member[`name_${i18n?.language}`] || member.name_uz}
         </h3>
       </div>
     </div>
@@ -105,18 +109,11 @@ export function TeamSection() {
   const { t } = useTranslation();
   const [selectedMember, setSelectedMember] = useState(null);
   const [selectedCountry, setSelectedCountry] = useState("all");
-  const [member, setMember] = useState([]);
-
-  useEffect(() => {
-    axios.get("https://api.ifpc.uz/members?limit=100").then((res) => {
-      setMember(res?.data?.data);
-    });
-  }, [selectedCountry]);
 
   const filteredMembers = useMemo(() => {
-    if (selectedCountry === "all") return member;
-    return member.filter((m) => m.country_id === selectedCountry);
-  }, [selectedCountry, member]);
+    if (selectedCountry === "all") return membersData;
+    return membersData.filter((m) => m.code === selectedCountry);
+  }, [selectedCountry]);
 
   const handleCardClick = (member) => {
     setSelectedMember(member);
@@ -135,29 +132,27 @@ export function TeamSection() {
           </h2>
         </div>
 
-        <CountriesFilter
+        <CountryFilter
           countryList={countryList}
           selectedCountry={selectedCountry}
           onCountryChange={setSelectedCountry}
-          totalCount={member.length}
+          totalCount={membersData.length}
           filteredCount={filteredMembers.length}
         />
 
         {filteredMembers.length === 0 && <NoData />}
+
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-8 md:gap-8 mb-8">
-          {filteredMembers &&
-            filteredMembers
-              ?.slice()
-              ?.reverse()
-              ?.map((member) => (
-                <TeamMemberCard
-                  key={member.id}
-                  member={member}
-                  onClick={() => handleCardClick(member)}
-                />
-              ))}
+          {filteredMembers?.map((member) => (
+            <TeamMemberCard
+              key={member.id}
+              member={member}
+              onClick={() => handleCardClick(member)}
+            />
+          ))}
         </div>
       </div>
+
       {selectedMember && (
         <TeamMemberModal
           member={selectedMember}
